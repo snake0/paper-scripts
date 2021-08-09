@@ -30,7 +30,7 @@ if __name__ == "__main__":
             rects = ax.bar(x - width * 4 + i * width + width / 2, data, width,
                            color=colors[i], label="4x"+str(i + 1))
     ax.set_ylabel('Normalized Results', fontsize=font_size)
-    ax.set_title('Scalability of CPU-intensive Applications', fontsize=font_size)
+    ax.set_title('Scalability of Stress-ng CPU Methods on GiantVM', fontsize=font_size)
     ax.set_xticks(x)
     ax.set_xticklabels(labels, fontsize=font_size, rotation=45)
     ax.legend(title='# of vCPUs', title_fontsize=font_size, fontsize=font_size, \
@@ -39,6 +39,7 @@ if __name__ == "__main__":
     fig.tight_layout()
 
     plt.gca().yaxis.grid(True)
+    plt.subplots_adjust(bottom=0.05, top=1.1)
 
     fig.savefig('/Users/snake0/taco-journal/newimgs/stress-ng-scale.pdf', dpi=300)
     plt.show()

@@ -20,17 +20,20 @@ R1 = np.loadtxt("/Users/snake0/taco-journal/newdata/ep.C.csv",delimiter=",",skip
 # R1=R1+1
 # R1 = np.log2(R1)
 
-sns_plot1 = sns.heatmap(R1, xticklabels=2, yticklabels=2, vmax=100, cmap="YlGnBu", square=True)
+sns_plot1 = sns.heatmap(R1, xticklabels=2, yticklabels=2,
+                        vmax=100, cmap="YlGnBu", square=True, linewidths=0.5, linecolor="white")
 for xitem in sns_plot1.get_xticklabels():
     xitem.set_rotation(90)
+    print(xitem)
 for yitem in sns_plot1.get_yticklabels():
     yitem.set_rotation(0)
+    print(yitem)
 # plt.xlabel('thread ID', fontproperties=sub_font)
 # plt.ylabel('thread ID', fontproperties=sub_font)
 plt.title('EP.C.y')
 
 plt.tight_layout()
-plt.subplots_adjust(left=0.05,right=0.96,bottom=0.05,top=0.95)
+plt.subplots_adjust(left=0.08,right=0.98,bottom=0.04,top=0.97)
 
 plt.savefig('/Users/snake0/taco-journal/newimgs/ep.C.pdf', dpi=300)
 plt.show()

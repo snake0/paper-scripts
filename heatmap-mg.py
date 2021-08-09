@@ -20,7 +20,8 @@ R1 = np.loadtxt("/Users/snake0/taco-journal/newdata/mg.C.csv",delimiter=",",skip
 # R1=R1+1
 # R1 = np.log2(R1)
 
-sns_plot1 = sns.heatmap(R1, xticklabels=2, yticklabels=2,vmax=100, cmap="YlGnBu", square=True)
+sns_plot1 = sns.heatmap(R1, xticklabels=2, yticklabels=2,vmax=100,
+                        cmap="YlGnBu", square=True, linewidths=0.5, linecolor="white")
 for xitem in sns_plot1.get_xticklabels():
     xitem.set_rotation(90)
 for yitem in sns_plot1.get_yticklabels():
@@ -30,7 +31,7 @@ for yitem in sns_plot1.get_yticklabels():
 plt.title('MG.C.y')
 
 plt.tight_layout()
-plt.subplots_adjust(left=0.05,right=0.96,bottom=0.05,top=0.95)
+plt.subplots_adjust(left=0.08,right=0.98,bottom=0.04,top=0.97)
 
 plt.savefig('/Users/snake0/taco-journal/newimgs/mg.C.pdf', dpi=300)
 plt.show()

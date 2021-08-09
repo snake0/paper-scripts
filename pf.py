@@ -42,9 +42,9 @@ def autolabel(rects):
         s = "{:.1f}%".format(height)
         l = len(s)
         if height < 0:
-            offset = height - 40 - len(s)*1.1
+            offset = height - 40 - len(s)*1.3
         else:
-            offset = 0 - 40 - len(s)*1.1
+            offset = 0 - 40 - len(s)*1.3
         ax.text(s=s,
                     x=rect.get_x() + rect.get_width() / 2, y=offset,
 
@@ -53,7 +53,7 @@ def autolabel(rects):
 
 b1 = plt.bar(x - width / 2 - sep, clique, width,
              label='x (DSM-aware Scheduler)', color=colors[0], edgecolor="black", linewidth=0.75)
-b2 = plt.bar(x + width / 2 + 2*sep, nb, width,
+b2 = plt.bar(x + width / 2 + sep, nb, width,
              label='y (NUMA Balancing)', color=colors[1], edgecolor="black", linewidth=0.75)
 autolabel(b1)
 autolabel(b2)
@@ -72,26 +72,26 @@ plt.ylim(min(nb)-50, max(clique)+1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
 # plt.xlabel('# of vCPUs')
-# plt.yticks([])
+plt.yticks([])
 # plt.ylabel('Percentage of Improvement')
-plt.xticks(x, name, rotation=90,fontsize=12)
-
-plt.grid(axis='x', linewidth=1, linestyle='dotted')
-plt.plot([-0.5, 9.5], [0, 0], linewidth=0.8, color='black')
-
-plt.legend(loc=2)
+plt.xticks(x, name, rotation=90,fontsize=11)
 
 ax.tick_params(length=0)
 
+plt.grid(axis='x', linewidth=0.6, linestyle=(0, (5, 3)))
+plt.plot([-0.5, 9.5], [0, 0], linewidth=0.8, color='black')
+
+# plt.legend(loc=2)
+
 # plt.subplots_adjust(top=1.2)
 ax.spines['right'].set_visible(False)
+ax.spines['left'].set_visible(False)
 ax.spines['top'].set_visible(False)
-# ax.spines['bottom'].set_visible(False)
-# plt.plot([9.5,9.5],[min(nb)-80, max(clique)+1], linewidth=1.5, color='black')
+ax.spines['bottom'].set_visible(False)
 
 plt.tight_layout()
 plt.title("NAS Parallel Benchmarks Throughput Improvement")
-plt.savefig('/Users/snake0/taco-journal/newimgs/performance.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('/Users/snake0/taco-journal/newimgs/performance1.pdf', dpi=300, bbox_inches='tight')
 plt.show()
 
 plt.close()
