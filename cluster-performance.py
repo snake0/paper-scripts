@@ -54,7 +54,7 @@ def autolabel(rects):
 b1 = plt.bar(x - width / 2 - sep, clique, width,
              label='x (DSM-aware Scheduler)', color=colors[0], edgecolor="black", linewidth=0.75)
 b2 = plt.bar(x + width / 2 + 2*sep, nb, width,
-             label='y (NUMA Balancing)', color=colors[1], edgecolor="black", linewidth=0.75)
+             label='y (NUMA Balancing Enabled)', color=colors[1], edgecolor="black", linewidth=0.75)
 autolabel(b1)
 autolabel(b2)
 

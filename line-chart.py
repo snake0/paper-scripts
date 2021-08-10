@@ -103,7 +103,7 @@ plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
 
 
 fig.tight_layout()
-fig.savefig('/Users/snake0/taco-journal/newimgs/sysbench-memory-all.pdf', dpi=300)
+fig.savefig('/Users/snake0/taco-journal/newimgs/sysbench-memory-all.pdf', dpi=100)
 plt.show()
 
 plt.close()

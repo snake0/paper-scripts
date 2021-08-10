@@ -11,7 +11,7 @@ import seaborn as sns
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium',size=28)
+plt.rc('font', family='Helvetica Neue', weight='medium',size=32)
 
 fig = plt.figure(figsize=(7, 6.5))
 
@@ -33,9 +33,9 @@ for yitem in sns_plot1.get_yticklabels():
 plt.title('EP.C.y')
 
 plt.tight_layout()
-plt.subplots_adjust(left=0.08,right=0.98,bottom=0.04,top=0.97)
+plt.subplots_adjust(left=0.08,right=0.97,bottom=0.04,top=0.97)
 
-plt.savefig('/Users/snake0/taco-journal/newimgs/ep.C.pdf', dpi=300)
+plt.savefig('/Users/snake0/taco-journal/newimgs/ep.C.pdf', dpi=100)
 plt.show()
 
 plt.close()

@@ -38,7 +38,7 @@ linewidth = 2
 ax.set_title(title, fontdict=font)
 
 plt.xticks(xrange, x, rotation=-20)
-ax.set_ylabel("CPU Time Occupancy", fontdict=font)
+ax.set_ylabel("CPU Time Distribution", fontdict=font)
 ax.tick_params(axis='x', which='major', labelsize=22)
 ax.tick_params(axis='y', which='major', labelsize=24)
 
