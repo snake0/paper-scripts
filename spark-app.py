@@ -20,7 +20,7 @@ xrange = np.arange(len(x))
 giantvm = [24.313, 26.083]
 inverted_index = [60 + 25.134, 60 + 16.020]
 
-title = "Text-Processing"
+title = "Text-Processing\nComparison with Spark"
 colors = ["#f5f7c8", "#c3ddbd"]
 dot_style = ['s', 'x', 'd', '^', '.', 'D']
 line_style = [':', '-.', '--', '-']
@@ -68,6 +68,7 @@ for i in xrange:
 ax.legend((giantvm_bar, spark_bar),
           ("GiantVM", "Spark"),
           loc=0, prop={'size': font_size}, frameon=False)
+plt.subplots_adjust(top=0.87)
 
 plt.grid(False)
 plt.savefig('/Users/snake0/taco-journal/newimgs/spark.pdf', dpi=300)
