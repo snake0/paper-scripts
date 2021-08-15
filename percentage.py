@@ -11,7 +11,7 @@ plt.rc('font', family='Helvetica Neue', weight='medium')
 # plt.rc('font', family='Helvetica Neue', weight='medium')
 
 fig, ax = plt.subplots()
-fig.set_size_inches(6, 6.2)
+fig.set_size_inches(6, 6)
 plt.subplots_adjust(top=0.90, right=0.97, bottom=0.2)
 
 

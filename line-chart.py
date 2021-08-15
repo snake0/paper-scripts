@@ -24,18 +24,18 @@ y9 = [4113.1, 5921.72, 7533.25, 7427.28, 7343.97, 7135.68]
 
 
 
-fig = plt.figure(figsize=(12.5, 2.6))
+fig = plt.figure(figsize=(12.5, 2.7))
 
 colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 
 titles= ["{4KiB,local,write,*}","{4KiB,global,read,*}","{4KiB,global,write,*}","{4MiB,global,write,*}"]
 
 plt.subplot(141)
-plt.plot(x, y1,linewidth=2, marker="x",markersize=8,label="* = GiantVM",color=colors[0],linestyle="dotted")
-plt.plot(x, y2,linewidth=2, marker="x",markersize=8,label="* = baseline",color=colors[0])
+plt.plot(x, y1,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[0],linestyle="dotted")
+plt.plot(x, y2,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[0])
 plt.xlim(4, 24)
 plt.xlabel('# of vCPUs')
-plt.ylabel('Memory Transfer Speed (MiB/s)')
+plt.ylabel('Data Transfer Speed (MiB/s)')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
 plt.legend(loc=4)
@@ -49,8 +49,8 @@ plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
 
 
 plt.subplot(142)
-plt.plot(x, y7,linewidth=2, marker="x",markersize=8,label="* = GiantVM",color=colors[1],linestyle="dotted")
-plt.plot(x, y8,linewidth=2, marker="x",markersize=8,label="* = baseline",color=colors[1])
+plt.plot(x, y7,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[1],linestyle="dotted")
+plt.plot(x, y8,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[1])
 plt.xlim(4, 24)
 plt.xlabel('# of vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
@@ -65,9 +65,9 @@ plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
 
 
 plt.subplot(143)
-plt.plot(x, y3,linewidth=2, marker="x",markersize=8,label="* = GiantVM",color=colors[2],linestyle="dotted")
-plt.plot(x, y4,linewidth=2, marker="x",markersize=8,label="* = baseline",color=colors[2])
-plt.plot(x, y9,linewidth=2, marker="o",markersize=6,label="* = GiantVM-IPoIB",color=colors[2],linestyle=(0,(5,3)),markerfacecolor='none')
+plt.plot(x, y3,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[2],linestyle="dotted")
+plt.plot(x, y4,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[2])
+plt.plot(x, y9,linewidth=2, marker="o",markersize=6,label="GiantVM-IPoIB",color=colors[2],linestyle=(0,(5,3)),markerfacecolor='none')
 plt.xlim(4, 24)
 plt.xlabel('# of vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
@@ -82,14 +82,14 @@ plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
 
 
 plt.subplot(144)
-plt.plot(x, y5,linewidth=2, marker="x",markersize=8,label="* = GiantVM",color=colors[3],linestyle="dotted")
-plt.plot(x, y6,linewidth=2, marker="x",markersize=8,label="* = baseline",color=colors[3])
+plt.plot(x, y5,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[3],linestyle="dotted")
+plt.plot(x, y6,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[3])
 plt.xlim(4, 24)
 plt.yscale('log')
 plt.xlabel('# of vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.legend(loc=4)
+plt.legend(loc='best')
 plt.title(titles[3])
 
 g = lambda x,pos : "${}$".format(f._formatSciNotation('%1.10e' % x))

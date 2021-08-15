@@ -29,8 +29,8 @@ colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 titles= ["Mutex {1,*}","Mutex {16,*}","File I/O {1KiB,*}","File I/O {1MiB,*}"]
 
 plt.subplot(121)
-plt.plot(x, y2,linewidth=2, marker="x",markersize=8,label="* = GiantVM",color=colors[0],linestyle="dotted")
-plt.plot(x, y1,linewidth=2, marker="x",markersize=8,label="* = baseline",color=colors[0])
+plt.plot(x, y2,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[0],linestyle="dotted")
+plt.plot(x, y1,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[0])
 plt.xlim(4, 24)
 plt.ylim(0, 3000000)
 plt.xlabel('# of vCPUs')
@@ -49,8 +49,8 @@ plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
 
 
 plt.subplot(122)
-plt.plot(x, y4,linewidth=2, marker="x",markersize=8,label="* = GiantVM",color=colors[1],linestyle="dotted")
-plt.plot(x, y3,linewidth=2, marker="x",markersize=8,label="* = baseline",color=colors[1])
+plt.plot(x, y4,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[1],linestyle="dotted")
+plt.plot(x, y3,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[1])
 plt.xlim(4, 24)
 plt.ylim(0, 3000000)
 plt.xlabel('# of vCPUs')
