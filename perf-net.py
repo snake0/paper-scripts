@@ -134,6 +134,9 @@ ax.spines['bottom'].set_visible(False)
 # plt.plot([9.5,9.5],[min(nb)-80, max(clique)+1], linewidth=1.5, color='black')
 plt.xlim([-width * 1.8 - sep - 0.05, 9 + width * 1.8 + sep + 0.05])
 
+plt.text(7.4,2.2,"Unit = MiB/s")
+
+
 plt.tight_layout()
 plt.title("Network Bandwidth Utilization Improvement")
 plt.savefig('/Users/snake0/taco-journal/newimgs/perf-net.pdf', dpi=300, bbox_inches='tight')

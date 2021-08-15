@@ -136,6 +136,8 @@ plt.plot([3, 3], [0, top], linewidth=1.5, color='black', linestyle='dotted')
 
 plt.plot([6, 6], [0, top], linewidth=1.5, color='black', linestyle='dotted')
 
+plt.text(0,5.5,"Unit = Mop/s/thread")
+
 plt.tight_layout()
 plt.title("Task Co-location Throughput Comparison")
 plt.savefig('/Users/snake0/taco-journal/newimgs/colocate.pdf', dpi=300, bbox_inches='tight')

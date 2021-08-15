@@ -5,7 +5,7 @@ import matplotlib
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-font_size=36
+font_size=38
 font = {'size': font_size,}
 plt.rc('font', family='Helvetica Neue', weight='medium')
 
@@ -68,7 +68,7 @@ for i in xrange:
 ax.legend((giantvm_bar, spark_bar),
           ("GiantVM", "Spark"),
           loc=0, prop={'size': font_size}, frameon=False)
-plt.subplots_adjust(top=0.87)
+plt.subplots_adjust(top=0.86)
 
 plt.grid(False)
 plt.savefig('/Users/snake0/taco-journal/newimgs/spark.pdf', dpi=300)

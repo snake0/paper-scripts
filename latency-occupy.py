@@ -141,6 +141,8 @@ ax.spines['left'].set_visible(False)
 ax.spines['bottom'].set_visible(False)
 # plt.plot([9.5,9.5],[min(nb)-80, max(clique)+1], linewidth=1.5, color='black')
 plt.xlim([-width * 1.8 - sep - 0.05, 9 + width * 1.8 + sep + 0.05])
+plt.ylim(0,105)
+plt.text(-0.4,105,"Unit = second")
 
 plt.tight_layout()
 plt.title("Execution Time Distribution")
