@@ -12,8 +12,10 @@ plt.rcParams['hatch.linewidth'] = 1
 fig, ax = plt.subplots()
 fig.set_size_inches(8, 3.5)
 
-name = ["BT.A", "CG.B", "DC.W", "EP.C", "FT.B", "IS.C",
-        "LU.A", "MG.C", "SP.A", "UA.W"]
+name = ["BT.A"]
+        # "CG.B", "DC.W", "EP.C", "FT.B", "IS.C", "LU.A", "MG.C", "SP.A", "UA.W"]
+
+# name = ["LU.A", "SP.A", "UA.W"]
 
 colors = ["#7ec1be", "#53a2bf", "#366eaa", "#0e215b"]
 
@@ -107,15 +109,15 @@ ua = np.array(
      806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768,
      806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768, 806768])
 
-# data = [bt, cg, dc, ep, ft, iss, lu, mg, sp, ua]
-data = [bt, lu, sp, ua]
+data = [bt]
+        # cg, dc, ep, ft, iss, lu, mg, sp, ua]
+# data = [lu, sp, ua]
 
-
-def diff(a):
-    aaa = []
-    for i in range(len(a) - 1):
-        aaa.append(a[i + 1] - a[i])
-    return aaa
+# def diff(a):
+#     aaa = []
+#     for i in range(len(a) - 1):
+#         aaa.append(a[i + 1] - a[i])
+#     return aaa
 
 
 maxl = -1
@@ -142,7 +144,7 @@ for i in range(len(data)):
 x = np.arange(maxl)
 
 for i in range(len(data)):
-    plt.plot(x[::4], data[i][::4], linewidth=0.5, marker="x", label=name[i],markersize=0.3)
+    plt.plot(x[::], data[i][::], linewidth=0.5, marker="x", label=name[i],markersize=1.2)
 
 ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
           fancybox=False, shadow=False, ncol=5, frameon=False, prop={'size': 13})
