@@ -6,12 +6,12 @@ import numpy as np
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium', size=13)
+plt.rc('font', family='Helvetica Neue', size=13)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
 fig, ax = plt.subplots()
-fig.set_size_inches(6.5, 3.7)
+fig.set_size_inches(6.5, 2.8)
 
 normal = np.array([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])
 
@@ -70,28 +70,28 @@ def autolabel(rects, array, heights):
         ax.text(s=s,
                 x=rect.get_x() + rect.get_width() / 2 + 0.02, y=height - offset,
 
-                va='bottom', size=11, rotation=90, ha='center', weight='bold')
+                va='bottom', size=11, rotation=90, ha='center')
 
 
 b1 = plt.bar(x - width * 1.2 - sep, clique, width,
-             color=colors[0], edgecolor="black", label='DSM-aware', linewidth=0.6)
+             color=colors[0], edgecolor="black", label='DaS', linewidth=0.6)
 # b10 = plt.bar(x - width * 1.3 - sep, 100 - clique, width, bottom=clique,
 #             color=colors[0], edgecolor="black", label='Application Time', linewidth=0.6)
-autolabel(b1, clique_l, clique + 0.04)
+autolabel(b1, clique_l, clique + 0.07)
 # autolabel(b10, clique_e, clique + 83 - clique)
 
 b2 = plt.bar(x, normal, width,
              color=colors[1], edgecolor="black", label='CFS', linewidth=0.6)
 # b20 = plt.bar(x, 100 - normal, width, bottom=normal,
 #               color=colors[0], edgecolor="black", linewidth=0.6)
-autolabel(b2, normarl_l, normal + 0.04)
+autolabel(b2, normarl_l, normal + 0.07)
 # autolabel(b20, normal_e, normal + 83 - normal)
 
 b3 = plt.bar(x + width * 1.2 + sep, nb, width,
              color=colors[2], edgecolor="black", label='NUMA Balancing', linewidth=0.6)
 # b30 = plt.bar(x + width * 1.3 + sep, 100 - nb, width, bottom=nb,
 #              color=colors[0], edgecolor="black", linewidth=0.6)
-autolabel(b3, nb_l, nb + 0.04)
+autolabel(b3, nb_l, nb + 0.07)
 # autolabel(b30, nb_e, nb + 83 - nb)
 # autolabel(b1)
 # autolabel(b2)
@@ -106,7 +106,7 @@ def to_percent(temp, position):
 plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(to_percent))
 
 plt.xlim(-0.5, 9.5)
-plt.ylim(0.0, 2.6)
+plt.ylim(0.0, 2.9)
 # plt.ylim(min(nb) - 50, max(clique) + 1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
@@ -134,7 +134,7 @@ ax.spines['bottom'].set_visible(False)
 # plt.plot([9.5,9.5],[min(nb)-80, max(clique)+1], linewidth=1.5, color='black')
 plt.xlim([-width * 1.8 - sep - 0.05, 9 + width * 1.8 + sep + 0.05])
 
-plt.text(7.4,2.2,"Unit = MiB/s")
+plt.text(7.4,2.6,"Unit = MiB/s")
 
 
 plt.tight_layout()

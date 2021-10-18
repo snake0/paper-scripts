@@ -6,14 +6,14 @@ import numpy as np
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium', size=13)
+plt.rc('font', family='Helvetica Neue', size=13)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
 fig, ax = plt.subplots()
-fig.set_size_inches(6.5, 3.7)
+fig.set_size_inches(6.5, 2.8)
 
-top = 6.3
+top = 7
 
 normal = np.array([1, 1, 1, 1, 1, 1])
 
@@ -68,28 +68,28 @@ def autolabel(rects, array, heights):
         ax.text(s=s,
                 x=rect.get_x() + rect.get_width() / 2 + 0.02, y=height - offset,
 
-                va='bottom', size=11, rotation=90, ha='center', weight='bold')
+                va='bottom', size=11, rotation=90, ha='center')
 
 
 b1 = plt.bar(x - width * 1.2 - sep, clique, width,
-             color=colors[0], edgecolor="black", label='DSM-aware', linewidth=0.6)
+             color=colors[0], edgecolor="black", label='DaS', linewidth=0.6)
 # b10 = plt.bar(x - width * 1.3 - sep, 100 - clique, width, bottom=clique,
 #             color=colors[0], edgecolor="black", label='Application Time', linewidth=0.6)
-autolabel(b1, clique_l, clique + 0.1)
+autolabel(b1, clique_l, clique + 0.12)
 # autolabel(b10, clique_e, clique + 83 - clique)
 
 b2 = plt.bar(x, normal, width,
              color=colors[1], edgecolor="black", label='CFS', linewidth=0.6)
 # b20 = plt.bar(x, 100 - normal, width, bottom=normal,
 #               color=colors[0], edgecolor="black", linewidth=0.6)
-autolabel(b2, normal_l, normal + 0.1)
+autolabel(b2, normal_l, normal + 0.12)
 # autolabel(b20, normal_e, normal + 83 - normal)
 
 b3 = plt.bar(x + width * 1.2 + sep, nb, width,
              color=colors[2], edgecolor="black", label='Singleton', linewidth=0.6)
 # b30 = plt.bar(x + width * 1.3 + sep, 100 - nb, width, bottom=nb,
 #              color=colors[0], edgecolor="black", linewidth=0.6)
-autolabel(b3, nb_l, nb + 0.1)
+autolabel(b3, nb_l, nb + 0.12)
 # autolabel(b30, nb_e, nb + 83 - nb)
 # autolabel(b1)
 # autolabel(b2)
@@ -136,7 +136,7 @@ plt.plot([3, 3], [0, top], linewidth=1.5, color='black', linestyle='dotted')
 
 plt.plot([6, 6], [0, top], linewidth=1.5, color='black', linestyle='dotted')
 
-plt.text(0,5.5,"Unit = Mop/s/thread")
+plt.text(0,6,"Unit = Mop/s/thread")
 
 plt.tight_layout()
 plt.title("Task Co-location Throughput Comparison")

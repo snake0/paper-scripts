@@ -6,12 +6,12 @@ import numpy as np
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium', size=13)
+plt.rc('font', family='Helvetica Neue', size=13)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
 fig, ax = plt.subplots()
-fig.set_size_inches(6.5, 3.7)
+fig.set_size_inches(6.5, 3.2)
 
 normal = np.array([10.22150428, 10.22892095, 14.456258, 1.003155954, 21.30449186, 29.37214144, 29.92757, 8.341463218,
                    15.33439944, 17.77646099])
@@ -23,7 +23,8 @@ clique = np.array(
     [7.998315602, 4.150075209, 5.980609183, 0.671152778, 21.10172233, 29.15483553, 22.15520013, 7.949557251,
      14.81370637, 9.312773328])
 
-nb = np.array([19.90348932, 11.08862739, 22.08420194, 1.571802338, 22.623722914409533, 30.03261374407583, 30.49634336, 9.465316823,
+nb = np.array([19.90348932, 11.08862739, 22.08420194, 1.571802338, 22.623722914409533, 30.03261374407583, 30.49634336,
+               9.465316823,
                14.70520242, 9.890117065])
 
 clique_l = np.array(
@@ -77,33 +78,40 @@ def autolabel(rects, array, heights):
         # else:
         #     offset = 0 - 40 - len(s) * 1.1
         ax.text(s=s,
-                x=rect.get_x() + rect.get_width() / 2 + 0.02, y=height-offset,
+                x=rect.get_x() + rect.get_width() / 2 + 0.02, y=height - offset,
 
-                va='bottom', size=11, rotation=90, ha='center', weight='bold')
+                va='bottom', size=11, rotation=90, ha='center')
 
 
 b1 = plt.bar(x - width * 1.2 - sep, clique, width,
-             color=colors[1], edgecolor="black", label='Page Transfer Time',linewidth=0.6)
+             color=colors[1], edgecolor="black", label='Page Transfer Time', linewidth=0.6)
 b10 = plt.bar(x - width * 1.2 - sep, 100 - clique, width, bottom=clique,
-            color=colors[0], edgecolor="black", label='Application Time', linewidth=0.6)
+              color=colors[0], edgecolor="black", label='Application Time', linewidth=0.6)
 autolabel(b1, clique_l, clique + 4)
-autolabel(b10, clique_e, clique + 83 - clique)
+autolabel(b10, clique_e, clique + 77 - clique)
 
 b2 = plt.bar(x, normal, width,
              color=colors[1], edgecolor="black", linewidth=0.6)
 b20 = plt.bar(x, 100 - normal, width, bottom=normal,
               color=colors[0], edgecolor="black", linewidth=0.6)
 autolabel(b2, normarl_l, normal + 4)
-autolabel(b20, normal_e, normal + 83 - normal)
+autolabel(b20, normal_e, normal + 77 - normal)
 
 b3 = plt.bar(x + width * 1.2 + sep, nb, width,
              color=colors[1], edgecolor="black", linewidth=0.6)
 b30 = plt.bar(x + width * 1.2 + sep, 100 - nb, width, bottom=nb,
-             color=colors[0], edgecolor="black", linewidth=0.6)
+              color=colors[0], edgecolor="black", linewidth=0.6)
 autolabel(b3, nb_l, nb + 4)
-autolabel(b30, nb_e, nb + 83 - nb)
+autolabel(b30, nb_e, nb + 77 - nb)
 # autolabel(b1)
 # autolabel(b2)
+
+ax.text(s="DaS", x=9 - 1.2 * width - sep - 0.02, y=105,
+        va='bottom', size=12, rotation=90, ha='center', weight='bold')
+ax.text(s="CFS", x=9, y=105,
+        va='bottom', size=12, rotation=90, ha='center', weight='bold')
+ax.text(s="NB", x=9 + 1.2 * width + sep + 0.02, y=105,
+        va='bottom', size=12, rotation=90, ha='center', weight='bold')
 
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 
@@ -124,7 +132,6 @@ plt.xlim(-0.5, 9.5)
 plt.xticks(x, name, rotation=00, size=11)
 
 plt.grid(axis='y', linewidth=0.4)
-
 ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
           fancybox=False, shadow=False, ncol=3, frameon=False, prop={'size': 14})
 
@@ -139,10 +146,10 @@ ax.spines['right'].set_visible(False)
 ax.spines['top'].set_visible(False)
 ax.spines['left'].set_visible(False)
 ax.spines['bottom'].set_visible(False)
-# plt.plot([9.5,9.5],[min(nb)-80, max(clique)+1], linewidth=1.5, color='black')
+# plt.plot([9.5,9.5],[min(nb)-77, max(clique)+1], linewidth=1.5, color='black')
 plt.xlim([-width * 1.8 - sep - 0.05, 9 + width * 1.8 + sep + 0.05])
-plt.ylim(0,105)
-plt.text(-0.4,105,"Unit = second")
+plt.ylim(0, 105)
+plt.text(-0.4, 105, "Unit = second")
 
 plt.tight_layout()
 plt.title("Execution Time Distribution")

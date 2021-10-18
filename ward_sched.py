@@ -3,7 +3,7 @@
 # The ward scheduler pings all nodes periodically for cpu and mem utilization
 # info. It also sends a command to dst for VM migration.
 
-import random
+import os
 import socket
 import struct
 import sys
@@ -13,9 +13,9 @@ import xml.etree.ElementTree as ET
 YANNI_MIGRATE = 0x38
 YANNI_PING = 0x78
 # Hard code here...
-NCPU_PER_NODE = 16
+NCPU_PER_NODE = 40
 
-violation_load = 80
+violation_load = 70
 
 
 class bcolors:
@@ -42,8 +42,7 @@ class vm:
         self.mig_dst = -1
 
     def __str__(self):
-        return "VM %d with %s cores and %s memory" % (self.vmid, self.cores,
-                                                      self.mem)
+        return "VM %d on node %d" % (self.vmid, self.current_node)
 
 
 class util:
@@ -56,7 +55,7 @@ class util:
     def __str__(self):
         # return "cpu1 %1.2f cpu5 %1.2f cpu15 %1.2f" % \
         #        (self.cpu1, self.cpu5, self.cpu15)
-        return "cpu1 %1.2f" % (self.cpu1)
+        return "cpus %1.2f  %1.2f  %1.2f" % (self.cpu1, self.cpu5, self.cpu15)
 
 
 class ward:
@@ -65,24 +64,38 @@ class ward:
         self.vms = []
         self.src = 0
         self.dst = 1
+        self.n_mig = 0
+        self.migrating = False
 
     def ping(self, target):
         assert target < len(self.nodes)
+        # print("Pinging Node%d" % target)
         pingvm = None
         old_mig_status = None
 
-        for v in self.vms:
-            if v.in_mig:
+        for i in range(len(self.vms)):
+            v = self.vms[i]
+            if v.in_mig and v.mig_dst is target:
+                print("Found in mig VM%d from %d to %d" % (v.vmid, v.current_node, target))
                 # only 1 vm could be in migration
-                pingvm = v
+                pingvm = i
                 old_mig_status = v.in_mig
                 break
 
-        self.nodes[target].ping(pingvm)
-        if pingvm is not None and old_mig_status and not pingvm.in_mig:
-            pingvm.current_node = pingvm.mig_dst
-            pingvm.mig_dst = -1
-            print("Migration of VM %d done." % pingvm.vmid)
+        if pingvm is not None:
+            self.nodes[target].ping(self.vms[pingvm])
+        else:
+            self.nodes[target].ping(None)
+
+        if pingvm is not None and old_mig_status and not self.vms[pingvm].in_mig:
+            self.vms[pingvm].current_node = self.vms[pingvm].mig_dst
+            self.vms[pingvm].mig_dst = -1
+            print("%s--------------- Migration End --------------%s"
+                  % (bcolors.WARNING, bcolors.DEFAULT))
+            print("Migration of VM %d to %d done." % (self.vms[pingvm].vmid,
+                                                      self.vms[pingvm].current_node))
+            self.migrating = False
+            self.print_all_up_vm()
 
     def migrate(self, vmid, src, dst):
         assert src < len(self.nodes)
@@ -91,6 +104,9 @@ class ward:
         if self.vms[vmid].in_mig:
             print("VM%d in migration" % vmid)
             return False
+
+        print("%s--------------- Migration Start --------------%s"
+              % (bcolors.WARNING, bcolors.DEFAULT))
 
         self.vms[vmid].in_mig = True
         self.vms[vmid].mig_dst = dst
@@ -117,11 +133,12 @@ class ward:
                 busiest = i
 
         if busiest_load > violation_load:
-            print("Found node %d busy" % busiest)
-            print("Busy %s" % str(self.nodes[busiest].utils[-1]))
-            return busiest, busiest_load
-        else:
-            return -1, -1
+            if busiest_load >= self.nodes[busiest].utils[-1].cpu5 >= \
+                    self.nodes[busiest].utils[-1].cpu15:
+                print("Found node %d busy" % busiest)
+                # print("Busy %s" % str(self.nodes[busiest].utils[-1]))
+                return busiest, busiest_load
+        return -1, -1
 
     # new
     def find_idlest_node(self):
@@ -135,7 +152,7 @@ class ward:
                 idlest = i
 
         print("Found node %d idle" % idlest)
-        print("Idle %s" % str(self.nodes[idlest].utils[-1]))
+        # print("Idle %s" % str(self.nodes[idlest].utils[-1]))
         return idlest, idlest_load
 
     # old
@@ -151,9 +168,9 @@ class ward:
 
     # old
     # TODO
-    def pick_next_idle(self, vm):
+    def pick_next_idle(self, vm0):
         # idle_threshold about 0.25
-        idle_threshold = vm.cores / NCPU_PER_NODE
+        idle_threshold = vm0.cores / NCPU_PER_NODE
         for i in range(len(self.nodes)):
             n = self.nodes[i]
 
@@ -165,21 +182,46 @@ class ward:
                 return i
         return -1
 
+    def is_vm_up(self, vm0):
+        ret = False
+        if vm0.in_mig:
+            return ret
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            vm_ip = self.nodes[vm0.current_node].ipaddr
+            vm_port = 10000 + vm0.current_node * 12 + vm0.vmid
+            # print("Connecting to %s:%d" %(vm_ip, vm_port))
+            if s.connect_ex((vm_ip, vm_port)) is 0:
+                ret = True
+                s.shutdown(2)
+            s.close()
+            return ret
+
+    def print_all_up_vm(self):
+        for vm0 in self.vms:
+            if self.is_vm_up(vm0):
+                print(str(vm0) + " @ " + self.nodes[vm0.current_node].ipaddr)
+
     # old
     # Random selection
     def select_next_vm(self):
-        return self.vms[int(random.randint(0, len(self.vms) - 1))]
+        for vm0 in self.vms:
+            if self.is_vm_up(vm0) and not vm0.in_mig:
+                return vm0
+        return None
 
     # new
     def select_next_vm_from_node(self, node):
         candidates = []
-        for vm in self.vms:
-            if vm.current_node == node and not vm.in_mig:
-                candidates.append(vm)
+        for vm0 in self.vms:
+            if vm0.current_node == node and not vm0.in_mig:
+                candidates.append(vm0)
         if len(candidates) == 0:
             return None
         else:
-            return candidates[int(random.randint(0, len(candidates) - 1))]
+            for vm0 in candidates:
+                if self.is_vm_up(vm0) and not vm0.in_mig:
+                    return vm0
+            return None
 
     def flip(self):
         print("Src Dst flipped")
@@ -189,35 +231,94 @@ class ward:
 
     # new
     def try_migrate(self):
+        if self.migrating:
+            return
         src, src_load = self.find_busiest_node()
         if src is -1:
             return
 
         dst, dst_load = self.find_idlest_node()
         if dst is not src:
-            vm = self.select_next_vm_from_node(src)
-            if vm is None:
+            vm0 = self.select_next_vm_from_node(src)
+            if vm0 is None:
+                print("No migratable VMs found on Node%d" % src)
                 return
-            if dst_load + (100.0 * vm.cores / NCPU_PER_NODE) < src_load:
-                print("dst_load %f src_load %f vm %f" % \
-                      (dst_load, src_load, (100.0 * vm.cores / NCPU_PER_NODE)))
-                self.migrate(vm.vmid, src, dst)
+            print("VM%d migrating from %d to %d" % (vm0.vmid, src, dst))
+            self.migrate(vm0.vmid, src, dst)
+            self.migrating = True
+
+        # src, src_load = self.find_busiest_node()
+        # if src is -1:
+        #     return
+
+        # dst, dst_load = self.find_idlest_node()
+        # if dst is not src:
+        #     vm0 = self.select_next_vm_from_node(src)
+        #     if vm0 is None:
+        #         print("No migratable VMs found on Node%d" % src)
+        #         return
+        #     vm_load = 100 * vm0.cores / NCPU_PER_NODE
+
+        #     i = 0
+        #     while dst_load + i * vm_load <= src_load:
+        #         i = i + 1
+        #     i = i - 1
+        #     print("%d VMs needed to be migrated from %d to %d" % (i, src, dst))
+
+        #     j = 0
+        #     while vm0 is not None and i is not 0:
+        #         j = j + 1
+        #         i = i - 1
+        #         print("VM%d migrating from %d to %d" % (vm0.vmid, src, dst))
+        #         print("%s--------------- Migration Start --------------%s"
+        #             % (bcolors.WARNING, bcolors.DEFAULT))
+        #         self.migrate(vm0.vmid, src, dst)
+        #         vm0 = self.select_next_vm_from_node(src)
+
+        #     print("src_load %f dst_load %f vm %f" %
+        #           (src_load, dst_load, j * vm_load))
+
         # vm = self.select_next_vm()
+        # if vm is None:
+        #     return False
+
+        # print("Compressing completed. Waiting for dst vm to run...")
+        # if self.n_mig is 0:
+        #     pass
+        # elif self.n_mig is 1:
+        #     time.sleep(50)
+        # else:
+        #     time.sleep(50)
         # print("Attempting to migrate VM%d" % vm.vmid)
 
         # if self.migrate(vm.vmid, self.src, self.dst):
+        #     self.n_mig = self.n_mig + 1
         #     self.flip()
+        #     return True
+
+        # return False
 
     def run(self):
         while True:
+            utils = []
             for i in range(len(self.nodes)):
                 self.ping(i)
+            for n in self.nodes:
+                utils.append("%1.2f" % n.utils[-1].cpu1)
+            print(utils)
+            self.print_all_up_vm()
 
+            #     utils.append(str(self.nodes[i].utils[-1]))
             # src, dst = self.pick_next_busy(), self.pick_next_idle(vm)
             # if 0 <= src != dst >= 0:
             #     self.migrate(vm.vmid, src, dst)
+            # print(utils)
 
             self.try_migrate()
+            # if migrated:
+            #     j = j + 1
+            #     if j is 5:
+            #         break
 
             time.sleep(1)
 
@@ -253,7 +354,20 @@ class node:
                          struct.unpack('f', rdata[12:16])[0])
                 if pingvm is not None:
                     pingvm.in_mig = struct.unpack('?', rdata[16:17])[0]
-                print("Node %d util %s" % (self.no, str(u)))
+
+                if len(self.utils) >= 15:
+                    avg = 0
+                    for u0 in self.utils[-15:]:
+                        avg = avg + u0.cpu1
+                    avg = avg / 15
+                    u.cpu15 = avg
+
+                if len(self.utils) >= 5:
+                    avg = 0
+                    for u0 in self.utils[-5:]:
+                        avg = avg + u0.cpu1
+                    avg = avg / 5
+                    u.cpu5 = avg
                 self.utils.append(u)
 
         except IOError:
@@ -265,9 +379,9 @@ class node:
 
     def migrate(self, vmid, src):
         assert self.active
-        # with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        #     s.connect((self.ipaddr, int(self.globalport)))
-        #     s.sendall(struct.pack("iiii", YANNI_MIGRATE, vmid, src, self.no))
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.connect((self.ipaddr, int(self.globalport)))
+            s.sendall(struct.pack("iiii", YANNI_MIGRATE, vmid, src, self.no))
 
     def migrate_done(self):
         self.in_mig = False
@@ -313,5 +427,8 @@ def ward_init(config_file):
     return w
 
 
-ward = ward_init("config.xml")
+# os.system("python3 /mnt/snake0/yanni-agent/cpu-monitor.py >& log-cpu.txt")
+
+ward = ward_init("config-main.xml")
 ward.run()
+os.system("../killer.sh")
