@@ -6,6 +6,9 @@ import matplotlib
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
+plt.rcParams['xtick.direction'] = 'in'  # 将x周的刻度线方向设置向内
+plt.rcParams['ytick.direction'] = 'in'  # 将y轴的刻度方向设置向内
+
 plt.rc('font', family='Nimbus Sans L', weight='medium',size=11)
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 

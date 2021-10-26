@@ -66,7 +66,7 @@ for i in xrange:
                          label="GiantVM", linewidth=1)
     autolabel(giantVM_bar)
 
-ax.legend(["GiantVM"], loc=2, prop={'size': 28}, frameon=False)
+ax.legend(["GiantVM"], loc=2, prop={'size': 28}, frameon=False,facecolor="white")
 
 # plt.hlines(1.0,-1,len(x),colors="#4a7cac",linestyles="dotted",linewidth=3)
 plt.xlim(-1,len(x))

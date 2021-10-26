@@ -10,12 +10,12 @@ if __name__ == "__main__":
 
     # constants
     width = 0.1
-    font_size = 25
+    font_size = 28
     aspect = 0.4
     file_path = './stress-ng-scale.CSV'
     matplotlib.rcParams['pdf.fonttype'] = 42
     matplotlib.rcParams['ps.fonttype'] = 42
-    plt.rc('font', family='Nimbus Sans L', weight='medium')
+    plt.rc('font', family='Nimbus Sans L', weight='medium',size=14)
 
     # colors & labels
     labels = ['ackermann', 'clongdouble', 'decimal128', 'fft', 'hamming', 'jenkin', 'matrixprod', 'nsqrt', 'rand48']
@@ -36,9 +36,9 @@ if __name__ == "__main__":
     ax.set_ylabel('Normalized Results', fontsize=font_size)
     ax.set_title('Scalability of Stress-ng CPU Methods on GiantVM', fontsize=font_size)
     ax.set_xticks(x)
-    ax.set_xticklabels(labels, fontsize=font_size, rotation=45)
+    ax.set_xticklabels(labels, fontsize=font_size-4, rotation=45)
     ax.legend(title='# vCPUs', title_fontsize=font_size, fontsize=font_size, \
-            loc='center left', bbox_to_anchor=(1, 0.5))
+            loc='center left', bbox_to_anchor=(1, 0.5) ,frameon=False,facecolor="white")
     ax.set_aspect(aspect)
     fig.tight_layout()
 
