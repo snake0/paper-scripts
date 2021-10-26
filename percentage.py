@@ -6,9 +6,9 @@ font = {'size': 26,}
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium')
+plt.rc('font', family='Nimbus Sans L', weight='medium')
 # font = {'size': 28, 'family': 'Helvetica Neue', 'weight': 'medium'}
-# plt.rc('font', family='Helvetica Neue', weight='medium')
+# plt.rc('font', family='Nimbus Sans L', weight='medium')
 
 fig, ax = plt.subplots()
 fig.set_size_inches(6, 6)

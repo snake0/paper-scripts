@@ -10,7 +10,7 @@ matplotlib.rcParams['ps.fonttype'] = 42
 matplotlib.rcParams['xtick.direction'] = 'in'
 matplotlib.rcParams['ytick.direction'] = 'in'
 
-plt.rc('font', family='Helvetica Neue', size=13)
+plt.rc('font', family='Nimbus Sans L', size=13)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
@@ -97,7 +97,7 @@ plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(to_percent))
 # plt.ylim(min(nb) - 50, max(clique) + 1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
-# plt.xlabel('# of vCPUs')
+# plt.xlabel('# vCPUs')
 
 for ax in bax.axs:
     ax.xaxis.set_major_formatter(mticker.IndexFormatter(name))

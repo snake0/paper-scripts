@@ -6,7 +6,10 @@ import matplotlib
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium',size=11)
+plt.rcParams['xtick.direction'] = 'in'  # 将x周的刻度线方向设置向内
+plt.rcParams['ytick.direction'] = 'in'  # 将y轴的刻度方向设置向内
+
+plt.rc('font', family='Nimbus Sans L', weight='medium',size=11)
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 
 x = [4, 8, 12, 16, 20, 24]
@@ -39,7 +42,7 @@ y8 = [94.26, 93.51, 91.88, 90.19, 89.07, 88.78]
 
 
 
-fig = plt.figure(figsize=(6.25, 2.8))
+fig = plt.figure(figsize=(6.25, 2.6))
 
 colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 
@@ -51,7 +54,7 @@ plt.plot(x1, y5,linewidth=2, marker="x",markersize=8,label="GiantVM",color=color
 plt.plot(x1, y6,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[0])
 plt.xlim(4, 20)
 plt.ylim(0.07,1000)
-plt.xlabel('# of vCPUs')
+plt.xlabel('# vCPUs')
 plt.ylabel('File I/O Speed (MiB/s)')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
@@ -59,8 +62,8 @@ plt.yscale('log')
 plt.legend(loc=1)
 plt.title(titles[2])
 
-g = lambda x,pos : "${}$".format(f._formatSciNotation('%1.10e' % x))
-plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
+# g = lambda x,pos : "${}$".format(f._formatSciNotation('%1.10e' % x))
+# plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
 
 
 
@@ -71,14 +74,14 @@ plt.plot(x1, y8,linewidth=2, marker="x",markersize=8,label="baseline",color=colo
 plt.xlim(4, 20)
 plt.ylim(0.07,1000)
 plt.yscale('log')
-plt.xlabel('# of vCPUs')
+plt.xlabel('# vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
 plt.legend(loc=1)
 plt.title(titles[3])
 
-g = lambda x,pos : "${}$".format(f._formatSciNotation('%1.10e' % x))
-plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
+# g = lambda x,pos : "${}$".format(f._formatSciNotation('%1.10e' % x))
+# plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
 
 
 

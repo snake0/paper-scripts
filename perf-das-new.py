@@ -8,7 +8,7 @@ matplotlib.rcParams['ps.fonttype'] = 42
 matplotlib.rcParams['xtick.direction'] = 'in'
 matplotlib.rcParams['ytick.direction'] = 'in'
 
-plt.rc('font', family='Helvetica Neue', size=13)
+plt.rc('font', family='Nimbus Sans L', size=13)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
@@ -95,7 +95,7 @@ plt.ylim(0.0, 1.2)
 # plt.ylim(min(nb) - 50, max(clique) + 1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
-# plt.xlabel('# of vCPUs')
+# plt.xlabel('# vCPUs')
 plt.yticks([0, 1])
 plt.xticks(x, name, rotation=00, size=11)
 

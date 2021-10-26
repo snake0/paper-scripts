@@ -6,10 +6,13 @@ import matplotlib
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium')
+plt.rcParams['xtick.direction'] = 'in'  # 将x周的刻度线方向设置向内
+plt.rcParams['ytick.direction'] = 'in'  # 将y轴的刻度方向设置向内
+
+plt.rc('font', family='Nimbus Sans L', weight='medium', size=12)
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 
-fig = plt.figure(figsize=(10, 2.4))
+fig = plt.figure(figsize=(3.125, 2.7))
 
 x = np.arange(0, 100)
 
@@ -35,100 +38,101 @@ y_write = np.array([184221, 145878, 106927, 36787, 29018, 27282, 21723, 21234, 1
 
 colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 
-plt.subplot(144)
-y_read_sort1=np.sort(y_read[:10])
-y_write_sort1=np.sort(y_write[:10])
-
-y_read_cdf1 = 1. * np.arange(len(y_read_sort1)) / (len(y_read_sort1) - 1)
-y_write_cdf1 = 1. * np.arange(len(y_write_sort1)) / (len(y_write_sort1) - 1)
-
-
-plt.plot(y_read_sort1, y_read_cdf1,linewidth=1.4,label="Read Faults",color=colors[3],linestyle="dotted")
-plt.plot(y_write_sort1, y_write_cdf1,linewidth=2.2, label="Write Faults",color=colors[0])
-
-plt.xlabel("Number of Page Faults")
-plt.xscale("log")
-plt.ylim([0,1])
-plt.xlim([2400,184500])
-plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.title("Top 10 Pages")
-
-g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
-plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
-
-g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
-plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
-
-plt.legend(loc=4)
-
-
-
-
-plt.subplot(143)
-y_read_sort1=np.sort(y_read[:20])
-y_write_sort1=np.sort(y_write[:20])
-
-y_read_cdf1 = 1. * np.arange(len(y_read_sort1)) / (len(y_read_sort1) - 1)
-y_write_cdf1 = 1. * np.arange(len(y_write_sort1)) / (len(y_write_sort1) - 1)
-
-
-plt.plot(y_read_sort1, y_read_cdf1,linewidth=1.4,label="Read Faults",color=colors[3],linestyle="dotted")
-plt.plot(y_write_sort1, y_write_cdf1,linewidth=2.2, label="Write Faults",color=colors[0])
-
-plt.xlabel("Number of Page Faults")
-plt.xscale("log")
-plt.ylim([0,1])
-plt.xlim([2400,184500])
-plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.title("Top 20 Pages")
-
-g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
-plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
-
-g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
-plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
-
-plt.legend(loc=4)
+# plt.subplot(144)
+# y_read_sort1=np.sort(y_read[:10])
+# y_write_sort1=np.sort(y_write[:10])
+#
+# y_read_cdf1 = 1. * np.arange(len(y_read_sort1)) / (len(y_read_sort1) - 1)
+# y_write_cdf1 = 1. * np.arange(len(y_write_sort1)) / (len(y_write_sort1) - 1)
+#
+#
+# plt.plot(y_read_sort1, y_read_cdf1,linewidth=1.4,label="Read Faults",color=colors[3],linestyle="dotted")
+# plt.plot(y_write_sort1, y_write_cdf1,linewidth=2.2, label="Write Faults",color=colors[0])
+#
+# plt.xlabel("Number of Page Faults")
+# plt.xscale("log")
+# plt.ylim([0,1])
+# plt.xlim([2400,184500])
+# plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
+# plt.title("Top 10 Pages")
+#
+# g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
+# plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
+#
+# g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
+# plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
+#
+# plt.legend(loc=4)
 
 
 
 
-
-plt.subplot(142)
-
-y_read_sort2=np.sort(y_read[:50])
-y_write_sort2=np.sort(y_write[:50])
-
-y_read_cdf2 = 1. * np.arange(len(y_read_sort2)) / (len(y_read_sort2) - 1)
-y_write_cdf2 = 1. * np.arange(len(y_write_sort2)) / (len(y_write_sort2) - 1)
-
-
-plt.plot(y_read_sort2, y_read_cdf2,linewidth=1.4,label="Read Faults",color=colors[3],linestyle="dotted")
-plt.plot(y_write_sort2, y_write_cdf2,linewidth=2.2, label="Write Faults",color=colors[0])
-
-plt.xlabel("Number of Page Faults")
-plt.xscale("log")
-plt.ylim([0,1])
-plt.xlim([2400,184500])
-plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.title("Top 50 Pages")
-
-g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
-plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
-
-g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
-plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
-
-plt.legend(loc=4)
+# plt.subplot(143)
+# y_read_sort1=np.sort(y_read[:20])
+# y_write_sort1=np.sort(y_write[:20])
+#
+# y_read_cdf1 = 1. * np.arange(len(y_read_sort1)) / (len(y_read_sort1) - 1)
+# y_write_cdf1 = 1. * np.arange(len(y_write_sort1)) / (len(y_write_sort1) - 1)
+#
+#
+# plt.plot(y_read_sort1, y_read_cdf1,linewidth=1.4,label="Read Faults",color=colors[3],linestyle="dotted")
+# plt.plot(y_write_sort1, y_write_cdf1,linewidth=2.2, label="Write Faults",color=colors[0])
+#
+# plt.xlabel("Number of Page Faults")
+# plt.xscale("log")
+# plt.ylim([0,1])
+# plt.xlim([2400,184500])
+# plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
+# plt.title("Top 20 Pages")
+#
+# g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
+# plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
+#
+# g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
+# plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
+#
+# plt.legend(loc=4)
 
 
+
+
+
+# plt.subplot(142)
+#
+# y_read_sort2=np.sort(y_read[:50])
+# y_write_sort2=np.sort(y_write[:50])
+#
+# y_read_cdf2 = 1. * np.arange(len(y_read_sort2)) / (len(y_read_sort2) - 1)
+# y_write_cdf2 = 1. * np.arange(len(y_write_sort2)) / (len(y_write_sort2) - 1)
+#
+#
+# plt.plot(y_read_sort2, y_read_cdf2,linewidth=1.4,label="Read Faults",color=colors[3],linestyle="dotted")
+# plt.plot(y_write_sort2, y_write_cdf2,linewidth=2.2, label="Write Faults",color=colors[0])
+#
+# plt.xlabel("Number of Page Faults")
+# plt.xscale("log")
+# plt.ylim([0,1])
+# plt.xlim([2400,184500])
+# plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
+# plt.title("Top 50 Pages")
+#
+# g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
+# plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
+#
+# g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
+# plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
+#
+# plt.legend(loc=4)
 
 
 
 
 
 
-plt.subplot(141)
+
+
+plt.subplot(111)
+
 
 y_read_sort3 = np.sort(y_read)
 y_write_sort3 = np.sort(y_write)
@@ -147,14 +151,15 @@ plt.ylabel("CDF")
 plt.xlim([2400,184500])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
 plt.title("Top 100 Pages")
-
-g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
-plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
-
-g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
-plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
+#
+# g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
+# plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
+#
+# g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
+# plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
 
 plt.legend(loc=4)
+# plt.subplots_adjust(left=0.35,bottom=-0.05)
 
 
 fig.tight_layout()

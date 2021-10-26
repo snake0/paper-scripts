@@ -6,7 +6,7 @@ import seaborn as sns
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium',size=33)
+plt.rc('font', family='Nimbus Sans L', weight='medium',size=33)
 
 fig = plt.figure(figsize=(7, 6.5))
 

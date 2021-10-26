@@ -6,7 +6,7 @@ import numpy as np
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', size=13)
+plt.rc('font', family='Nimbus Sans L', size=13)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
@@ -107,7 +107,7 @@ plt.ylim(0.0,3.1)
 # plt.ylim(min(nb) - 50, max(clique) + 1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
-# plt.xlabel('# of vCPUs')
+# plt.xlabel('# vCPUs')
 # plt.yticks([])
 # plt.ylabel('Percentage of Improvement')
 plt.xticks(x, name, rotation=00, size=11)

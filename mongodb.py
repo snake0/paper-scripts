@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 font = {'size': 26, 'family': 'Helvetica Neue', 'weight': 'medium'}
-plt.rc('font', family='Helvetica Neue', weight='medium')
+plt.rc('font', family='Nimbus Sans L', weight='medium')
 fig, ax = plt.subplots()
 fig.set_size_inches(10, 7.85)
 plt.subplots_adjust(top=0.95, right=0.95)

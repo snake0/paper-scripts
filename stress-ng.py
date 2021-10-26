@@ -6,9 +6,12 @@ font = {'size': 28,}
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium')
+plt.rcParams['xtick.direction'] = 'in'  # 将x周的刻度线方向设置向内
+plt.rcParams['ytick.direction'] = 'in'  # 将y轴的刻度方向设置向内
+
+plt.rc('font', family='Nimbus Sans L', weight='medium')
 # font = {'size': 28, 'family': 'Helvetica Neue', 'weight': 'medium'}
-# plt.rc('font', family='Helvetica Neue', weight='medium')
+# plt.rc('font', family='Nimbus Sans L', weight='medium')
 
 fig, ax = plt.subplots()
 fig.set_size_inches(8, 7.2)
@@ -22,7 +25,8 @@ xrange = np.arange(len(x))
 giantVM = [0.939948116, 0.7652072415, 0.7751622627, 0.8960600598, 0.7435865961,
         0.4053164141, 0.9621792433, 0.9820859601, 0.8520079264]
 
-title = "Stress-ng Overhead on GiantVM"
+# title = "Stress-ng Overhead on GiantVM"
+title = "Distributed vCPU Overhead"
 colors = ['#f4f8c2']
 dot_style = ['s', 'x', 'd', '^', '.', 'D']
 line_style = [':', '-.', '--', '-']

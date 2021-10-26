@@ -1,438 +1,439 @@
-cmtt10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
-STIXSizeThreeSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
-cmsy10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
-cmss17 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmss17.ttf
-DejaVu Sans - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
-STIXNonUnicode - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
-cmr10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
-DejaVu Sans - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
-STIXNonUnicode - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
-DejaVu Sans - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
-cmmi10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
-DejaVu Serif Display - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
-cmss10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
-DejaVu Sans Mono - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
-STIXSizeThreeSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
-DejaVu Serif - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
-STIXSizeFourSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
-DejaVu Serif - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
-STIXSizeTwoSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
-cmb10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
-STIXSizeOneSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
-STIXNonUnicode - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
-STIXSizeFiveSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
-cmex10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
-DejaVu Serif - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
-STIXSizeOneSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
-STIXSizeTwoSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
-STIXSizeFourSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
-Verdana - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/verdana.ttf
-DejaVu Sans Display - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
 STIXGeneral - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBolIta.ttf
-DejaVu Sans Mono - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
-STIXGeneral - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
-STIXGeneral - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
-DejaVu Sans - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
-STIXGeneral - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
-STIXNonUnicode - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
 DejaVu Serif - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Italic.ttf
+cmss10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmss10.ttf
+DejaVu Sans - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans.ttf
+DejaVu Sans - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-BoldOblique.ttf
+STIXNonUnicode - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniIta.ttf
+DejaVu Sans Display - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansDisplay.ttf
+STIXGeneral - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralBol.ttf
 DejaVu Sans Mono - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-BoldOblique.ttf
+STIXSizeOneSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymReg.ttf
+STIXSizeThreeSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymReg.ttf
+STIXSizeFourSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymReg.ttf
+cmsy10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmsy10.ttf
+cmb10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmb10.ttf
 DejaVu Sans Mono - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Oblique.ttf
-Tsukushi A Round Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/8def8795a8bc5906be76cb45d9ca92ff305adb0f.asset/AssetData/TsukushiAMaruGothic.ttc
-Noto Sans Lepcha - /System/Library/Fonts/Supplemental/NotoSansLepcha-Regular.ttf
-Noto Sans New Tai Lue - /System/Library/Fonts/Supplemental/NotoSansNewTaiLue-Regular.ttf
-Noto Sans Pau Cin Hau - /System/Library/Fonts/Supplemental/NotoSansPauCinHau-Regular.ttf
-Noto Sans Modi - /System/Library/Fonts/Supplemental/NotoSansModi-Regular.ttf
-Noto Sans Palmyrene - /System/Library/Fonts/Supplemental/NotoSansPalmyrene-Regular.ttf
-Noto Sans Tai Le - /System/Library/Fonts/Supplemental/NotoSansTaiLe-Regular.ttf
-STIXSizeOneSym - /System/Library/Fonts/Supplemental/STIXSizOneSymReg.otf
-Osaka - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/47405a357e3ac82b7afbf33f535962172e3e3d10.asset/AssetData/Osaka.ttf
-Arial Black - /System/Library/Fonts/Supplemental/Arial Black.ttf
-Trattatello - /System/Library/Fonts/Supplemental/Trattatello.ttf
-Marker Felt - /System/Library/Fonts/MarkerFelt.ttc
-Noto Sans PhagsPa - /System/Library/Fonts/Supplemental/NotoSansPhagsPa-Regular.ttf
-Courier New - /System/Library/Fonts/Supplemental/Courier New Bold Italic.ttf
-STIXSizeOneSym - /System/Library/Fonts/Supplemental/STIXSizOneSymBol.otf
-Noto Sans Yi - /System/Library/Fonts/Supplemental/NotoSansYi-Regular.ttf
-.SF NS Rounded - /System/Library/Fonts/SFNSRounded.ttf
-Symbol - /System/Library/Fonts/Symbol.ttf
-Noto Sans Buhid - /System/Library/Fonts/Supplemental/NotoSansBuhid-Regular.ttf
-Noto Sans Hanifi Rohingya - /System/Library/Fonts/Supplemental/NotoSansHanifiRohingya-Regular.ttf
-Noto Sans Hanunoo - /System/Library/Fonts/Supplemental/NotoSansHanunoo-Regular.ttf
-Noto Sans Coptic - /System/Library/Fonts/Supplemental/NotoSansCoptic-Regular.ttf
+STIXSizeTwoSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymReg.ttf
+STIXGeneral - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneral.ttf
+STIXNonUnicode - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBolIta.ttf
+STIXNonUnicode - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUni.ttf
+DejaVu Serif - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif.ttf
+STIXSizeThreeSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizThreeSymBol.ttf
+DejaVu Sans - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Oblique.ttf
+STIXNonUnicode - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXNonUniBol.ttf
+DejaVu Serif - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-Bold.ttf
+STIXSizeTwoSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizTwoSymBol.ttf
+STIXGeneral - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXGeneralItalic.ttf
+cmmi10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmmi10.ttf
+cmr10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmr10.ttf
+cmss17 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmss17.ttf
+STIXSizeOneSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizOneSymBol.ttf
+DejaVu Sans Mono - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono.ttf
+cmex10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmex10.ttf
+STIXSizeFourSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFourSymBol.ttf
+DejaVu Serif - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerif-BoldItalic.ttf
+STIXSizeFiveSym - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/STIXSizFiveSymReg.ttf
+Verdana - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/verdana.ttf
+cmtt10 - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/cmtt10.ttf
+DejaVu Sans Mono - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSansMono-Bold.ttf
+DejaVu Sans - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSans-Bold.ttf
+DejaVu Serif Display - /Users/snake0/PycharmProjects/analyzer/venv/lib/python3.9/site-packages/matplotlib/mpl-data/fonts/ttf/DejaVuSerifDisplay.ttf
+STIXVariants - /System/Library/Fonts/Supplemental/STIXVar.otf
+Devanagari MT - /System/Library/Fonts/Supplemental/DevanagariMT.ttc
+.SF NS Mono - /System/Library/Fonts/SFNSMonoItalic.ttf
+Tamil Sangam MN - /System/Library/Fonts/Supplemental/Tamil Sangam MN.ttc
+Noto Sans Tagbanwa - /System/Library/Fonts/Supplemental/NotoSansTagbanwa-Regular.ttf
+Noto Sans Sundanese - /System/Library/Fonts/Supplemental/NotoSansSundanese-Regular.ttf
 Didot - /System/Library/Fonts/Supplemental/Didot.ttc
-Nanum Myeongjo - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/5c10807185ddbca859bc0b3ecefe55ebb1985aa9.asset/AssetData/NanumMyeongjo.ttc
-Noto Sans Mende Kikakui - /System/Library/Fonts/Supplemental/NotoSansMendeKikakui-Regular.ttf
-AppleMyungjo - /System/Library/Fonts/Supplemental/AppleMyungjo.ttf
-HeadLineA - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/8a0c0a968b8f2ea59ef70bf4ae52f818630ed614.asset/AssetData/HeadlineA.ttf
-Academy Engraved LET - /System/Library/Fonts/Supplemental/Academy Engraved LET Fonts.ttf
-Sana - /System/Library/Fonts/Supplemental/Sana.ttc
-Songti SC - /System/Library/Fonts/Supplemental/Songti.ttc
-Toppan Bunkyu Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/5ef536f846908ec81f4b37caef397b3cb050b64e.asset/AssetData/ToppanBunkyuGothicPr6N.ttc
-Kohinoor Gujarati - /System/Library/Fonts/KohinoorGujarati.ttc
-Apple Symbols - /System/Library/Fonts/Apple Symbols.ttf
-Shree Devanagari 714 - /System/Library/Fonts/Supplemental/Shree714.ttc
-STIXSizeFourSym - /System/Library/Fonts/Supplemental/STIXSizFourSymReg.otf
-Malayalam MN - /System/Library/Fonts/Supplemental/Malayalam MN.ttc
-DecoType Naskh - /System/Library/Fonts/Supplemental/DecoTypeNaskh.ttc
-Tahoma - /System/Library/Fonts/Supplemental/Tahoma.ttf
-Noto Sans Rejang - /System/Library/Fonts/Supplemental/NotoSansRejang-Regular.ttf
-Verdana - /System/Library/Fonts/Supplemental/Verdana Bold Italic.ttf
-Noto Sans Caucasian Albanian - /System/Library/Fonts/Supplemental/NotoSansCaucasianAlbanian-Regular.ttf
-Noto Sans Osmanya - /System/Library/Fonts/Supplemental/NotoSansOsmanya-Regular.ttf
-Noto Sans Old Turkic - /System/Library/Fonts/Supplemental/NotoSansOldTurkic-Regular.ttf
-Noto Sans Limbu - /System/Library/Fonts/Supplemental/NotoSansLimbu-Regular.ttf
 Trebuchet MS - /System/Library/Fonts/Supplemental/Trebuchet MS Bold Italic.ttf
-Noto Sans Tai Tham - /System/Library/Fonts/Supplemental/NotoSansTaiTham-Regular.ttf
-Noto Sans Armenian - /System/Library/Fonts/NotoSansArmenian.ttc
-Wawati TC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/693bb8838084c6f5f476acaa6741ad8eae9db8da.asset/AssetData/WawaTC-Regular.otf
-Comic Sans MS - /System/Library/Fonts/Supplemental/Comic Sans MS Bold.ttf
-Arial - /System/Library/Fonts/Supplemental/Arial.ttf
-Verdana - /System/Library/Fonts/Supplemental/Verdana Bold.ttf
-STIXSizeFourSym - /System/Library/Fonts/Supplemental/STIXSizFourSymBol.otf
-Galvji - /System/Library/Fonts/Supplemental/Galvji.ttc
-STHeiti - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/bf625d290b705582d5fd619878281f3325b075d0.asset/AssetData/STHEITI.ttf
+Kannada Sangam MN - /System/Library/Fonts/Supplemental/Kannada Sangam MN.ttc
+Noto Sans Meroitic - /System/Library/Fonts/Supplemental/NotoSansMeroitic-Regular.ttf
+Noto Sans Buhid - /System/Library/Fonts/Supplemental/NotoSansBuhid-Regular.ttf
+STIXIntegralsD - /System/Library/Fonts/Supplemental/STIXIntDBol.otf
+LingWai SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/b6841082981e7a8ab74788c20cb89f11493fd4bf.asset/AssetData/LingWaiSC-Medium.otf
+Bodoni Ornaments - /System/Library/Fonts/Supplemental/Bodoni Ornaments.ttf
+STIXIntegralsD - /System/Library/Fonts/Supplemental/STIXIntDReg.otf
+Noto Sans Elbasan - /System/Library/Fonts/Supplemental/NotoSansElbasan-Regular.ttf
+Malayalam MN - /System/Library/Fonts/Supplemental/Malayalam MN.ttc
+Georgia - /System/Library/Fonts/Supplemental/Georgia Bold Italic.ttf
+Hiragino Sans CNS - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/7912a7db209e28f561e770eb85a0ea9cb39f89ef.asset/AssetData/Hiragino_Sans_CNS.ttc
+Noto Sans Sharada - /System/Library/Fonts/Supplemental/NotoSansSharada-Regular.ttf
+Big Caslon - /System/Library/Fonts/Supplemental/BigCaslon.ttf
 STIXGeneral - /System/Library/Fonts/Supplemental/STIXGeneralItalic.otf
-Kohinoor Devanagari - /System/Library/Fonts/Kohinoor.ttc
-Noto Sans Old North Arabian - /System/Library/Fonts/Supplemental/NotoSansOldNorthArabian-Regular.ttf
-Noto Sans Manichaean - /System/Library/Fonts/Supplemental/NotoSansManichaean-Regular.ttf
-Noto Sans Avestan - /System/Library/Fonts/Supplemental/NotoSansAvestan-Regular.ttf
-PT Serif Caption - /System/Library/Fonts/Supplemental/PTSerifCaption.ttc
-Skia - /System/Library/Fonts/Supplemental/Skia.ttf
-Noto Sans Warang Citi - /System/Library/Fonts/Supplemental/NotoSansWarangCiti-Regular.ttf
-Hoefler Text - /System/Library/Fonts/Supplemental/Hoefler Text.ttc
-.SF Compact - /System/Library/Fonts/SFCompact.ttf
-YuKyokasho Yoko - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/bf3dc4579b9aab95801aaba773fc9bb83893b991.asset/AssetData/Kyokasho.ttc
-Arial Hebrew - /System/Library/Fonts/ArialHB.ttc
-Avenir Next Condensed - /System/Library/Fonts/Avenir Next Condensed.ttc
-Lao Sangam MN - /System/Library/Fonts/Supplemental/Lao Sangam MN.ttf
-Malayalam Sangam MN - /System/Library/Fonts/Supplemental/Malayalam Sangam MN.ttc
-Noto Serif Ahom - /System/Library/Fonts/Supplemental/NotoSerifAhom-Regular.ttf
-Baskerville - /System/Library/Fonts/Supplemental/Baskerville.ttc
-Tahoma - /System/Library/Fonts/Supplemental/Tahoma Bold.ttf
-Arial Narrow - /System/Library/Fonts/Supplemental/Arial Narrow.ttf
-Menlo - /System/Library/Fonts/Menlo.ttc
-Wingdings 2 - /System/Library/Fonts/Supplemental/Wingdings 2.ttf
+STHeiti - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/bf625d290b705582d5fd619878281f3325b075d0.asset/AssetData/STHEITI.ttf
+Toppan Bunkyu Mincho - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/d37ed4f492e87221b72d5c3aa5d4ff76e6d37c87.asset/AssetData/ToppanBunkyuMinchoPr6N-Regular.otf
+Noto Sans Takri - /System/Library/Fonts/Supplemental/NotoSansTakri-Regular.ttf
+Sathu - /System/Library/Fonts/Supplemental/Sathu.ttf
 Noto Sans Kaithi - /System/Library/Fonts/Supplemental/NotoSansKaithi-Regular.ttf
-Noto Sans Bamum - /System/Library/Fonts/Supplemental/NotoSansBamum-Regular.ttf
-Heiti TC - /System/Library/Fonts/STHeiti Medium.ttc
-Kohinoor Telugu - /System/Library/Fonts/KohinoorTelugu.ttc
-STFangsong - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
-Libian SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/263f8d1ebcf06f4703bab24071039da20fb4bb92.asset/AssetData/Libian.ttc
-Heiti TC - /System/Library/Fonts/STHeiti Light.ttc
-Wingdings 3 - /System/Library/Fonts/Supplemental/Wingdings 3.ttf
-Noto Sans Linear A - /System/Library/Fonts/Supplemental/NotoSansLinearA-Regular.ttf
-Al Tarikh - /System/Library/Fonts/Supplemental/Al Tarikh.ttc
-Gujarati MT - /System/Library/Fonts/Supplemental/GujaratiMT.ttc
-AppleGothic - /System/Library/Fonts/Supplemental/AppleGothic.ttf
+Noteworthy - /System/Library/Fonts/Noteworthy.ttc
+Kohinoor Gujarati - /System/Library/Fonts/KohinoorGujarati.ttc
+STIXSizeFiveSym - /System/Library/Fonts/Supplemental/STIXSizFiveSymReg.otf
+Noto Sans Tifinagh - /System/Library/Fonts/Supplemental/NotoSansTifinagh-Regular.ttf
+ITF Devanagari - /System/Library/Fonts/Supplemental/ITFDevanagari.ttc
+Tahoma - /System/Library/Fonts/Supplemental/Tahoma.ttf
+Telugu MN - /System/Library/Fonts/Supplemental/Telugu MN.ttc
+KufiStandardGK - /System/Library/Fonts/Supplemental/KufiStandardGK.ttc
+Noto Nastaliq Urdu - /System/Library/Fonts/NotoNastaliq.ttc
+PT Serif - /System/Library/Fonts/Supplemental/PTSerif.ttc
+Ayuthaya - /System/Library/Fonts/Supplemental/Ayuthaya.ttf
+Noto Sans Caucasian Albanian - /System/Library/Fonts/Supplemental/NotoSansCaucasianAlbanian-Regular.ttf
+Noto Sans Kharoshthi - /System/Library/Fonts/Supplemental/NotoSansKharoshthi-Regular.ttf
+Yuanti SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/5cd7ab25aa37ed171827d6fe772a80748a98ef6d.asset/AssetData/Yuanti.ttc
+Verdana - /System/Library/Fonts/Supplemental/Verdana Bold Italic.ttf
+Athelas - /System/Library/Fonts/Supplemental/Athelas.ttc
+Lantinghei SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/a3b1936b33a95120db4abbc9c59da5bdbea384ee.asset/AssetData/Lantinghei.ttc
+Songti SC - /System/Library/Fonts/Supplemental/Songti.ttc
+Skia - /System/Library/Fonts/Supplemental/Skia.ttf
+Myanmar MN - /System/Library/Fonts/Supplemental/Myanmar MN.ttc
 Osaka - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/eca12ba29af8fda43b3ebe09ae1c0606adc65a27.asset/AssetData/OsakaMono.ttf
 Noto Sans Chakma - /System/Library/Fonts/Supplemental/NotoSansChakma-Regular.ttf
-Kaiti SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/00e58c0676b9e589e9309dbca4b795bbba3b5420.asset/AssetData/Kaiti.ttc
-Noto Sans Thaana - /System/Library/Fonts/Supplemental/NotoSansThaana-Regular.ttf
-Trebuchet MS - /System/Library/Fonts/Supplemental/Trebuchet MS Italic.ttf
-.Aqua Kana - /System/Library/Fonts/AquaKana.ttc
-STIXNonUnicode - /System/Library/Fonts/Supplemental/STIXNonUniBol.otf
-Arial Narrow - /System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf
-Noto Sans Pahawh Hmong - /System/Library/Fonts/Supplemental/NotoSansPahawhHmong-Regular.ttf
-Noto Sans Cuneiform - /System/Library/Fonts/Supplemental/NotoSansCuneiform-Regular.ttf
-Toppan Bunkyu Midashi Mincho - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/14a24f75750dfdd5cb190b7d808e8d4731888704.asset/AssetData/ToppanBunkyuMidashiMinchoStdN-ExtraBold.otf
-Sathu - /System/Library/Fonts/Supplemental/Sathu.ttf
-Trebuchet MS - /System/Library/Fonts/Supplemental/Trebuchet MS Bold.ttf
-Nadeem - /System/Library/Fonts/Supplemental/Nadeem.ttc
-Noto Sans Tagbanwa - /System/Library/Fonts/Supplemental/NotoSansTagbanwa-Regular.ttf
-PT Serif - /System/Library/Fonts/Supplemental/PTSerif.ttc
-Nanum Brush Script - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/3b0bb049516d6dd825e1cd8731587ca7415517ff.asset/AssetData/NanumScript.ttc
-Times New Roman - /System/Library/Fonts/Supplemental/Times New Roman.ttf
-Noto Sans Phoenician - /System/Library/Fonts/Supplemental/NotoSansPhoenician-Regular.ttf
-Sinhala MN - /System/Library/Fonts/Supplemental/Sinhala MN.ttc
-Hiragino Maru Gothic Pro - /System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc
-Noto Sans Khojki - /System/Library/Fonts/Supplemental/NotoSansKhojki-Regular.ttf
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W5.ttc
-Georgia - /System/Library/Fonts/Supplemental/Georgia Italic.ttf
-Apple Braille - /System/Library/Fonts/Apple Braille Pinpoint 6 Dot.ttf
-Baghdad - /System/Library/Fonts/Supplemental/Baghdad.ttc
-Big Caslon - /System/Library/Fonts/Supplemental/BigCaslon.ttf
-Noto Sans Elbasan - /System/Library/Fonts/Supplemental/NotoSansElbasan-Regular.ttf
-Noto Sans Takri - /System/Library/Fonts/Supplemental/NotoSansTakri-Regular.ttf
-Brush Script MT - /System/Library/Fonts/Supplemental/Brush Script.ttf
-New Peninim MT - /System/Library/Fonts/Supplemental/NewPeninimMT.ttc
-Times - /System/Library/Fonts/Times.ttc
-LingWai SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/b6841082981e7a8ab74788c20cb89f11493fd4bf.asset/AssetData/LingWaiSC-Medium.otf
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W9.ttc
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W4.ttc
-Mukta Mahee - /System/Library/Fonts/MuktaMahee.ttc
-PingFang HK - /System/Library/Fonts/PingFang.ttc
-.SF NS Mono - /System/Library/Fonts/SFNSMonoItalic.ttf
-STIXGeneral - /System/Library/Fonts/Supplemental/STIXGeneralBol.otf
-STIXIntegralsD - /System/Library/Fonts/Supplemental/STIXIntDReg.otf
-DIN Condensed - /System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf
-Bodoni 72 Oldstyle - /System/Library/Fonts/Supplemental/Bodoni 72 OS.ttc
-Noto Sans Carian - /System/Library/Fonts/Supplemental/NotoSansCarian-Regular.ttf
-Noto Sans Cypriot - /System/Library/Fonts/Supplemental/NotoSansCypriot-Regular.ttf
-STIXIntegralsUpD - /System/Library/Fonts/Supplemental/STIXIntUpDReg.otf
-Hiragino Mincho ProN - /System/Library/Fonts/ヒラギノ明朝 ProN.ttc
-Verdana - /System/Library/Fonts/Supplemental/Verdana.ttf
-Andale Mono - /System/Library/Fonts/Supplemental/Andale Mono.ttf
-STIXIntegralsUpD - /System/Library/Fonts/Supplemental/STIXIntUpDBol.otf
-Hei - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/36440aa0be75aaa7a1fab8c5c42930b7d407dc48.asset/AssetData/Hei.ttf
-Arial - /System/Library/Fonts/Supplemental/Arial Bold.ttf
-YuGothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/00a83746b65bd0a829eba9a553e88c60b18f89d7.asset/AssetData/YuGothic-Medium.otf
-Apple LiGothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/8ad04015359b75f65d68b465cbab918051c72e6d.asset/AssetData/AppleLiGothic-Medium.ttf
-Geeza Pro - /System/Library/Fonts/GeezaPro.ttc
-Apple SD Gothic Neo - /System/Library/Fonts/AppleSDGothicNeo.ttc
-Mishafi Gold - /System/Library/Fonts/Supplemental/Mishafi Gold.ttf
-Noto Sans Bhaiksuki - /System/Library/Fonts/Supplemental/NotoSansBhaiksuki-Regular.ttf
-LiHei Pro - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/6eda9db6065eccfa83b34ae4c3111810efffc1b5.asset/AssetData/LiHeiPro.ttf
-Gurmukhi MN - /System/Library/Fonts/Supplemental/Gurmukhi MN.ttc
-Noto Nastaliq Urdu - /System/Library/Fonts/NotoNastaliq.ttc
-Gurmukhi MT - /System/Library/Fonts/Supplemental/Gurmukhi.ttf
-Khmer Sangam MN - /System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf
-STIXIntegralsUp - /System/Library/Fonts/Supplemental/STIXIntUpReg.otf
-Toppan Bunkyu Mincho - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/d37ed4f492e87221b72d5c3aa5d4ff76e6d37c87.asset/AssetData/ToppanBunkyuMinchoPr6N-Regular.otf
-Kokonor - /System/Library/Fonts/Supplemental/Kokonor.ttf
-Noto Sans Saurashtra - /System/Library/Fonts/Supplemental/NotoSansSaurashtra-Regular.ttf
-Yuppy TC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/b6c310298897f0ac2b38dafd41cef452a0557a31.asset/AssetData/YuppyTC-Regular.otf
-Hiragino Sans GB - /System/Library/Fonts/Hiragino Sans GB.ttc
-PT Sans - /System/Library/Fonts/Supplemental/PTSans.ttc
-Lantinghei SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/a3b1936b33a95120db4abbc9c59da5bdbea384ee.asset/AssetData/Lantinghei.ttc
-Noto Serif Balinese - /System/Library/Fonts/Supplemental/NotoSerifBalinese-Regular.ttf
-Noto Sans Imperial Aramaic - /System/Library/Fonts/Supplemental/NotoSansImperialAramaic-Regular.ttf
-STIXSizeThreeSym - /System/Library/Fonts/Supplemental/STIXSizThreeSymBol.otf
-Noto Sans Batak - /System/Library/Fonts/Supplemental/NotoSansBatak-Regular.ttf
-STIXIntegralsSm - /System/Library/Fonts/Supplemental/STIXIntSmReg.otf
-Webdings - /System/Library/Fonts/Supplemental/Webdings.ttf
-Noto Sans Buginese - /System/Library/Fonts/Supplemental/NotoSansBuginese-Regular.ttf
-STIXSizeFiveSym - /System/Library/Fonts/Supplemental/STIXSizFiveSymReg.otf
-Mishafi - /System/Library/Fonts/Supplemental/Mishafi.ttf
-Chalkboard SE - /System/Library/Fonts/Supplemental/ChalkboardSE.ttc
-Times New Roman - /System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf
-Ayuthaya - /System/Library/Fonts/Supplemental/Ayuthaya.ttf
-Arial Unicode MS - /System/Library/Fonts/Supplemental/Arial Unicode.ttf
-Times New Roman - /System/Library/Fonts/Supplemental/Times New Roman Bold.ttf
-KufiStandardGK - /System/Library/Fonts/Supplemental/KufiStandardGK.ttc
-Apple Braille - /System/Library/Fonts/Apple Braille Outline 6 Dot.ttf
-Noto Sans Khudawadi - /System/Library/Fonts/Supplemental/NotoSansKhudawadi-Regular.ttf
-Tsukushi B Round Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/6ec5cb139687d842d0186f98215ef1c477df6cc0.asset/AssetData/TsukushiBMaruGothic.ttc
-Plantagenet Cherokee - /System/Library/Fonts/Supplemental/PlantagenetCherokee.ttf
-STIXNonUnicode - /System/Library/Fonts/Supplemental/STIXNonUniBolIta.otf
-Gujarati Sangam MN - /System/Library/Fonts/Supplemental/Gujarati Sangam MN.ttc
-.Arabic UI Display - /System/Library/Fonts/ArabicUIDisplay.ttc
-Georgia - /System/Library/Fonts/Supplemental/Georgia Bold.ttf
-Corsiva Hebrew - /System/Library/Fonts/Supplemental/Corsiva.ttc
-Noto Sans NKo - /System/Library/Fonts/Supplemental/NotoSansNKo-Regular.ttf
-Oriya MN - /System/Library/Fonts/Supplemental/Oriya MN.ttc
-Noto Sans Marchen - /System/Library/Fonts/Supplemental/NotoSansMarchen-Regular.ttf
-Noto Sans Bassa Vah - /System/Library/Fonts/Supplemental/NotoSansBassaVah-Regular.ttf
-System Font - /System/Library/Fonts/SFNSItalic.ttf
-Athelas - /System/Library/Fonts/Supplemental/Athelas.ttc
-Seravek - /System/Library/Fonts/Supplemental/Seravek.ttc
-STIXIntegralsD - /System/Library/Fonts/Supplemental/STIXIntDBol.otf
-Noto Sans Syloti Nagri - /System/Library/Fonts/Supplemental/NotoSansSylotiNagri-Regular.ttf
-Arial Narrow - /System/Library/Fonts/Supplemental/Arial Narrow Italic.ttf
-Baoli SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/c91371d5492434af5929487028bf10767406267c.asset/AssetData/Baoli.ttc
-Noto Sans Old Italic - /System/Library/Fonts/Supplemental/NotoSansOldItalic-Regular.ttf
-.Keyboard - /System/Library/Fonts/Keyboard.ttf
-Noto Sans Myanmar - /System/Library/Fonts/NotoSansMyanmar.ttc
-GungSeo - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/ac3e154cec7affea536ee3a5a859b0dd78eb0c17.asset/AssetData/Gungseouche.ttf
-Silom - /System/Library/Fonts/Supplemental/Silom.ttf
-STIXSizeThreeSym - /System/Library/Fonts/Supplemental/STIXSizThreeSymReg.otf
-Wingdings - /System/Library/Fonts/Supplemental/Wingdings.ttf
-LingWai TC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/ec88728883c8296c7eb583ce64501d3242b25c2f.asset/AssetData/LingWaiTC-Medium.otf
-Arial Narrow - /System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf
 Zapf Dingbats - /System/Library/Fonts/ZapfDingbats.ttf
-Noto Sans Mandaic - /System/Library/Fonts/Supplemental/NotoSansMandaic-Regular.ttf
-Noto Sans Inscriptional Pahlavi - /System/Library/Fonts/Supplemental/NotoSansInscriptionalPahlavi-Regular.ttf
-Beirut - /System/Library/Fonts/Supplemental/Beirut.ttc
-Euphemia UCAS - /System/Library/Fonts/Supplemental/EuphemiaCAS.ttc
-STIXGeneral - /System/Library/Fonts/Supplemental/STIXGeneralBolIta.otf
-Telugu MN - /System/Library/Fonts/Supplemental/Telugu MN.ttc
-Mshtakan - /System/Library/Fonts/Supplemental/Mshtakan.ttc
-Noto Sans Mongolian - /System/Library/Fonts/Supplemental/NotoSansMongolian-Regular.ttf
-Noto Sans Gothic - /System/Library/Fonts/Supplemental/NotoSansGothic-Regular.ttf
-Gill Sans - /System/Library/Fonts/Supplemental/GillSans.ttc
-Noto Sans Hatran - /System/Library/Fonts/Supplemental/NotoSansHatran-Regular.ttf
-Rockwell - /System/Library/Fonts/Supplemental/Rockwell.ttc
-Apple Braille - /System/Library/Fonts/Apple Braille.ttf
+LingWai TC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/ec88728883c8296c7eb583ce64501d3242b25c2f.asset/AssetData/LingWaiTC-Medium.otf
+Arial Unicode MS - /Library/Fonts/Arial Unicode.ttf
+STIXIntegralsSm - /System/Library/Fonts/Supplemental/STIXIntSmReg.otf
+STFangsong - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c66b413a81d594dc2fc430266c1629c30a5237b.asset/AssetData/STFANGSO.ttf
+InaiMathi - /System/Library/Fonts/Supplemental/InaiMathi-MN.ttc
+Gujarati MT - /System/Library/Fonts/Supplemental/GujaratiMT.ttc
+Kefa - /System/Library/Fonts/Supplemental/Kefa.ttc
+Toppan Bunkyu Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/5ef536f846908ec81f4b37caef397b3cb050b64e.asset/AssetData/ToppanBunkyuGothicPr6N.ttc
+Noto Sans Thaana - /System/Library/Fonts/Supplemental/NotoSansThaana-Regular.ttf
+Gurmukhi Sangam MN - /System/Library/Fonts/Supplemental/Gurmukhi Sangam MN.ttc
+Noto Sans Bhaiksuki - /System/Library/Fonts/Supplemental/NotoSansBhaiksuki-Regular.ttf
+Tahoma - /System/Library/Fonts/Supplemental/Tahoma Bold.ttf
 STIXNonUnicode - /System/Library/Fonts/Supplemental/STIXNonUni.otf
-STIXIntegralsSm - /System/Library/Fonts/Supplemental/STIXIntSmBol.otf
-Noto Sans Vai - /System/Library/Fonts/Supplemental/NotoSansVai-Regular.ttf
-Noto Sans Miao - /System/Library/Fonts/Supplemental/NotoSansMiao-Regular.ttf
+Toppan Bunkyu Midashi Mincho - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/14a24f75750dfdd5cb190b7d808e8d4731888704.asset/AssetData/ToppanBunkyuMidashiMinchoStdN-ExtraBold.otf
+Mishafi - /System/Library/Fonts/Supplemental/Mishafi.ttf
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W2.ttc
+Diwan Thuluth - /System/Library/Fonts/Supplemental/Diwan Thuluth.ttf
+Noto Sans Ogham - /System/Library/Fonts/Supplemental/NotoSansOgham-Regular.ttf
+Trebuchet MS - /System/Library/Fonts/Supplemental/Trebuchet MS Italic.ttf
+Corsiva Hebrew - /System/Library/Fonts/Supplemental/Corsiva.ttc
+Party LET - /System/Library/Fonts/Supplemental/PartyLET-plain.ttf
+Verdana - /System/Library/Fonts/Supplemental/Verdana Bold.ttf
+Euphemia UCAS - /System/Library/Fonts/Supplemental/EuphemiaCAS.ttc
+Arial - /System/Library/Fonts/Supplemental/Arial Bold Italic.ttf
+Noto Sans Ugaritic - /System/Library/Fonts/Supplemental/NotoSansUgaritic-Regular.ttf
+Webdings - /System/Library/Fonts/Supplemental/Webdings.ttf
+.New York - /System/Library/Fonts/NewYorkItalic.ttf
 Cochin - /System/Library/Fonts/Supplemental/Cochin.ttc
-Apple Chancery - /System/Library/Fonts/Supplemental/Apple Chancery.ttf
-Al Bayan - /System/Library/Fonts/Supplemental/AlBayan.ttc
-Myanmar Sangam MN - /System/Library/Fonts/Supplemental/Myanmar Sangam MN.ttc
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W6.ttc
-SimSong - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/61c49f4632f9c10ad2521da713cda25f94f77be3.asset/AssetData/SimSong.ttc
-Noto Sans Syriac - /System/Library/Fonts/Supplemental/NotoSansSyriac-Regular.ttf
-Noto Sans Shavian - /System/Library/Fonts/Supplemental/NotoSansShavian-Regular.ttf
+Verdana - /System/Library/Fonts/Supplemental/Verdana.ttf
+Noto Sans Modi - /System/Library/Fonts/Supplemental/NotoSansModi-Regular.ttf
+STIXNonUnicode - /System/Library/Fonts/Supplemental/STIXNonUniBolIta.otf
+Noto Sans Hatran - /System/Library/Fonts/Supplemental/NotoSansHatran-Regular.ttf
+Apple Braille - /System/Library/Fonts/Apple Braille.ttf
+Noto Sans Saurashtra - /System/Library/Fonts/Supplemental/NotoSansSaurashtra-Regular.ttf
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W0.ttc
+Shree Devanagari 714 - /System/Library/Fonts/Supplemental/Shree714.ttc
+.Keyboard - /System/Library/Fonts/Keyboard.ttf
+Noto Sans Mro - /System/Library/Fonts/Supplemental/NotoSansMro-Regular.ttf
+STIXSizeThreeSym - /System/Library/Fonts/Supplemental/STIXSizThreeSymBol.otf
+Nanum Brush Script - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/3b0bb049516d6dd825e1cd8731587ca7415517ff.asset/AssetData/NanumScript.ttc
+HeadLineA - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/8a0c0a968b8f2ea59ef70bf4ae52f818630ed614.asset/AssetData/HeadlineA.ttf
+Noto Sans Samaritan - /System/Library/Fonts/Supplemental/NotoSansSamaritan-Regular.ttf
+Al Nile - /System/Library/Fonts/Supplemental/Al Nile.ttc
 Toppan Bunkyu Midashi Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/c7c8e5cb889b80fff0175bf138a7b66c6f027f21.asset/AssetData/ToppanBunkyuMidashiGothicStdN-ExtraBold.otf
-Weibei SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/fcc77abee40ac0268e0a78ea256448a23736fcaf.asset/AssetData/WeibeiSC-Bold.otf
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W1.ttc
+Hiragino Mincho ProN - /System/Library/Fonts/ヒラギノ明朝 ProN.ttc
+Sukhumvit Set - /System/Library/Fonts/Supplemental/SukhumvitSet.ttc
+Gill Sans - /System/Library/Fonts/Supplemental/GillSans.ttc
+Helvetica - /System/Library/Fonts/Helvetica.ttc
+Papyrus - /System/Library/Fonts/Supplemental/Papyrus.ttc
+Thonburi - /System/Library/Fonts/Thonburi.ttc
+PT Mono - /System/Library/Fonts/Supplemental/PTMono.ttc
+Bodoni 72 Smallcaps - /System/Library/Fonts/Supplemental/Bodoni 72 Smallcaps Book.ttf
+Noto Sans Old South Arabian - /System/Library/Fonts/Supplemental/NotoSansOldSouthArabian-Regular.ttf
+Noto Sans PhagsPa - /System/Library/Fonts/Supplemental/NotoSansPhagsPa-Regular.ttf
+Noto Serif Myanmar - /System/Library/Fonts/NotoSerifMyanmar.ttc
+Mshtakan - /System/Library/Fonts/Supplemental/Mshtakan.ttc
+Rockwell - /System/Library/Fonts/Supplemental/Rockwell.ttc
+Noto Sans Khojki - /System/Library/Fonts/Supplemental/NotoSansKhojki-Regular.ttf
+Noto Sans Mongolian - /System/Library/Fonts/Supplemental/NotoSansMongolian-Regular.ttf
+Noto Sans Glagolitic - /System/Library/Fonts/Supplemental/NotoSansGlagolitic-Regular.ttf
+SimSong - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/61c49f4632f9c10ad2521da713cda25f94f77be3.asset/AssetData/SimSong.ttc
+PT Sans - /System/Library/Fonts/Supplemental/PTSans.ttc
+Noto Sans Avestan - /System/Library/Fonts/Supplemental/NotoSansAvestan-Regular.ttf
+Apple Symbols - /System/Library/Fonts/Apple Symbols.ttf
+Nadeem - /System/Library/Fonts/Supplemental/Nadeem.ttc
+Nanum Myeongjo - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/5c10807185ddbca859bc0b3ecefe55ebb1985aa9.asset/AssetData/NanumMyeongjo.ttc
+Noto Sans Cham - /System/Library/Fonts/Supplemental/NotoSansCham-Regular.ttf
+Noto Sans Khudawadi - /System/Library/Fonts/Supplemental/NotoSansKhudawadi-Regular.ttf
+Chalkboard - /System/Library/Fonts/Supplemental/Chalkboard.ttc
+Chalkduster - /System/Library/Fonts/Supplemental/Chalkduster.ttf
+STIXSizeOneSym - /System/Library/Fonts/Supplemental/STIXSizOneSymReg.otf
+BiauKai - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/77368dfa9dba1fbbd6019b7ee1a7fc25d1169649.asset/AssetData/BiauKai.ttf
+YuGothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/00a83746b65bd0a829eba9a553e88c60b18f89d7.asset/AssetData/YuGothic-Medium.otf
+Kailasa - /System/Library/Fonts/Supplemental/Kailasa.ttc
+Trebuchet MS - /System/Library/Fonts/Supplemental/Trebuchet MS Bold.ttf
+Noto Sans Manichaean - /System/Library/Fonts/Supplemental/NotoSansManichaean-Regular.ttf
+Noto Sans Linear B - /System/Library/Fonts/Supplemental/NotoSansLinearB-Regular.ttf
+Noto Sans Myanmar - /System/Library/Fonts/NotoSansMyanmar.ttc
+Tsukushi B Round Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/6ec5cb139687d842d0186f98215ef1c477df6cc0.asset/AssetData/TsukushiBMaruGothic.ttc
+Comic Sans MS - /System/Library/Fonts/Supplemental/Comic Sans MS.ttf
+Al Tarikh - /System/Library/Fonts/Supplemental/Al Tarikh.ttc
+Arial Narrow - /System/Library/Fonts/Supplemental/Arial Narrow Bold.ttf
+Noto Sans Old North Arabian - /System/Library/Fonts/Supplemental/NotoSansOldNorthArabian-Regular.ttf
+LiHei Pro - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/6eda9db6065eccfa83b34ae4c3111810efffc1b5.asset/AssetData/LiHeiPro.ttf
+Gujarati Sangam MN - /System/Library/Fonts/Supplemental/Gujarati Sangam MN.ttc
+Damascus - /System/Library/Fonts/Supplemental/Damascus.ttc
+Times New Roman - /System/Library/Fonts/Supplemental/Times New Roman.ttf
+Bradley Hand - /System/Library/Fonts/Supplemental/Bradley Hand Bold.ttf
+Noto Sans Lycian - /System/Library/Fonts/Supplemental/NotoSansLycian-Regular.ttf
+Times - /System/Library/Fonts/Times.ttc
+Libian SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/263f8d1ebcf06f4703bab24071039da20fb4bb92.asset/AssetData/Libian.ttc
+Times New Roman - /System/Library/Fonts/Supplemental/Times New Roman Bold.ttf
+Osaka - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/47405a357e3ac82b7afbf33f535962172e3e3d10.asset/AssetData/Osaka.ttf
+Courier New - /System/Library/Fonts/Supplemental/Courier New Italic.ttf
+Mishafi Gold - /System/Library/Fonts/Supplemental/Mishafi Gold.ttf
+Noto Sans Hanunoo - /System/Library/Fonts/Supplemental/NotoSansHanunoo-Regular.ttf
+Seravek - /System/Library/Fonts/Supplemental/Seravek.ttc
+Noto Sans Shavian - /System/Library/Fonts/Supplemental/NotoSansShavian-Regular.ttf
+Mukta Mahee - /System/Library/Fonts/MuktaMahee.ttc
+STIXIntegralsUpSm - /System/Library/Fonts/Supplemental/STIXIntUpSmReg.otf
+Noto Sans Inscriptional Parthian - /System/Library/Fonts/Supplemental/NotoSansInscriptionalParthian-Regular.ttf
+Arial Rounded MT Bold - /System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf
+Noto Sans Mende Kikakui - /System/Library/Fonts/Supplemental/NotoSansMendeKikakui-Regular.ttf
+Avenir - /System/Library/Fonts/Avenir.ttc
+Apple Chancery - /System/Library/Fonts/Supplemental/Apple Chancery.ttf
+Noto Sans Rejang - /System/Library/Fonts/Supplemental/NotoSansRejang-Regular.ttf
+Wingdings 2 - /System/Library/Fonts/Supplemental/Wingdings 2.ttf
+Noto Sans Tai Tham - /System/Library/Fonts/Supplemental/NotoSansTaiTham-Regular.ttf
+Raanana - /System/Library/Fonts/Supplemental/Raanana.ttc
+Academy Engraved LET - /System/Library/Fonts/Supplemental/Academy Engraved LET Fonts.ttf
+Weibei TC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/583519b80beacd4c491545da47385740f651e7a6.asset/AssetData/WeibeiTC-Bold.otf
+Hoefler Text - /System/Library/Fonts/Supplemental/Hoefler Text.ttc
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W7.ttc
+Kai - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/7cb72b1f60ccd0551894a1f248aa7c28fa3afb1d.asset/AssetData/Kai.ttf
+DIN Alternate - /System/Library/Fonts/Supplemental/DIN Alternate Bold.ttf
+AppleGothic - /System/Library/Fonts/Supplemental/AppleGothic.ttf
+Noto Sans Kannada - /System/Library/Fonts/NotoSansKannada.ttc
+Noto Sans Vai - /System/Library/Fonts/Supplemental/NotoSansVai-Regular.ttf
+Kohinoor Bangla - /System/Library/Fonts/KohinoorBangla.ttc
+Noto Sans Lepcha - /System/Library/Fonts/Supplemental/NotoSansLepcha-Regular.ttf
 Noto Sans Wancho - /System/Library/Fonts/Supplemental/NotoSansWancho-Regular.ttf
+Noto Serif Ahom - /System/Library/Fonts/Supplemental/NotoSerifAhom-Regular.ttf
+Kohinoor Devanagari - /System/Library/Fonts/Kohinoor.ttc
+Wingdings 3 - /System/Library/Fonts/Supplemental/Wingdings 3.ttf
+Times New Roman - /System/Library/Fonts/Supplemental/Times New Roman Italic.ttf
+Apple Braille - /System/Library/Fonts/Apple Braille Outline 6 Dot.ttf
+Noto Serif Balinese - /System/Library/Fonts/Supplemental/NotoSerifBalinese-Regular.ttf
+Arial Hebrew - /System/Library/Fonts/ArialHB.ttc
+Noto Sans Tagalog - /System/Library/Fonts/Supplemental/NotoSansTagalog-Regular.ttf
+Savoye LET - /System/Library/Fonts/Supplemental/Savoye LET.ttc
+Menlo - /System/Library/Fonts/Menlo.ttc
+Galvji - /System/Library/Fonts/Supplemental/Galvji.ttc
+Lucida Grande - /System/Library/Fonts/LucidaGrande.ttc
+STIXIntegralsUpSm - /System/Library/Fonts/Supplemental/STIXIntUpSmBol.otf
+Bodoni 72 Oldstyle - /System/Library/Fonts/Supplemental/Bodoni 72 OS.ttc
+Charter - /System/Library/Fonts/Supplemental/Charter.ttc
+YuMincho - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/bdee83ea598d4a36c665b2095e0f39376e9c182b.asset/AssetData/YuMincho.ttc
+Microsoft Sans Serif - /System/Library/Fonts/Supplemental/Microsoft Sans Serif.ttf
+Noto Sans Mahajani - /System/Library/Fonts/Supplemental/NotoSansMahajani-Regular.ttf
+Telugu Sangam MN - /System/Library/Fonts/Supplemental/Telugu Sangam MN.ttc
+Arial Unicode MS - /System/Library/Fonts/Supplemental/Arial Unicode.ttf
 Waseem - /System/Library/Fonts/Supplemental/Waseem.ttc
 Apple LiSung - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/ce51ca1d8fea058f7c61047c2b2bb90b08060280.asset/AssetData/AppleLiSung-Light.ttf
-HanziPen SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/cb9a85576455613deae27ccbede3cece696b39c0.asset/AssetData/Hanzipen.ttc
-STIXVariants - /System/Library/Fonts/Supplemental/STIXVarBol.otf
-Noto Sans Ogham - /System/Library/Fonts/Supplemental/NotoSansOgham-Regular.ttf
-Lucida Grande - /System/Library/Fonts/LucidaGrande.ttc
-Yuanti SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/5cd7ab25aa37ed171827d6fe772a80748a98ef6d.asset/AssetData/Yuanti.ttc
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W1.ttc
-Arial - /System/Library/Fonts/Supplemental/Arial Italic.ttf
-Bradley Hand - /System/Library/Fonts/Supplemental/Bradley Hand Bold.ttf
-Noteworthy - /System/Library/Fonts/Noteworthy.ttc
-Noto Sans Sharada - /System/Library/Fonts/Supplemental/NotoSansSharada-Regular.ttf
-Apple Braille - /System/Library/Fonts/Apple Braille Pinpoint 8 Dot.ttf
-Oriya Sangam MN - /System/Library/Fonts/Supplemental/Oriya Sangam MN.ttc
-Sinhala Sangam MN - /System/Library/Fonts/Supplemental/Sinhala Sangam MN.ttc
-DIN Alternate - /System/Library/Fonts/Supplemental/DIN Alternate Bold.ttf
-Phosphate - /System/Library/Fonts/Supplemental/Phosphate.ttc
-Muna - /System/Library/Fonts/Supplemental/Muna.ttc
-Krungthep - /System/Library/Fonts/Supplemental/Krungthep.ttf
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W8.ttc
-Noto Sans Osage - /System/Library/Fonts/Supplemental/NotoSansOsage-Regular.ttf
-Wawati SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c5fb4ab37ef16487d14e6bfa70a8b98f7e1efa8.asset/AssetData/WawaSC-Regular.otf
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W7.ttc
-Al Nile - /System/Library/Fonts/Supplemental/Al Nile.ttc
-Diwan Thuluth - /System/Library/Fonts/Supplemental/Diwan Thuluth.ttf
-Iowan Old Style - /System/Library/Fonts/Supplemental/Iowan Old Style.ttc
-Superclarendon - /System/Library/Fonts/Supplemental/SuperClarendon.ttc
-.SF Compact Rounded - /System/Library/Fonts/SFCompactRounded.ttf
-STIXIntegralsUpSm - /System/Library/Fonts/Supplemental/STIXIntUpSmBol.otf
-.New York - /System/Library/Fonts/NewYorkItalic.ttf
-Noto Sans Lycian - /System/Library/Fonts/Supplemental/NotoSansLycian-Regular.ttf
-.New York - /System/Library/Fonts/NewYork.ttf
-Noto Sans Javanese - /System/Library/Fonts/Supplemental/NotoSansJavanese-Regular.otf
-Herculanum - /System/Library/Fonts/Supplemental/Herculanum.ttf
-Noto Sans Psalter Pahlavi - /System/Library/Fonts/Supplemental/NotoSansPsalterPahlavi-Regular.ttf
-Noto Sans Old Permic - /System/Library/Fonts/Supplemental/NotoSansOldPermic-Regular.ttf
-Noto Sans Tagalog - /System/Library/Fonts/Supplemental/NotoSansTagalog-Regular.ttf
-Avenir - /System/Library/Fonts/Avenir.ttc
-Luminari - /System/Library/Fonts/Supplemental/Luminari.ttf
-Avenir Next - /System/Library/Fonts/Avenir Next.ttc
-Charter - /System/Library/Fonts/Supplemental/Charter.ttc
-Noto Sans Mahajani - /System/Library/Fonts/Supplemental/NotoSansMahajani-Regular.ttf
-Chalkboard - /System/Library/Fonts/Supplemental/Chalkboard.ttc
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W3.ttc
-Bangla Sangam MN - /System/Library/Fonts/Supplemental/Bangla Sangam MN.ttc
-Kohinoor Bangla - /System/Library/Fonts/KohinoorBangla.ttc
-STIXVariants - /System/Library/Fonts/Supplemental/STIXVar.otf
-PCMyungjo - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/96887f5398e3fc37ec326507b9ca72c87be57ff7.asset/AssetData/PCmyoungjo.ttf
-Impact - /System/Library/Fonts/Supplemental/Impact.ttf
-Telugu Sangam MN - /System/Library/Fonts/Supplemental/Telugu Sangam MN.ttc
-Arial Rounded MT Bold - /System/Library/Fonts/Supplemental/Arial Rounded Bold.ttf
-Palatino - /System/Library/Fonts/Palatino.ttc
-Noto Sans Lydian - /System/Library/Fonts/Supplemental/NotoSansLydian-Regular.ttf
-Arial - /System/Library/Fonts/Supplemental/Arial Bold Italic.ttf
-Noto Sans Inscriptional Parthian - /System/Library/Fonts/Supplemental/NotoSansInscriptionalParthian-Regular.ttf
-STIXIntegralsUp - /System/Library/Fonts/Supplemental/STIXIntUpBol.otf
-Georgia - /System/Library/Fonts/Supplemental/Georgia Bold Italic.ttf
-Noto Sans Linear B - /System/Library/Fonts/Supplemental/NotoSansLinearB-Regular.ttf
-Chalkduster - /System/Library/Fonts/Supplemental/Chalkduster.ttf
-Noto Sans Samaritan - /System/Library/Fonts/Supplemental/NotoSansSamaritan-Regular.ttf
-Optima - /System/Library/Fonts/Optima.ttc
-Kai - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/7cb72b1f60ccd0551894a1f248aa7c28fa3afb1d.asset/AssetData/Kai.ttf
-Damascus - /System/Library/Fonts/Supplemental/Damascus.ttc
+Wingdings - /System/Library/Fonts/Supplemental/Wingdings.ttf
+Noto Sans New Tai Lue - /System/Library/Fonts/Supplemental/NotoSansNewTaiLue-Regular.ttf
+Gurmukhi MT - /System/Library/Fonts/Supplemental/Gurmukhi.ttf
+Geeza Pro - /System/Library/Fonts/GeezaPro.ttc
 Noto Sans Newa - /System/Library/Fonts/Supplemental/NotoSansNewa-Regular.ttf
-STHeiti - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/a4374b18bc562b80a5a4940e1f2008bbd58156c4.asset/AssetData/STXIHEI.ttf
-Noto Sans Nabataean - /System/Library/Fonts/Supplemental/NotoSansNabataean-Regular.ttf
-Savoye LET - /System/Library/Fonts/Supplemental/Savoye LET.ttc
-Georgia - /System/Library/Fonts/Supplemental/Georgia.ttf
-Xingkai SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/fedef1896002be99406da1bf1a1a6104a1737b39.asset/AssetData/Xingkai.ttc
-Noto Sans Cham - /System/Library/Fonts/Supplemental/NotoSansCham-Regular.ttf
-PilGi - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/28e55afbf7022f012e4a3ef68fa96d9a71bd1cd7.asset/AssetData/Pilgiche.ttf
-Microsoft Sans Serif - /System/Library/Fonts/Supplemental/Microsoft Sans Serif.ttf
-Courier New - /System/Library/Fonts/Supplemental/Courier New Italic.ttf
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W0.ttc
-PT Mono - /System/Library/Fonts/Supplemental/PTMono.ttc
-Noto Sans Adlam - /System/Library/Fonts/Supplemental/NotoSansAdlam-Regular.ttf
-Noto Sans Sundanese - /System/Library/Fonts/Supplemental/NotoSansSundanese-Regular.ttf
-STIXGeneral - /System/Library/Fonts/Supplemental/STIXGeneral.otf
-Khmer MN - /System/Library/Fonts/Supplemental/Khmer MN.ttc
-YuMincho - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/bdee83ea598d4a36c665b2095e0f39376e9c182b.asset/AssetData/YuMincho.ttc
-Diwan Kufi - /System/Library/Fonts/Supplemental/Diwan Kufi.ttc
-Noto Sans Old Hungarian - /System/Library/Fonts/Supplemental/NotoSansOldHungarian-Regular.ttf
-STIXNonUnicode - /System/Library/Fonts/Supplemental/STIXNonUniIta.otf
-Noto Sans Tirhuta - /System/Library/Fonts/Supplemental/NotoSansTirhuta-Regular.ttf
-American Typewriter - /System/Library/Fonts/Supplemental/AmericanTypewriter.ttc
-Trebuchet MS - /System/Library/Fonts/Supplemental/Trebuchet MS.ttf
-Noto Sans Multani - /System/Library/Fonts/Supplemental/NotoSansMultani-Regular.ttf
-BiauKai - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/77368dfa9dba1fbbd6019b7ee1a7fc25d1169649.asset/AssetData/BiauKai.ttf
-Party LET - /System/Library/Fonts/Supplemental/PartyLET-plain.ttf
-Klee - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/a5578564cd8cb162d7ba1544317ef3ae407bf939.asset/AssetData/Klee.ttc
-Noto Sans Oriya - /System/Library/Fonts/NotoSansOriya.ttc
-Comic Sans MS - /System/Library/Fonts/Supplemental/Comic Sans MS.ttf
-Yuppy SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/c2e85ff2325814a0f6ebd90957fbdb5e5b396867.asset/AssetData/YuppySC-Regular.otf
-Farah - /System/Library/Fonts/Supplemental/Farah.ttc
-Noto Sans Mro - /System/Library/Fonts/Supplemental/NotoSansMro-Regular.ttf
-YuGothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/16410f7b0c96b4bb08d952fa04d67cd65a42f1b7.asset/AssetData/YuGothic-Bold.otf
-Kefa - /System/Library/Fonts/Supplemental/Kefa.ttc
-Noto Sans Siddham - /System/Library/Fonts/Supplemental/NotoSansSiddham-Regular.ttf
-STIXSizeTwoSym - /System/Library/Fonts/Supplemental/STIXSizTwoSymBol.otf
-Tamil MN - /System/Library/Fonts/Supplemental/Tamil MN.ttc
-Noto Sans Tifinagh - /System/Library/Fonts/Supplemental/NotoSansTifinagh-Regular.ttf
-Noto Sans Old Persian - /System/Library/Fonts/Supplemental/NotoSansOldPersian-Regular.ttf
-Tamil Sangam MN - /System/Library/Fonts/Supplemental/Tamil Sangam MN.ttc
-Noto Sans Runic - /System/Library/Fonts/Supplemental/NotoSansRunic-Regular.ttf
-Snell Roundhand - /System/Library/Fonts/Supplemental/SnellRoundhand.ttc
-Bodoni 72 Smallcaps - /System/Library/Fonts/Supplemental/Bodoni 72 Smallcaps Book.ttf
-Noto Sans Kayah Li - /System/Library/Fonts/Supplemental/NotoSansKayahLi-Regular.ttf
-.SF Compact - /System/Library/Fonts/SFCompactItalic.ttf
-LiSong Pro - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/0e78e10f6c9d306bd197282bbc77c29c3ec1991f.asset/AssetData/LiSongPro.ttf
-Noto Sans Ol Chiki - /System/Library/Fonts/Supplemental/NotoSansOlChiki-Regular.ttf
-Thonburi - /System/Library/Fonts/Thonburi.ttc
-Hiragino Sans CNS - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/7912a7db209e28f561e770eb85a0ea9cb39f89ef.asset/AssetData/Hiragino_Sans_CNS.ttc
+STIXIntegralsSm - /System/Library/Fonts/Supplemental/STIXIntSmBol.otf
+Wawati TC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/693bb8838084c6f5f476acaa6741ad8eae9db8da.asset/AssetData/WawaTC-Regular.otf
 Apple Braille - /System/Library/Fonts/Apple Braille Outline 8 Dot.ttf
-Arial Unicode MS - /Library/Fonts/Arial Unicode.ttf
-Helvetica Neue - /System/Library/Fonts/HelveticaNeue.ttc
-Noto Serif Myanmar - /System/Library/Fonts/NotoSerifMyanmar.ttc
-Noto Sans Kannada - /System/Library/Fonts/NotoSansKannada.ttc
-Copperplate - /System/Library/Fonts/Supplemental/Copperplate.ttc
-Noto Sans Duployan - /System/Library/Fonts/Supplemental/NotoSansDuployan-Regular.ttf
-SignPainter - /System/Library/Fonts/Supplemental/SignPainter.ttc
-Noto Sans Ugaritic - /System/Library/Fonts/Supplemental/NotoSansUgaritic-Regular.ttf
-Devanagari Sangam MN - /System/Library/Fonts/Supplemental/Devanagari Sangam MN.ttc
-STIXSizeTwoSym - /System/Library/Fonts/Supplemental/STIXSizTwoSymReg.otf
-Noto Sans Meetei Mayek - /System/Library/Fonts/Supplemental/NotoSansMeeteiMayek-Regular.ttf
-Bodoni Ornaments - /System/Library/Fonts/Supplemental/Bodoni Ornaments.ttf
-Futura - /System/Library/Fonts/Supplemental/Futura.ttc
-Gurmukhi Sangam MN - /System/Library/Fonts/Supplemental/Gurmukhi Sangam MN.ttc
-Kailasa - /System/Library/Fonts/Supplemental/Kailasa.ttc
-Bangla MN - /System/Library/Fonts/Supplemental/Bangla MN.ttc
-Bodoni 72 - /System/Library/Fonts/Supplemental/Bodoni 72.ttc
-Noto Sans Old South Arabian - /System/Library/Fonts/Supplemental/NotoSansOldSouthArabian-Regular.ttf
-Noto Sans Kharoshthi - /System/Library/Fonts/Supplemental/NotoSansKharoshthi-Regular.ttf
-Zapfino - /System/Library/Fonts/Supplemental/Zapfino.ttf
-.SF NS Mono - /System/Library/Fonts/SFNSMono.ttf
-Helvetica - /System/Library/Fonts/Helvetica.ttc
-System Font - /System/Library/Fonts/SFNS.ttf
-Farisi - /System/Library/Fonts/Supplemental/Farisi.ttf
-Times New Roman - /System/Library/Fonts/Supplemental/Times New Roman Italic.ttf
-Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W2.ttc
-Kannada MN - /System/Library/Fonts/Supplemental/Kannada MN.ttc
-Devanagari MT - /System/Library/Fonts/Supplemental/DevanagariMT.ttc
-.Arabic UI Text - /System/Library/Fonts/ArabicUIText.ttc
-Noto Sans Brahmi - /System/Library/Fonts/Supplemental/NotoSansBrahmi-Regular.ttf
-Verdana - /System/Library/Fonts/Supplemental/Verdana Italic.ttf
-Lao MN - /System/Library/Fonts/Supplemental/Lao MN.ttc
-Noto Sans Glagolitic - /System/Library/Fonts/Supplemental/NotoSansGlagolitic-Regular.ttf
-Noto Sans Meroitic - /System/Library/Fonts/Supplemental/NotoSansMeroitic-Regular.ttf
-Raanana - /System/Library/Fonts/Supplemental/Raanana.ttc
-Weibei TC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/583519b80beacd4c491545da47385740f651e7a6.asset/AssetData/WeibeiTC-Bold.otf
-InaiMathi - /System/Library/Fonts/Supplemental/InaiMathi-MN.ttc
-Hannotate SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/d980a16edc19d62d8e2af1c1c99d786f6e01bbf9.asset/AssetData/Hannotate.ttc
-Papyrus - /System/Library/Fonts/Supplemental/Papyrus.ttc
-STIXIntegralsUpSm - /System/Library/Fonts/Supplemental/STIXIntUpSmReg.otf
-PSL Ornanong Pro - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/f9cb1a8cb284e4cfae229f476cbe49331215cc60.asset/AssetData/Ornanong.ttc
-ITF Devanagari - /System/Library/Fonts/Supplemental/ITFDevanagari.ttc
+Noto Sans Old Hungarian - /System/Library/Fonts/Supplemental/NotoSansOldHungarian-Regular.ttf
+PT Serif Caption - /System/Library/Fonts/Supplemental/PTSerifCaption.ttc
+Noto Sans Tai Le - /System/Library/Fonts/Supplemental/NotoSansTaiLe-Regular.ttf
+Noto Sans Inscriptional Pahlavi - /System/Library/Fonts/Supplemental/NotoSansInscriptionalPahlavi-Regular.ttf
+Kohinoor Telugu - /System/Library/Fonts/KohinoorTelugu.ttc
+Noto Sans Kayah Li - /System/Library/Fonts/Supplemental/NotoSansKayahLi-Regular.ttf
+STIXSizeThreeSym - /System/Library/Fonts/Supplemental/STIXSizThreeSymReg.otf
+Impact - /System/Library/Fonts/Supplemental/Impact.ttf
+Snell Roundhand - /System/Library/Fonts/Supplemental/SnellRoundhand.ttc
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W5.ttc
 Hoefler Text - /System/Library/Fonts/Supplemental/Hoefler Text Ornaments.ttf
+Nimbus Sans L - /Users/snake0/Library/Fonts/NimbusSanL-Reg.ttf
+Noto Sans Buginese - /System/Library/Fonts/Supplemental/NotoSansBuginese-Regular.ttf
+Arial - /System/Library/Fonts/Supplemental/Arial Bold.ttf
+Sinhala Sangam MN - /System/Library/Fonts/Supplemental/Sinhala Sangam MN.ttc
+Trebuchet MS - /System/Library/Fonts/Supplemental/Trebuchet MS.ttf
+Lao MN - /System/Library/Fonts/Supplemental/Lao MN.ttc
+Noto Sans Linear A - /System/Library/Fonts/Supplemental/NotoSansLinearA-Regular.ttf
+Sana - /System/Library/Fonts/Supplemental/Sana.ttc
+Weibei SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/fcc77abee40ac0268e0a78ea256448a23736fcaf.asset/AssetData/WeibeiSC-Bold.otf
+STIXIntegralsUpD - /System/Library/Fonts/Supplemental/STIXIntUpDReg.otf
+Avenir Next Condensed - /System/Library/Fonts/Avenir Next Condensed.ttc
+Trattatello - /System/Library/Fonts/Supplemental/Trattatello.ttf
 Noto Sans Sora Sompeng - /System/Library/Fonts/Supplemental/NotoSansSoraSompeng-Regular.ttf
-Sukhumvit Set - /System/Library/Fonts/Supplemental/SukhumvitSet.ttc
-Marion - /System/Library/Fonts/Supplemental/Marion.ttc
-Nanum Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/ee9e9584cd1a5f676e03a9efcc80783bc7e12e2c.asset/AssetData/NanumGothic.ttc
-Courier New - /System/Library/Fonts/Supplemental/Courier New Bold.ttf
+Apple Braille - /System/Library/Fonts/Apple Braille Pinpoint 6 Dot.ttf
+Noto Sans Palmyrene - /System/Library/Fonts/Supplemental/NotoSansPalmyrene-Regular.ttf
+Apple SD Gothic Neo - /System/Library/Fonts/AppleSDGothicNeo.ttc
+.Arabic UI Text - /System/Library/Fonts/ArabicUIText.ttc
+STIXIntegralsUp - /System/Library/Fonts/Supplemental/STIXIntUpBol.otf
+Heiti TC - /System/Library/Fonts/STHeiti Medium.ttc
 SF Mono - /Users/snake0/Library/Fonts/SFMono-Regular.otf
-Noto Sans Tai Viet - /System/Library/Fonts/Supplemental/NotoSansTaiViet-Regular.ttf
-Courier New - /System/Library/Fonts/Supplemental/Courier New.ttf
+Noto Sans Armenian - /System/Library/Fonts/NotoSansArmenian.ttc
+Noto Sans Osage - /System/Library/Fonts/Supplemental/NotoSansOsage-Regular.ttf
+Noto Sans Batak - /System/Library/Fonts/Supplemental/NotoSansBatak-Regular.ttf
+Noto Sans Gothic - /System/Library/Fonts/Supplemental/NotoSansGothic-Regular.ttf
+Courier New - /System/Library/Fonts/Supplemental/Courier New Bold.ttf
+Brush Script MT - /System/Library/Fonts/Supplemental/Brush Script.ttf
+Wawati SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/4c5fb4ab37ef16487d14e6bfa70a8b98f7e1efa8.asset/AssetData/WawaSC-Regular.otf
+Xingkai SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/fedef1896002be99406da1bf1a1a6104a1737b39.asset/AssetData/Xingkai.ttc
+Luminari - /System/Library/Fonts/Supplemental/Luminari.ttf
+System Font - /System/Library/Fonts/SFNS.ttf
+Noto Sans Old Turkic - /System/Library/Fonts/Supplemental/NotoSansOldTurkic-Regular.ttf
+Noto Sans Hanifi Rohingya - /System/Library/Fonts/Supplemental/NotoSansHanifiRohingya-Regular.ttf
+Noto Sans Tirhuta - /System/Library/Fonts/Supplemental/NotoSansTirhuta-Regular.ttf
+.Arabic UI Display - /System/Library/Fonts/ArabicUIDisplay.ttc
+STIXGeneral - /System/Library/Fonts/Supplemental/STIXGeneralBol.otf
+STIXGeneral - /System/Library/Fonts/Supplemental/STIXGeneral.otf
+.SF NS Mono - /System/Library/Fonts/SFNSMono.ttf
+LiSong Pro - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/0e78e10f6c9d306bd197282bbc77c29c3ec1991f.asset/AssetData/LiSongPro.ttf
+STIXNonUnicode - /System/Library/Fonts/Supplemental/STIXNonUniIta.otf
+.SF Compact Rounded - /System/Library/Fonts/SFCompactRounded.ttf
+Apple LiGothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/8ad04015359b75f65d68b465cbab918051c72e6d.asset/AssetData/AppleLiGothic-Medium.ttf
+Avenir Next - /System/Library/Fonts/Avenir Next.ttc
+Phosphate - /System/Library/Fonts/Supplemental/Phosphate.ttc
+Lao Sangam MN - /System/Library/Fonts/Supplemental/Lao Sangam MN.ttf
+Chalkboard SE - /System/Library/Fonts/Supplemental/ChalkboardSE.ttc
+Al Bayan - /System/Library/Fonts/Supplemental/AlBayan.ttc
+STIXSizeTwoSym - /System/Library/Fonts/Supplemental/STIXSizTwoSymBol.otf
+Noto Sans Imperial Aramaic - /System/Library/Fonts/Supplemental/NotoSansImperialAramaic-Regular.ttf
+Superclarendon - /System/Library/Fonts/Supplemental/SuperClarendon.ttc
+Noto Sans Ol Chiki - /System/Library/Fonts/Supplemental/NotoSansOlChiki-Regular.ttf
+Courier New - /System/Library/Fonts/Supplemental/Courier New Bold Italic.ttf
+Noto Sans Marchen - /System/Library/Fonts/Supplemental/NotoSansMarchen-Regular.ttf
+Klee - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/a5578564cd8cb162d7ba1544317ef3ae407bf939.asset/AssetData/Klee.ttc
+Noto Sans Cuneiform - /System/Library/Fonts/Supplemental/NotoSansCuneiform-Regular.ttf
 Noto Sans Lisu - /System/Library/Fonts/Supplemental/NotoSansLisu-Regular.ttf
+Verdana - /System/Library/Fonts/Supplemental/Verdana Italic.ttf
+Yuppy SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/c2e85ff2325814a0f6ebd90957fbdb5e5b396867.asset/AssetData/YuppySC-Regular.otf
 Noto Sans Egyptian Hieroglyphs - /System/Library/Fonts/Supplemental/NotoSansEgyptianHieroglyphs-Regular.ttf
-Myanmar MN - /System/Library/Fonts/Supplemental/Myanmar MN.ttc
-Kannada Sangam MN - /System/Library/Fonts/Supplemental/Kannada Sangam MN.ttc
+Noto Sans Cypriot - /System/Library/Fonts/Supplemental/NotoSansCypriot-Regular.ttf
+Oriya Sangam MN - /System/Library/Fonts/Supplemental/Oriya Sangam MN.ttc
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W4.ttc
+.SF NS Rounded - /System/Library/Fonts/SFNSRounded.ttf
+Oriya MN - /System/Library/Fonts/Supplemental/Oriya MN.ttc
+Hannotate SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/d980a16edc19d62d8e2af1c1c99d786f6e01bbf9.asset/AssetData/Hannotate.ttc
+Comic Sans MS - /System/Library/Fonts/Supplemental/Comic Sans MS Bold.ttf
+STIXNonUnicode - /System/Library/Fonts/Supplemental/STIXNonUniBol.otf
+Khmer Sangam MN - /System/Library/Fonts/Supplemental/Khmer Sangam MN.ttf
+Noto Sans Syriac - /System/Library/Fonts/Supplemental/NotoSansSyriac-Regular.ttf
+Noto Sans Bassa Vah - /System/Library/Fonts/Supplemental/NotoSansBassaVah-Regular.ttf
+Noto Sans Adlam - /System/Library/Fonts/Supplemental/NotoSansAdlam-Regular.ttf
+AppleMyungjo - /System/Library/Fonts/Supplemental/AppleMyungjo.ttf
+Symbol - /System/Library/Fonts/Symbol.ttf
+Noto Sans Siddham - /System/Library/Fonts/Supplemental/NotoSansSiddham-Regular.ttf
+Noto Sans Mandaic - /System/Library/Fonts/Supplemental/NotoSansMandaic-Regular.ttf
+Copperplate - /System/Library/Fonts/Supplemental/Copperplate.ttc
+Noto Sans Bamum - /System/Library/Fonts/Supplemental/NotoSansBamum-Regular.ttf
+Noto Sans Old Italic - /System/Library/Fonts/Supplemental/NotoSansOldItalic-Regular.ttf
+Tsukushi A Round Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/8def8795a8bc5906be76cb45d9ca92ff305adb0f.asset/AssetData/TsukushiAMaruGothic.ttc
+STHeiti - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/a4374b18bc562b80a5a4940e1f2008bbd58156c4.asset/AssetData/STXIHEI.ttf
+Bangla MN - /System/Library/Fonts/Supplemental/Bangla MN.ttc
+PingFang HK - /System/Library/Fonts/PingFang.ttc
+Arial - /System/Library/Fonts/Supplemental/Arial.ttf
+Farisi - /System/Library/Fonts/Supplemental/Farisi.ttf
+Noto Sans Miao - /System/Library/Fonts/Supplemental/NotoSansMiao-Regular.ttf
+Sinhala MN - /System/Library/Fonts/Supplemental/Sinhala MN.ttc
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W9.ttc
+Arial - /System/Library/Fonts/Supplemental/Arial Italic.ttf
+Georgia - /System/Library/Fonts/Supplemental/Georgia Italic.ttf
+Krungthep - /System/Library/Fonts/Supplemental/Krungthep.ttf
+Arial Narrow - /System/Library/Fonts/Supplemental/Arial Narrow.ttf
+PilGi - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/28e55afbf7022f012e4a3ef68fa96d9a71bd1cd7.asset/AssetData/Pilgiche.ttf
+Bangla Sangam MN - /System/Library/Fonts/Supplemental/Bangla Sangam MN.ttc
+American Typewriter - /System/Library/Fonts/Supplemental/AmericanTypewriter.ttc
+Noto Sans Osmanya - /System/Library/Fonts/Supplemental/NotoSansOsmanya-Regular.ttf
+PCMyungjo - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/96887f5398e3fc37ec326507b9ca72c87be57ff7.asset/AssetData/PCmyoungjo.ttf
+STIXIntegralsUp - /System/Library/Fonts/Supplemental/STIXIntUpReg.otf
+Kokonor - /System/Library/Fonts/Supplemental/Kokonor.ttf
+DecoType Naskh - /System/Library/Fonts/Supplemental/DecoTypeNaskh.ttc
+Noto Sans Multani - /System/Library/Fonts/Supplemental/NotoSansMultani-Regular.ttf
+Beirut - /System/Library/Fonts/Supplemental/Beirut.ttc
+SignPainter - /System/Library/Fonts/Supplemental/SignPainter.ttc
+Noto Sans Coptic - /System/Library/Fonts/Supplemental/NotoSansCoptic-Regular.ttf
+Noto Sans Yi - /System/Library/Fonts/Supplemental/NotoSansYi-Regular.ttf
+Hiragino Sans GB - /System/Library/Fonts/Hiragino Sans GB.ttc
+Palatino - /System/Library/Fonts/Palatino.ttc
+Heiti TC - /System/Library/Fonts/STHeiti Light.ttc
+Bodoni 72 - /System/Library/Fonts/Supplemental/Bodoni 72.ttc
+Andale Mono - /System/Library/Fonts/Supplemental/Andale Mono.ttf
+Times New Roman - /System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf
+Marion - /System/Library/Fonts/Supplemental/Marion.ttc
+Noto Sans Duployan - /System/Library/Fonts/Supplemental/NotoSansDuployan-Regular.ttf
+Courier New - /System/Library/Fonts/Supplemental/Courier New.ttf
+Kannada MN - /System/Library/Fonts/Supplemental/Kannada MN.ttc
+Noto Sans Nabataean - /System/Library/Fonts/Supplemental/NotoSansNabataean-Regular.ttf
+Noto Sans NKo - /System/Library/Fonts/Supplemental/NotoSansNKo-Regular.ttf
+Muna - /System/Library/Fonts/Supplemental/Muna.ttc
+Noto Sans Oriya - /System/Library/Fonts/NotoSansOriya.ttc
+Baoli SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/c91371d5492434af5929487028bf10767406267c.asset/AssetData/Baoli.ttc
+HanziPen SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/cb9a85576455613deae27ccbede3cece696b39c0.asset/AssetData/Hanzipen.ttc
+Tamil MN - /System/Library/Fonts/Supplemental/Tamil MN.ttc
+.New York - /System/Library/Fonts/NewYork.ttf
+Zapfino - /System/Library/Fonts/Supplemental/Zapfino.ttf
+Helvetica Neue - /System/Library/Fonts/HelveticaNeue.ttc
+Noto Sans Pahawh Hmong - /System/Library/Fonts/Supplemental/NotoSansPahawhHmong-Regular.ttf
+Farah - /System/Library/Fonts/Supplemental/Farah.ttc
+Hiragino Maru Gothic Pro - /System/Library/Fonts/ヒラギノ丸ゴ ProN W4.ttc
+.Aqua Kana - /System/Library/Fonts/AquaKana.ttc
+.SF Compact - /System/Library/Fonts/SFCompact.ttf
+Silom - /System/Library/Fonts/Supplemental/Silom.ttf
+STIXIntegralsUpD - /System/Library/Fonts/Supplemental/STIXIntUpDBol.otf
+STIXSizeTwoSym - /System/Library/Fonts/Supplemental/STIXSizTwoSymReg.otf
+Myanmar Sangam MN - /System/Library/Fonts/Supplemental/Myanmar Sangam MN.ttc
+Devanagari Sangam MN - /System/Library/Fonts/Supplemental/Devanagari Sangam MN.ttc
+Noto Sans Carian - /System/Library/Fonts/Supplemental/NotoSansCarian-Regular.ttf
+Noto Sans Syloti Nagri - /System/Library/Fonts/Supplemental/NotoSansSylotiNagri-Regular.ttf
+DIN Condensed - /System/Library/Fonts/Supplemental/DIN Condensed Bold.ttf
+Marker Felt - /System/Library/Fonts/MarkerFelt.ttc
+New Peninim MT - /System/Library/Fonts/Supplemental/NewPeninimMT.ttc
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W3.ttc
+Noto Sans Phoenician - /System/Library/Fonts/Supplemental/NotoSansPhoenician-Regular.ttf
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W8.ttc
+Yuppy TC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/b6c310298897f0ac2b38dafd41cef452a0557a31.asset/AssetData/YuppyTC-Regular.otf
+Noto Sans Runic - /System/Library/Fonts/Supplemental/NotoSansRunic-Regular.ttf
+PSL Ornanong Pro - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/f9cb1a8cb284e4cfae229f476cbe49331215cc60.asset/AssetData/Ornanong.ttc
+STIXSizeOneSym - /System/Library/Fonts/Supplemental/STIXSizOneSymBol.otf
+STIXGeneral - /System/Library/Fonts/Supplemental/STIXGeneralBolIta.otf
+Baskerville - /System/Library/Fonts/Supplemental/Baskerville.ttc
+Khmer MN - /System/Library/Fonts/Supplemental/Khmer MN.ttc
+Herculanum - /System/Library/Fonts/Supplemental/Herculanum.ttf
+Kaiti SC - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/00e58c0676b9e589e9309dbca4b795bbba3b5420.asset/AssetData/Kaiti.ttc
+Diwan Kufi - /System/Library/Fonts/Supplemental/Diwan Kufi.ttc
+GungSeo - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/ac3e154cec7affea536ee3a5a859b0dd78eb0c17.asset/AssetData/Gungseouche.ttf
+System Font - /System/Library/Fonts/SFNSItalic.ttf
+Noto Sans Brahmi - /System/Library/Fonts/Supplemental/NotoSansBrahmi-Regular.ttf
+YuGothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/16410f7b0c96b4bb08d952fa04d67cd65a42f1b7.asset/AssetData/YuGothic-Bold.otf
+Arial Narrow - /System/Library/Fonts/Supplemental/Arial Narrow Italic.ttf
+Georgia - /System/Library/Fonts/Supplemental/Georgia Bold.ttf
+Hiragino Sans - /System/Library/Fonts/ヒラギノ角ゴシック W6.ttc
+Apple Braille - /System/Library/Fonts/Apple Braille Pinpoint 8 Dot.ttf
+Noto Sans Javanese - /System/Library/Fonts/Supplemental/NotoSansJavanese-Regular.otf
+.SF Compact - /System/Library/Fonts/SFCompactItalic.ttf
+Hei - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/36440aa0be75aaa7a1fab8c5c42930b7d407dc48.asset/AssetData/Hei.ttf
+Noto Sans Tai Viet - /System/Library/Fonts/Supplemental/NotoSansTaiViet-Regular.ttf
+Gurmukhi MN - /System/Library/Fonts/Supplemental/Gurmukhi MN.ttc
+Baghdad - /System/Library/Fonts/Supplemental/Baghdad.ttc
+Noto Sans Old Persian - /System/Library/Fonts/Supplemental/NotoSansOldPersian-Regular.ttf
+Noto Sans Meetei Mayek - /System/Library/Fonts/Supplemental/NotoSansMeeteiMayek-Regular.ttf
+Optima - /System/Library/Fonts/Optima.ttc
+Noto Sans Limbu - /System/Library/Fonts/Supplemental/NotoSansLimbu-Regular.ttf
+STIXSizeFourSym - /System/Library/Fonts/Supplemental/STIXSizFourSymReg.otf
+Georgia - /System/Library/Fonts/Supplemental/Georgia.ttf
+Noto Sans Lydian - /System/Library/Fonts/Supplemental/NotoSansLydian-Regular.ttf
+Arial Black - /System/Library/Fonts/Supplemental/Arial Black.ttf
+Futura - /System/Library/Fonts/Supplemental/Futura.ttc
+Noto Sans Old Permic - /System/Library/Fonts/Supplemental/NotoSansOldPermic-Regular.ttf
+Noto Sans Pau Cin Hau - /System/Library/Fonts/Supplemental/NotoSansPauCinHau-Regular.ttf
+Noto Sans Warang Citi - /System/Library/Fonts/Supplemental/NotoSansWarangCiti-Regular.ttf
+Malayalam Sangam MN - /System/Library/Fonts/Supplemental/Malayalam Sangam MN.ttc
+Noto Sans Psalter Pahlavi - /System/Library/Fonts/Supplemental/NotoSansPsalterPahlavi-Regular.ttf
+Arial Narrow - /System/Library/Fonts/Supplemental/Arial Narrow Bold Italic.ttf
+STIXVariants - /System/Library/Fonts/Supplemental/STIXVarBol.otf
+Plantagenet Cherokee - /System/Library/Fonts/Supplemental/PlantagenetCherokee.ttf
+YuKyokasho Yoko - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/bf3dc4579b9aab95801aaba773fc9bb83893b991.asset/AssetData/Kyokasho.ttc
+Iowan Old Style - /System/Library/Fonts/Supplemental/Iowan Old Style.ttc
+STIXSizeFourSym - /System/Library/Fonts/Supplemental/STIXSizFourSymBol.otf
+Nanum Gothic - /System/Library/AssetsV2/com_apple_MobileAsset_Font6/ee9e9584cd1a5f676e03a9efcc80783bc7e12e2c.asset/AssetData/NanumGothic.ttc

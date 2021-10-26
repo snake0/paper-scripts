@@ -12,7 +12,7 @@ matplotlib.rcParams['ps.fonttype'] = 42
 matplotlib.rcParams['xtick.direction'] = 'in'
 matplotlib.rcParams['ytick.direction'] = 'in'
 
-plt.rc('font', family='Helvetica Neue', weight='medium', size=11)
+plt.rc('font', family='Nimbus Sans L', weight='medium', size=11)
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 #
 x = range(0, 4)

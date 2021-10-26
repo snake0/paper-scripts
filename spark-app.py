@@ -7,10 +7,10 @@ matplotlib.rcParams['ps.fonttype'] = 42
 
 font_size=38
 font = {'size': font_size,}
-plt.rc('font', family='Helvetica Neue', weight='medium')
+plt.rc('font', family='Nimbus Sans L', weight='medium')
 
 # font = {'size': font_size, 'family': 'Helvetica Neue', 'weight': 'medium'}
-# plt.rc('font', family='Helvetica Neue', weight='medium')
+# plt.rc('font', family='Nimbus Sans L', weight='medium')
 fig, ax = plt.subplots()
 fig.set_size_inches(10, 7.85)
 plt.subplots_adjust(top=0.90, right=0.94,left=0.2)

@@ -11,7 +11,7 @@ matplotlib.rcParams['ps.fonttype'] = 42
 font_size = 30
 
 font = {'size': font_size, 'family': 'Helvetica Neue', 'weight': 'medium'}
-plt.rc('font', family='Helvetica Neue', weight='medium')
+plt.rc('font', family='Nimbus Sans L', weight='medium')
 fig = plt.figure()
 fig.set_size_inches(16, 9.5)
 x = np.arange(0, 100)

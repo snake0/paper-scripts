@@ -6,7 +6,7 @@ import matplotlib
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium',size=11)
+plt.rc('font', family='Nimbus Sans L', weight='medium',size=11)
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 
 x = [8, 16, 24, 32]
@@ -33,7 +33,7 @@ plt.plot(x, b10,linewidth=2, marker="x",markersize=8,label="Barrelfish",color=co
 plt.plot(x, l10,linewidth=2, marker="x",markersize=8,label="Linux",color=colors[0])
 plt.xlim(8, 32)
 plt.ylim(0, 300)
-plt.xlabel('# of vCPUs')
+plt.xlabel('# vCPUs')
 plt.ylabel('RPS (Ops/s)')
 plt.xticks(range(8,40,8),["4x2","4x4","4x6","4x8"])
 plt.yticks([0,100,200,300])
@@ -51,7 +51,7 @@ plt.plot(x, b20,linewidth=2, marker="x",markersize=8,label="Barrelfish",color=co
 plt.plot(x, l20,linewidth=2, marker="x",markersize=8,label="Linux",color=colors[2])
 plt.xlim(8, 32)
 plt.ylim(0, 300)
-plt.xlabel('# of vCPUs')
+plt.xlabel('# vCPUs')
 plt.xticks(range(8,40,8),["4x2","4x4","4x6","4x8"])
 plt.yticks([0,100,200,300])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
@@ -67,7 +67,7 @@ plt.subplot(133)
 plt.plot(x, b40,linewidth=2, marker="x",markersize=8,label="Barrelfish",color=colors[3],linestyle="dotted")
 plt.plot(x, l40,linewidth=2, marker="x",markersize=8,label="Linux",color=colors[3])
 plt.xlim(8, 32)
-plt.xlabel('# of vCPUs')
+plt.xlabel('# vCPUs')
 plt.xticks(range(8,40,8),["4x2","4x4","4x6","4x8"])
 plt.yticks([0,100,200,300])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))

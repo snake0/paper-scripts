@@ -131,7 +131,7 @@ f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 # plt.ylim(min(nb) - 50, max(clique) + 1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
-# plt.xlabel('# of vCPUs')
+# plt.xlabel('# vCPUs')
 # plt.yticks([])
 # plt.ylabel('Percentage of Improvement')
 plt.xticks(x, name, rotation=12, size=11)

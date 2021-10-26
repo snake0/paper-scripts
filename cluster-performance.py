@@ -6,7 +6,7 @@ import numpy as np
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium', size=11)
+plt.rc('font', family='Nimbus Sans L', weight='medium', size=11)
 
 fig, ax = plt.subplots()
 fig.set_size_inches(5.5, 3.3)
@@ -71,7 +71,7 @@ plt.xlim(-0.5, 9.5)
 plt.ylim(min(nb)-50, max(clique)+1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
-# plt.xlabel('# of vCPUs')
+# plt.xlabel('# vCPUs')
 # plt.yticks([])
 # plt.ylabel('Percentage of Improvement')
 plt.xticks(x, name, rotation=90,fontsize=12)

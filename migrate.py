@@ -5,7 +5,7 @@ import numpy as np
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
-plt.rc('font', family='Helvetica Neue', weight='medium', size=13)
+plt.rc('font', family='Nimbus Sans L', weight='medium', size=13)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 

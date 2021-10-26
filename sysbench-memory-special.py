@@ -7,7 +7,7 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
 font = {'size': 24, 'family': 'Helvetica Neue', 'weight': 'medium'}
-plt.rc('font', family='Helvetica Neue', weight='medium')
+plt.rc('font', family='Nimbus Sans L', weight='medium')
 fig = plt.figure()
 fig.set_size_inches(10, 7.85)
 
