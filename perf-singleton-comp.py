@@ -9,14 +9,21 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 matplotlib.rcParams['xtick.direction'] = 'in'
 matplotlib.rcParams['ytick.direction'] = 'in'
+matplotlib.rcParams['axes.linewidth'] = 0.5  # set the value globally
 
-plt.rc('font', family='Nimbus Sans L', size=13)
+
+plt.rc('font', family='Nimbus Sans L')
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
-fig = plt.figure()
+
+fig,ax = plt.subplots()
 bax = brokenaxes(xlims=None, ylims=((0, 7.5), (20.5, 23)), hspace=.1, despine=False)
 fig.set_size_inches(6.5, 6.5)
+
+plt.tick_params(top=True,bottom=False,left=True,right=False)
+ax.set_axisbelow(True)
+
 
 normal = np.array([1, 1, 1, 1, 1, 1])
 
@@ -110,7 +117,9 @@ plt.xlim([-width * 1.8 - sep - 0.05, 5 + width * 1.8 + sep + 0.05])
 
 # plt.tight_layout()
 # plt.title("Single-thread Throughput Improvement")
-plt.savefig('./newimgs/perf-singleton-comp.pdf', dpi=300, bbox_inches='tight')
+
+plt.savefig('/Users/snake0/taco-journal/newimgs/singleton-comp.pdf', dpi=300, bbox_inches='tight')
+
 plt.show()
 
 plt.close()

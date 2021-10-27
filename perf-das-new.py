@@ -7,13 +7,18 @@ matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 matplotlib.rcParams['xtick.direction'] = 'in'
 matplotlib.rcParams['ytick.direction'] = 'in'
+matplotlib.rcParams['axes.linewidth'] = 0.5  # set the value globally
 
-plt.rc('font', family='Nimbus Sans L', size=13)
+
+plt.rc('font', family='Nimbus Sans L')
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
 fig, ax = plt.subplots()
-fig.set_size_inches(6.5, 2.8)
+fig.set_size_inches(7.995,2.214)
+
+plt.tick_params(top=True,bottom=False,left=True,right=False)
+ax.set_axisbelow(True)
 
 normal = np.array([1, 1, 1, 1, 1, 1, 1, 1])
 
@@ -43,7 +48,7 @@ x = np.arange(len(das))
 # colors = ["#366EAA", "#71A1E2", "#DDF2FF"]
 colors = ["#f5f7c8", "#c3ddbd", "#7eb6bd"]
 
-width = 0.23
+width = 0.17
 
 sep = 0.00
 
@@ -66,22 +71,22 @@ def autolabel(rects, array, heights):
         ax.text(s=s,
                 x=rect.get_x() + rect.get_width() / 2 + 0.02, y=height - offset,
 
-                va='bottom', size=11, rotation=90, ha='center')
+                va='bottom', rotation=90,size=10, ha='center')
 
 
-b1 = plt.bar(x - width * 1.2 - sep, das, width,
-             color=colors[0], edgecolor="black", label='DaS', linewidth=0.6)
-autolabel(b1, das_l, das + 0.07)
+b1 = plt.bar(x - width * 1.25 - sep, das, width,
+             color=colors[0], edgecolor="black", label='DaS',  linewidth=0.7)
+autolabel(b1, das_l, das +0.03)
 
 b2 = plt.bar(x, cfs, width,
-             color=colors[1], edgecolor="black", label='CFS', linewidth=0.6)
-autolabel(b2, cfs_l, cfs + 0.07)
+             color=colors[1], edgecolor="black", label='CFS',  linewidth=0.7)
+autolabel(b2, cfs_l, cfs +0.03 )
 
-b3 = plt.bar(x + width * 1.2 + sep, nb, width,
-             color=colors[2], edgecolor="black", label='NUMA Balancing', linewidth=0.6)
-autolabel(b3, nb_l, nb + 0.07)
+b3 = plt.bar(x + width * 1.25 + sep, nb, width,
+             color=colors[2], edgecolor="black", label='NUMA Balancing',  linewidth=0.7)
+autolabel(b3, nb_l, nb  +0.03)
 
-f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
+# f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 
 
 def to_percent(temp, position):
@@ -90,27 +95,31 @@ def to_percent(temp, position):
 
 plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(to_percent))
 
-plt.xlim(-0.5, 9.5)
-plt.ylim(0.0, 1.2)
+plt.xlim(-1., 10)
+plt.ylim(0.0, 1.1)
 # plt.ylim(min(nb) - 50, max(clique) + 1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
 # plt.xlabel('# vCPUs')
-plt.yticks([0, 1])
-plt.xticks(x, name, rotation=00, size=11)
+# plt.yticks([0, 1])
+plt.xticks(x, name, rotation=00)
+plt.yticks([0,0.2,0.4,0.6,0.8,1])
 
-plt.grid(axis='y', linewidth=0.8, linestyle=(0, (5, 3)))
+# plt.grid(axis='y', linewidth=0.7, linestyle=(0, (5, 3)))
+plt.grid(axis='y',linewidth=0.4,linestyle=(0,(2,4)),color = "#000000")
 
-ax.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1),
-          fancybox=False, shadow=False, ncol=3, frameon=False, prop={'size': 14})
+ax.legend(loc='upper right',facecolor='white',framealpha=1.0,
+        frameon=True,ncol=3, edgecolor='white')
+plt.ylabel("Normalized Results")
 
-ax.tick_params(length=0)
+# ax.tick_params(length=0)
 
-plt.xlim([-width * 1.8 - sep - 0.05, 7 + width * 1.8 + sep + 0.05])
+plt.xlim([-width * 1.8 - sep - 0.05-0.3, 7 + width * 1.8 + sep + 0.05+0.3])
 
 plt.tight_layout()
 # plt.title("Single-thread Throughput Improvement")
-plt.savefig('./newimgs/perf-das-new.pdf', dpi=300, bbox_inches='tight')
+
+plt.savefig('/Users/snake0/taco-journal/newimgs/das-new.pdf', dpi=300, bbox_inches='tight')
 plt.show()
 
 plt.close()

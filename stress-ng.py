@@ -70,7 +70,7 @@ ax.legend(["GiantVM"], loc=2, prop={'size': 28}, frameon=False,facecolor="white"
 
 # plt.hlines(1.0,-1,len(x),colors="#4a7cac",linestyles="dotted",linewidth=3)
 plt.xlim(-1,len(x))
-plt.grid(True,linewidth=0.8,linestyle=(0,(5,3)),axis="y")
+plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 plt.yticks([0,1.0])
 plt.ylim(0,1.47)
 #plt.tight_layout()

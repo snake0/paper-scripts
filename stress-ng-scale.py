@@ -16,6 +16,7 @@ if __name__ == "__main__":
     matplotlib.rcParams['pdf.fonttype'] = 42
     matplotlib.rcParams['ps.fonttype'] = 42
     plt.rc('font', family='Nimbus Sans L', weight='medium',size=14)
+    matplotlib.rcParams['axes.linewidth'] = 0.5  # set the value globally
 
     # colors & labels
     labels = ['ackermann', 'clongdouble', 'decimal128', 'fft', 'hamming', 'jenkin', 'matrixprod', 'nsqrt', 'rand48']
@@ -42,7 +43,7 @@ if __name__ == "__main__":
     ax.set_aspect(aspect)
     fig.tight_layout()
 
-    plt.gca().yaxis.grid(True, linestyle = '--')
+    plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 
     plt.subplots_adjust(bottom=0.0, top=1.1)
 

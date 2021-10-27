@@ -5,7 +5,7 @@ import matplotlib
 import pandas as pd
 import seaborn as sns
 
-data = pd.read_excel('C:/Develop/PythonDemos/paper/rdma-tcp-lat.xlsx', header=0, usecols=[1, 3])
+data = pd.read_excel('~/Downloads/rdma-tcp-lat.xlsx', header=0, usecols=[0,1,2])
 
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
@@ -18,8 +18,11 @@ f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 x = range(1000)
 # x_title = ['64B', '128B', '256B', '512B', '1K', '2K', '4K', '8K', '16K', '32K', '64K', '128K', '256K', '512K', '1M',
 #            '2M']
-y1 = data['Non-owner Write TCP(us)'].values.tolist()
-y2 = data['Non-owner Write RDMA(us)'].values.tolist()
+y1 = data['Non-owner Write TCP'].values.tolist()
+y2 = data['Non-owner Write RDMA'].values.tolist()
+
+print(y1,y2)
+exit
 
 y1_min = np.min(y1)
 y1_max = np.max(y1)
@@ -69,8 +72,8 @@ plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
 # plt.title(titles[0])
 #
 fig.tight_layout()
-# fig.savefig('/Users/snake0/taco-journal/newimgs/sysbench-memory-all.pdf', dpi=100)
-fig.savefig('./newimgs/non-write-latency.pdf', dpi=100)
+fig.savefig('/Users/snake0/taco-journal/newimgs/non-write-latency.pdf', dpi=100)
+# fig.savefig('./newimgs/non-write-latency.pdf', dpi=100)
 plt.show()
 
 plt.close()
