@@ -9,6 +9,9 @@ matplotlib.rcParams['ps.fonttype'] = 42
 plt.rcParams['xtick.direction'] = 'in'  # 将x周的刻度线方向设置向内
 plt.rcParams['ytick.direction'] = 'in'  # 将y轴的刻度方向设置向内
 
+matplotlib.rcParams['axes.linewidth'] = 0.5  # set the value globally
+
+
 plt.rc('font', family='Nimbus Sans L', weight='medium',size=11)
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 
@@ -57,7 +60,7 @@ plt.ylim(0.07,1000)
 plt.xlabel('# vCPUs')
 plt.ylabel('File I/O Speed (MiB/s)')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
-plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
+plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 plt.yscale('log')
 plt.legend(facecolor='white',framealpha=1.0,
         loc='best',frameon=True,ncol=1, edgecolor='white')
@@ -77,7 +80,7 @@ plt.ylim(0.07,1000)
 plt.yscale('log')
 plt.xlabel('# vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
-plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
+plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 plt.legend(facecolor='white',framealpha=1.0,
         loc='best',frameon=True,ncol=1, edgecolor='white')
 plt.title(titles[3])
