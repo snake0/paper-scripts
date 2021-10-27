@@ -41,7 +41,8 @@ plt.ylabel('RPS (Ops/s)')
 plt.xticks(range(8,40,8),["4x2","4x4","4x6","4x8"])
 plt.yticks([0,100,200,300])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.legend(loc=1)
+plt.legend(facecolor='white',framealpha=1.0,
+        loc='best',frameon=True,ncol=1, edgecolor='white')
 plt.title(titles[0])
 
 
@@ -58,7 +59,8 @@ plt.xlabel('# vCPUs')
 plt.xticks(range(8,40,8),["4x2","4x4","4x6","4x8"])
 plt.yticks([0,100,200,300])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.legend(loc=1)
+plt.legend(facecolor='white',framealpha=1.0,
+        loc='best',frameon=True,ncol=1, edgecolor='white')
 plt.title(titles[1])
 
 
@@ -74,7 +76,8 @@ plt.xlabel('# vCPUs')
 plt.xticks(range(8,40,8),["4x2","4x4","4x6","4x8"])
 plt.yticks([0,100,200,300])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.legend(loc=1)
+plt.legend(facecolor='white',framealpha=1.0,
+        loc='best',frameon=True,ncol=1, edgecolor='white')
 plt.title(titles[2])
 
 

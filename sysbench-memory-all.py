@@ -50,7 +50,8 @@ plt.xlabel('# vCPUs')
 plt.ylabel('Memory Transfer Speed (GiB/s)')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.legend(loc=4)
+plt.legend(facecolor='white',framealpha=1.0,
+        loc='best',frameon=True,ncol=1, edgecolor='white')
 plt.title(titles[0])
 
 # g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
@@ -67,7 +68,8 @@ plt.xlim(4, 24)
 plt.xlabel('# vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.legend(loc=4)
+plt.legend(facecolor='white',framealpha=1.0,
+        loc='best',frameon=True,ncol=1, edgecolor='white')
 plt.title(titles[1])
 
 # g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
@@ -84,7 +86,8 @@ plt.xlim(4, 24)
 plt.xlabel('# vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.legend(loc=4)
+plt.legend(facecolor='white',framealpha=1.0,
+        loc='best',frameon=True,ncol=1, edgecolor='white')
 plt.title(titles[2])
 
 # g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
@@ -101,7 +104,8 @@ plt.yscale('log')
 plt.xlabel('# vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
 plt.grid(axis='y',linewidth=0.8,linestyle=(0,(5,3)))
-plt.legend(loc='best')
+plt.legend(facecolor='white',framealpha=1.0,
+        loc='best',frameon=True,ncol=1, edgecolor='white')
 plt.title(titles[3])
 
 # g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))

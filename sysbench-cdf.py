@@ -62,7 +62,8 @@ colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 # g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
 # plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
 #
-# plt.legend(loc=4)
+# plt.legend(facecolor='white',framealpha=1.0,
+#         loc='best',frameon=True,ncol=1, edgecolor='white')
 
 
 
@@ -91,7 +92,8 @@ colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 # g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
 # plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
 #
-# plt.legend(loc=4)
+# plt.legend(facecolor='white',framealpha=1.0,
+#         loc='best',frameon=True,ncol=1, edgecolor='white')
 
 
 
@@ -122,7 +124,8 @@ colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 # g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
 # plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
 #
-# plt.legend(loc=4)
+# plt.legend(facecolor='white',framealpha=1.0,
+#         loc='best',frameon=True,ncol=1, edgecolor='white')
 
 
 
@@ -158,7 +161,8 @@ plt.title("Top 100 Pages")
 # g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
 # plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
 
-plt.legend(loc=4)
+plt.legend(facecolor='white',framealpha=1.0,
+        loc='best',frameon=True,ncol=1, edgecolor='white')
 # plt.subplots_adjust(left=0.35,bottom=-0.05)
 
 
