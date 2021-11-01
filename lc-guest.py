@@ -20,7 +20,7 @@ fig, ax = plt.subplots()
 fig.set_size_inches(3., 2.4)
 plt.subplots_adjust()
 
-x = ["w/o", "naïve", "Yanni"]
+x = ["w/o", "naïve", "LaS"]
 lc_guest = [1, 708.0166667/810.7166667, 714.0166667/810.7166667]
 
 xrange = np.arange(len(x))

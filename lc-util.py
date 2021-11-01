@@ -19,7 +19,7 @@ fig, ax = plt.subplots()
 fig.set_size_inches(3.3, 2.4)
 plt.subplots_adjust()
 
-x = ["w/o", "naïve", "Yanni"]
+x = ["w/o", "naïve", "LaS"]
 lc_util = [30.6147614, 36.10551394, 41.28190491]
 lc_gini = [0.568788477, 0.48619563, 0.425715139]
 

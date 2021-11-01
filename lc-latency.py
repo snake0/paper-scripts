@@ -21,7 +21,7 @@ fig, ax = plt.subplots()
 fig.set_size_inches(3., 2.4)
 plt.subplots_adjust()
 
-x = ["naïve", "Yanni"]
+x = ["naïve", "LaS"]
 lc_latency = [2031455.692/1976033.625, 1975565.927/1976033.625]
 lc_95latency = [3195470.417/2332104.538, 2344859.067/2332104.538]
 lc_99latency = [4752269.695/2514224.813, 3464523.773/2514224.813]

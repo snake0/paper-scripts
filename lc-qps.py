@@ -22,7 +22,7 @@ fig, ax = plt.subplots()
 fig.set_size_inches(3., 2.6)
 plt.subplots_adjust()
 
-x = ["w/o", "naïve", "Yanni"]
+x = ["w/o", "naïve", "LaS"]
 lc_qps = [1,  517.775/532.525,523.09375/532.525]
 
 xrange = np.arange(len(x))
