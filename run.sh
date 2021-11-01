@@ -2,6 +2,6 @@
 
 python3 $1 &
 #open $2
-sleep 5
+sleep 3
 killall Python
 

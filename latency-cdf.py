@@ -27,7 +27,9 @@ y_rdma = np.array(data['Non-owner Write RDMA'].values.tolist())
 y_tcp = np.array(data['Non-owner Write TCP'].values.tolist())
 y_ipoib = np.array(data['Non-owner Write IPoIB'].values.tolist())
 
-
+y_rdma = y_rdma / 1000
+y_tcp = y_tcp / 1000
+y_ipoib = y_ipoib / 1000
 
 
 colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
@@ -139,15 +141,23 @@ rdma_90 = np.percentile(y_rdma_sort3,90)
 tcp_90 = np.percentile(y_tcp_sort3,90)
 iboip_90 = np.percentile(y_iboip_sort3,90)
 
+
+rdma_50 = np.percentile(y_rdma_sort3,50)
+tcp_50 = np.percentile(y_tcp_sort3,50)
+iboip_50 = np.percentile(y_iboip_sort3,50)
+
+print(rdma_50,tcp_50,iboip_50)
+print(rdma_90,tcp_90,iboip_90)
+
 y_rdma_cdf3 = 1. * np.arange(len(y_rdma_sort3)) / (len(y_rdma_sort3) - 1)
 y_tcp_cdf3 = 1. * np.arange(len(y_tcp_sort3)) / (len(y_tcp_sort3) - 1)
 y_iboip_cdf3 = 1. * np.arange(len(y_iboip_sort3)) / (len(y_iboip_sort3) - 1)
 
 
 
-plt.plot(y_rdma_sort3, y_rdma_cdf3,linewidth=1.4,label="RDMA",color=colors[3],linestyle="dotted")
-plt.plot(y_tcp_sort3, y_tcp_cdf3,linewidth=1.8, label="TCP-Ethernet",color="black")
-plt.plot(y_iboip_sort3, y_iboip_cdf3,linewidth=2.2, label="TCP-IBoIP",color=colors[0])
+plt.plot(y_rdma_sort3, y_rdma_cdf3,label="RDMA",linewidth=1.4,color=colors[3],linestyle="dotted")
+plt.plot(y_tcp_sort3, y_tcp_cdf3,label="TCP-Ethernet",linewidth=1.8, color="black")
+plt.plot(y_iboip_sort3, y_iboip_cdf3,label="TCP-IPoIB",linewidth=2.2, color=colors[0])
 
 # plt.scatter(rdma_90, 0.9,color = 'black', s=15,marker='s')
 # plt.scatter(tcp_90, 0.9,color = 'black', s=15,marker='s')
@@ -155,7 +165,7 @@ plt.plot(y_iboip_sort3, y_iboip_cdf3,linewidth=2.2, label="TCP-IBoIP",color=colo
 #
 # plt.text(30000, 0.87, "P90",size=11,weight='bold')
 
-plt.xlabel("Non-owner Write Latency")
+plt.xlabel("Non-owner Write Latency (us)")
 plt.xscale("log")
 plt.ylim([0,1])
 plt.ylabel("CDF")
@@ -163,7 +173,10 @@ plt.ylabel("CDF")
 plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 # plt.title("Non-owner Write Latency")
 plt.yticks([0,0.2,0.4,0.6,0.8,1])
+# plt.scatter(0.1,0.95, s=4, c='red', marker='s')
 #
+# plt.text(0.1,0.9,"Main Memory")
+# #
 # g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
 # plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
 #
@@ -171,7 +184,7 @@ plt.yticks([0,0.2,0.4,0.6,0.8,1])
 # plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
 
 plt.legend(facecolor='white',framealpha=0.0,
-        loc=4,frameon=True,ncol=1, edgecolor='white')
+        loc='lower right',frameon=True,ncol=1, edgecolor='white')
 # plt.subplots_adjust(left=0.35,bottom=-0.05)
 
 

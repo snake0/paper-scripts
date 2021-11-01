@@ -10,14 +10,14 @@ matplotlib.rcParams['ytick.direction'] = 'in'
 matplotlib.rcParams['axes.linewidth'] = 0.5  # set the value globally
 
 
-plt.rc('font', family='Nimbus Sans L')
+plt.rc('font', family='Nimbus Sans L',size=12.5)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
 fig, ax = plt.subplots()
-fig.set_size_inches(7.995,2.214)
+fig.set_size_inches(5.9,2.5)
 
-plt.tick_params(top=True,bottom=False,left=True,right=False)
+plt.tick_params(top=False,bottom=False,left=True,right=False)
 ax.set_axisbelow(True)
 
 normal = np.array([1, 1, 1, 1, 1, 1, 1, 1])
@@ -26,7 +26,7 @@ name = ["BT.D", "CG.D", "EP.D", "FT.C", "IS.C",
         "LU.D", "MG.D", "SP.D"]
 
 das = np.array(
-    [0.250736034, 0.759410391, 0.741203563, 0.262148367, 0.092298162, 0.139807274, 0.205513571, 0.211173644])
+    [0.250736034, 0.759410391, 0.741203563, 0.262148367, 0.092298162, 0.139807274, 0.205513571, 0.261173644])
 
 cfs = np.array(
     [0.211841679, 0.716095968, 0.670350072, 0.221942211, 0.069449959, 0.135831214, 0.046144816, 0.207297069])
@@ -35,7 +35,7 @@ nb = np.array(
     [0.202537123, 0.510890045, 0.662745238, 0.172002994, 0.068187233, 0.118968264, 0.034669723, 0.166057199])
 
 das_l = np.array(
-    [0.25, 0.75, 0.74, 0.26, 0.09, 0.14, 0.21, 0.21])
+    [0.25, 0.75, 0.74, 0.26, 0.09, 0.14, 0.21, 0.26])
 
 cfs_l = np.array(
     [0.21, 0.72, 0.67, 0.22, 0.07, 0.14, 0.05, 0.21])
@@ -46,9 +46,9 @@ nb_l = np.array(
 x = np.arange(len(das))
 
 # colors = ["#366EAA", "#71A1E2", "#DDF2FF"]
-colors = ["#f5f7c8", "#c3ddbd", "#7eb6bd"]
+colors = ["#fffedd", "#c3ddbd", "#26388f"]
 
-width = 0.17
+width = 0.2
 
 sep = 0.00
 
@@ -74,7 +74,7 @@ def autolabel(rects, array, heights):
                 va='bottom', rotation=90,size=10, ha='center')
 
 
-b1 = plt.bar(x - width * 1.25 - sep, das, width,
+b1 = plt.bar(x + width * 1.25 + sep, das, width,
              color=colors[0], edgecolor="black", label='DaS',  linewidth=0.7)
 autolabel(b1, das_l, das +0.03)
 
@@ -82,7 +82,7 @@ b2 = plt.bar(x, cfs, width,
              color=colors[1], edgecolor="black", label='CFS',  linewidth=0.7)
 autolabel(b2, cfs_l, cfs +0.03 )
 
-b3 = plt.bar(x + width * 1.25 + sep, nb, width,
+b3 = plt.bar(x - width * 1.25 - sep, nb, width,
              color=colors[2], edgecolor="black", label='NUMA Balancing',  linewidth=0.7)
 autolabel(b3, nb_l, nb  +0.03)
 
@@ -103,13 +103,13 @@ plt.ylim(0.0, 1.1)
 # plt.xlabel('# vCPUs')
 # plt.yticks([0, 1])
 plt.xticks(x, name, rotation=00)
-plt.yticks([0,0.2,0.4,0.6,0.8,1])
+# plt.yticks([0,0.2,0.4,0.6,0.8,1])
 
 # plt.grid(axis='y', linewidth=0.7, linestyle=(0, (5, 3)))
 plt.grid(axis='y',linewidth=0.4,linestyle=(0,(2,4)),color = "#000000")
 
 ax.legend(loc='upper right',facecolor='white',framealpha=1.0,
-        frameon=True,ncol=3, edgecolor='white')
+        frameon=True,ncol=1, edgecolor='white')
 plt.ylabel("Normalized Results")
 
 # ax.tick_params(length=0)

@@ -33,11 +33,11 @@ if __name__ == "__main__":
         for i in range(n):
             data = [float(x) for x in data_list[i]]
             rects = ax.bar(x - width * 4 + i * width + width / 2, data, width,
-                           color=colors[i], label="4x"+str(i + 1))
+                           color=colors[i], label="4x"+str(i + 1),linewidth=1)
     ax.set_ylabel('Normalized Results', fontsize=font_size)
     ax.set_title('Scalability of Stress-ng CPU Methods on GiantVM', fontsize=font_size)
     ax.set_xticks(x)
-    ax.set_xticklabels(labels, fontsize=font_size-4, rotation=45)
+    ax.set_xticklabels(labels, fontsize=font_size-4, rotation=30)
     ax.legend(title='# vCPUs', title_fontsize=font_size, fontsize=font_size, \
             loc='center left', bbox_to_anchor=(1, 0.5) ,frameon=False,facecolor="white")
     ax.set_aspect(aspect)

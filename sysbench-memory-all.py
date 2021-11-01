@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.ticker as mticker
 import matplotlib
+from color import *
 
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
@@ -46,8 +47,8 @@ colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 titles= ["Memory {4KiB,local,write,*}","Memory {4KiB,global,read,*}","Memory {4KiB,global,write,*}","Memory {4MiB,global,write,*}"]
 
 plt.subplot(141)
-plt.plot(x, y1,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[0],linestyle="dotted")
-plt.plot(x, y2,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[0])
+plt.plot(x, y1,linewidth=2.2,label="GiantVM",color=colors_line[0])
+plt.plot(x, y2,label="baseline",linewidth=1.9,color=colors_line[3],linestyle="dotted")
 plt.xlim(4, 24)
 plt.xlabel('# vCPUs')
 plt.ylabel('Memory Transfer Speed (GiB/s)')
@@ -65,8 +66,8 @@ plt.title(titles[0])
 
 
 plt.subplot(142)
-plt.plot(x, y7,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[1],linestyle="dotted")
-plt.plot(x, y8,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[1])
+plt.plot(x, y7,linewidth=2.2,label="GiantVM",color=colors_line[0])
+plt.plot(x, y8,label="baseline",linewidth=1.9,color=colors_line[3],linestyle="dotted")
 plt.xlim(4, 24)
 plt.xlabel('# vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
@@ -82,9 +83,9 @@ plt.title(titles[1])
 
 
 plt.subplot(143)
-plt.plot(x, y3,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[2],linestyle="dotted")
-plt.plot(x, y4,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[2])
-plt.plot(x, y9,linewidth=2, marker="o",markersize=6,label="GiantVM-IPoIB",color=colors[2],linestyle=(0,(5,3)),markerfacecolor='none')
+plt.plot(x, y3,linewidth=2.2,label="GiantVM",color=colors_line[0])
+plt.plot(x, y4,label="baseline",linewidth=1.9,color=colors_line[3],linestyle="dotted")
+plt.plot(x, y9,label="GiantVM-IPoIB",linewidth=1.8, color="black")
 plt.xlim(4, 24)
 plt.xlabel('# vCPUs')
 plt.xticks(range(4,28,4),["4x"+str(i) for i in range(1,7)])
@@ -100,8 +101,8 @@ plt.title(titles[2])
 
 
 plt.subplot(144)
-plt.plot(x, y5,linewidth=2, marker="x",markersize=8,label="GiantVM",color=colors[3],linestyle="dotted")
-plt.plot(x, y6,linewidth=2, marker="x",markersize=8,label="baseline",color=colors[3])
+plt.plot(x, y5,linewidth=2.2,label="GiantVM",color=colors_line[0])
+plt.plot(x, y6,label="baseline",linewidth=1.9,color=colors_line[3],linestyle="dotted")
 plt.xlim(4, 24)
 plt.yscale('log')
 plt.xlabel('# vCPUs')

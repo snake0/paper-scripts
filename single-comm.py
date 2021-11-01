@@ -1,6 +1,5 @@
 import matplotlib
 import matplotlib.pyplot as plt
-import matplotlib.ticker as mticker
 import numpy as np
 
 matplotlib.rcParams['pdf.fonttype'] = 42
@@ -9,22 +8,23 @@ matplotlib.rcParams['xtick.direction'] = 'in'
 matplotlib.rcParams['ytick.direction'] = 'in'
 matplotlib.rcParams['axes.linewidth'] = 0.5  # set the value globally
 
-plt.rc('font', family='Nimbus Sans L')
+plt.rc('font', family='Nimbus Sans L',size=12.5)
 plt.rcParams['hatch.color'] = '#636466'
 plt.rcParams['hatch.linewidth'] = 1
 
 colors = ["#26388f", "#6db8be", "#a7d5b9", "#d9ecb8", "#fffedd"]
 
-fig, ax = plt.subplots()
-fig.set_size_inches(4.6, 2.8)
+fig, axs = plt.subplots(1, 2, figsize=(5.3, 2.5))
 
-plt.tick_params(top=True, bottom=False, left=True, right=False)
-ax.set_axisbelow(True)
+plt.tick_params(top=False, bottom=False, left=True, right=False)
+# axs[0].set_axisbelow(False)
+# axs[1].set_axisbelow(False)
 
 normal = np.array([1, 1, 1, 1, 1, 1, 1, 1])
 
 name = ["CG.D", "EP.D"]
-# 
+name1 = ["FT.C", "BT.D"]
+#
 # das = np.array(
 #     [0.250736034, 0.759410391, 0.741203563, 0.262148367, 0.092298162, 0.139807274, 0.205513571])
 # 
@@ -46,12 +46,12 @@ name = ["CG.D", "EP.D"]
 
 # colors = ["#366EAA", "#71A1E2", "#DDF2FF"]
 
-width = 0.12
+width = 0.14
 
 sep = 0.03
 
 
-def autolabel(rects, array, heights):
+def autolabel(ax, rects, array, heights):
     """Attach a text label above each bar in *rects*, displaying its height."""
     for i in range(len(rects)):
         rect = rects[i]
@@ -67,83 +67,129 @@ def autolabel(rects, array, heights):
         # else:
         #     offset = 0 - 40 - len(s) * 1.1
         ax.text(s=s,
-                x=rect.get_x() + rect.get_width() / 2 + 0.05, y=height - offset,
+                x=rect.get_x() + rect.get_width() / 2 + 0.01, y=height - offset,
 
                 va='bottom', rotation=90, size=10, ha='center')
-        
-cfs8non = np.array([0.392755271,0.501995053])
 
-das8loc = np.array([0.473380281,0.508202741])
 
-cfs16non = np.array([0.865876308,0.957225522])
+cfs8non = np.array([0.392755271, 0.501995053])
 
-das16par = np.array([0.91825048,1.058400673])
+das8loc = np.array([0.473380281, 0.508202741])
 
-mpi = np.array([1.209162385,1.427948711])
+cfs16non = np.array([0.865876308, 0.957225522])
+
+das16par = np.array([0.91825048, 1.058400673])
+
+mpi = np.array([1.209162385, 1.427948711])
+
+cfs8non1 = np.array([0.146843807, 0.266416139])
+
+das8loc1 = np.array([0.596267751, 0.903784378])
+
+cfs16non1 = np.array([0.311521995, 0.414458015])
+
+das16par1 = np.array([0.367956063, 0.490552943])
+
+mpi1 = np.array([1.403617605, 1.956451711])
 
 x = np.arange(len(mpi))
 
-t1 = plt.bar(x - width * 2 - 2*sep, cfs8non, width,
-             color=colors[0], edgecolor="black", label='DaS', linewidth=0.9)
-autolabel(t1, cfs8non, cfs8non + 0.03)
+# axs[0].set_ylabel("Normalized Results")
 
-t2 = plt.bar(x - width * 1 - sep, das8loc, width,
-             color=colors[1], edgecolor="black", label='DaS', linewidth=0.9)
-autolabel(t2, das8loc, das8loc + 0.03)
+t1 = axs[0].bar(x - width * 2 - 2 * sep, cfs8non, width,
+                color=colors[0], edgecolor="black", label='CFS-8-Non', linewidth=0.9)
+autolabel(axs[0], t1, cfs8non, cfs8non + 0.03)
 
-t3 = plt.bar(x, cfs16non, width,
-             color=colors[2], edgecolor="black", label='DaS', linewidth=0.9)
-autolabel(t3, cfs16non, cfs16non + 0.03)
+t2 = axs[0].bar(x - width * 1 - sep, das8loc, width,
+                color=colors[1], edgecolor="black", label='DaS-8-Loc', linewidth=0.9)
+autolabel(axs[0], t2, das8loc, das8loc + 0.03)
 
-t4 = plt.bar(x + width  + sep, das16par, width,
-             color=colors[3], edgecolor="black", label='DaS', linewidth=0.9)
-autolabel(t4, das16par, das16par + 0.03)
+t3 = axs[0].bar(x, cfs16non, width,
+                color=colors[2], edgecolor="black", label='CFS-16-Non', linewidth=0.9)
+autolabel(axs[0], t3, cfs16non, cfs16non + 0.03)
 
-t5 = plt.bar(x + 2*width + 2*sep, mpi, width,
-             color=colors[4], edgecolor="black", label='DaS', linewidth=0.9)
-autolabel(t5, mpi, mpi + 0.03)
+t4 = axs[0].bar(x + width + sep, das16par, width,
+                color=colors[3], edgecolor="black", label='DaS-16-Cli', linewidth=0.9)
+autolabel(axs[0], t4, das16par, das16par + 0.03)
 
+t5 = axs[0].bar(x + 2 * width + 2 * sep, mpi, width,
+                color=colors[4], edgecolor="black", label='MPI', linewidth=0.9)
+autolabel(axs[0], t5, mpi, mpi + 0.03)
 
+axs[0].tick_params(top=False, bottom=False, left=True, right=False)
 
-
-# f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
-
-
-def to_percent(temp, position):
-    return '%1.1f' % (temp)
-
-
-plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(to_percent))
-
-plt.xlim(-1., 10)
-plt.ylim(0.0, 1.8)
+axs[0].set_xlim(-0.55, 1.55)
+axs[0].set_ylim(0.0, 2.8)
 # plt.ylim(min(nb) - 50, max(clique) + 1)
 
 # plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
 # plt.xlabel('# vCPUs')
 # plt.yticks([0, 1])
-plt.xticks(x, name, rotation=00)
-plt.yticks([0, 0.3, 0.6, 0.9, 1.2, 1.5])
+axs[0].set_xticks(x)
+axs[0].set_xticklabels(name, rotation=00)
+# axs[0].set_yticks([0, 0.3, 0.6, 0.9, 1.2, 1.5])
 
 # plt.grid(axis='y', linewidth=0.9, linestyle=(0, (5, 3)))
-plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
+axs[0].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 
-ax.legend(loc='upper right', facecolor='white', framealpha=1.0,
-          frameon=True, ncol=3, edgecolor='white')
+axs[0].set_axisbelow(True)
 
-ax.legend(title='# vCPUs',
-            loc='center left', bbox_to_anchor=(1, 0.5) ,frameon=False,facecolor="white",ncol=1)
+axs[0].legend((t1, t2), ("CFS-8", "DaS-8"),
+              loc='upper left', frameon=False, facecolor="white", ncol=1)
 
-plt.ylabel("Normalized Results")
+s1 = axs[1].bar(x - width * 2 - 2 * sep, cfs8non1, width,
+                color=colors[0], edgecolor="black", label='CFS-8-Non', linewidth=0.9)
+autolabel(axs[1], t1, cfs8non1, cfs8non1 + 0.03)
+
+s2 = axs[1].bar(x - width * 1 - sep, das8loc1, width,
+                color=colors[1], edgecolor="black", label='DaS-8-Loc', linewidth=0.9)
+autolabel(axs[1], t2, das8loc1, das8loc1 + 0.03)
+
+s3 = axs[1].bar(x, cfs16non1, width,
+                color=colors[2], edgecolor="black", label='CFS-16-Non', linewidth=0.9)
+autolabel(axs[1], t3, cfs16non1, cfs16non1 + 0.03)
+
+s4 = axs[1].bar(x + width + sep, das16par1, width,
+                color=colors[3], edgecolor="black", label='DaS-16-Cli', linewidth=0.9)
+autolabel(axs[1], t4, das16par1, das16par1 + 0.03)
+
+s5 = axs[1].bar(x + 2 * width + 2 * sep, mpi1, width,
+                color=colors[4], edgecolor="black", label='MPI', linewidth=0.9)
+autolabel(axs[1], t5, mpi1, mpi1 + 0.03)
+
+plt.tick_params(top=False, bottom=False, left=True, right=False)
+
+# f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
+
+axs[1].set_xlim(-1., 10)
+axs[1].set_ylim(0.0, 3.8)
+# plt.ylim(min(nb) - 50, max(clique) + 1)
+
+# plt.yticks([-90, -60, -30, 0, 30, 60, 90, 120])
+# plt.xlabel('# vCPUs')
+# plt.yticks([0, 1])
+axs[1].set_xticks(x)
+axs[1].set_xticklabels(name1, rotation=00)
+# axs[1].set_yticks([0, 0.3, 0.6, 0.9, 1.2, 1.5])
+
+# plt.grid(axis='y', linewidth=0.9, linestyle=(0, (5, 3)))
+axs[1].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
+
+axs[1].set_axisbelow(True)
+
+# axs[1].legend(
+#     loc='best', frameon=False, facecolor="white", ncol=1, bbox_to_anchor=(1.05, 1.0) )\
+axs[1].legend((s3, s4, s5), ('CFS-16', 'DaS-16', "MPI"),
+              loc='upper left', frameon=False, facecolor="white", ncol=1)
 
 # ax.tick_params(length=0)
 
-plt.xlim([-width * 1.8 - sep - 0.05 - 0.2, len(x) - 1 + width * 1.8 + sep + 0.05 + 0.2])
+plt.xlim([-width * 1.8 - sep - 0.05 - 0.3, len(x) - 1 + width * 1.8 + sep + 0.05 + 0.3])
 
 plt.tight_layout()
 # plt.title("Single-thread Throughput Improvement")
 
-plt.savefig('/Users/snake0/taco-journal/newimgs/single-com.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('/Users/snake0/taco-journal/newimgs/single-com.pdf', dpi=300)
 plt.show()
 
 plt.close()

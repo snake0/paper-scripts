@@ -50,7 +50,7 @@ ylatency = [10.90569025, 11.3494405, 11.25516425, 11.3727005, 11.67127925, 15.71
 
 # titles = ["{4KiB,local,write,*}", "{4KiB,global,read,*}", "{4KiB,global,write,*}", "{4MiB,global,write,*}"]
 
-fig, axs = plt.subplots(1,2,figsize=(6.33125, 2.6))
+fig, axs = plt.subplots(1,2,figsize=(6.33125, 2.7))
 
 # plt.xlim([-1, 16])
 # plt.ylim([0, 100000])
@@ -64,7 +64,7 @@ fig, axs = plt.subplots(1,2,figsize=(6.33125, 2.6))
 # plt.legend([p1, p3, p2, p4], ["", "", "RDMA", "TCP"], ncol=2, columnspacing=0)
 
 l1,=axs[0].plot(x, y3, linewidth=2.0, color=colors[3], linestyle="dotted",)
-l2,=axs[0].plot(x, y4, linewidth=1.5, marker="^", markersize=5, color='black', markerfacecolor='none')
+l2,=axs[0].plot(x, y4, linewidth=1.5,  color='black')
 l3,=axs[0].plot(x, ylatency, linewidth=1.9, marker="s", markersize=5, color=colors[0], markerfacecolor='none')
 # ax1.set_ylim(1, 10000)
 axs[0].set_yscale('log')
@@ -104,11 +104,11 @@ axs[0].set_xticklabels(x_title[::2], rotation=26)
 
 
 l4,=axs[1].plot(x, y1, linewidth=2., color=colors[3], linestyle="dotted",)
-l5,=axs[1].plot(x, y2, linewidth=1.5, marker="^", markersize=5, color='black', markerfacecolor='none')
+l5,=axs[1].plot(x, y2, linewidth=1.5,  color='black')
 l6,=axs[1].plot(x, ybandwidth, linewidth=1.9, marker="s", markersize=5, color=colors[0], markerfacecolor='none')
 # ax1.set_ylim(1, 10000)
 axs[1].set_yscale('log')
-axs[1].set_ylabel('Bandwidth (us)')
+axs[1].set_ylabel('Bandwidth (MiB/s)')
 axs[1].set_xlabel('Request Size (Byte)')
 
 axs[1].set_xlim([-2,16])

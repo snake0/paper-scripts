@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.ticker as mticker
 import matplotlib
+from color import *
 
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
@@ -32,8 +33,8 @@ colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 
 
 plt.subplot(131)
-plt.plot(x, b10,linewidth=2, marker="x",markersize=8,label="Barrelfish",color=colors[0],linestyle="dotted")
-plt.plot(x, l10,linewidth=2, marker="x",markersize=8,label="Linux",color=colors[0])
+plt.plot(x, b10, label="Barrelfish",linewidth=1.9,color=colors_line[3],linestyle="dotted")
+plt.plot(x, l10, label="Linux",linewidth=2.2, color=colors_line[0])
 plt.xlim(8, 32)
 plt.ylim(0, 300)
 plt.xlabel('# vCPUs')
@@ -51,8 +52,8 @@ plt.title(titles[0])
 
 
 plt.subplot(132)
-plt.plot(x, b20,linewidth=2, marker="x",markersize=8,label="Barrelfish",color=colors[2],linestyle="dotted")
-plt.plot(x, l20,linewidth=2, marker="x",markersize=8,label="Linux",color=colors[2])
+plt.plot(x, b20, label="Barrelfish",linewidth=1.9,color=colors_line[3],linestyle="dotted")
+plt.plot(x, l20, label="Linux",linewidth=2.2, color=colors_line[0])
 plt.xlim(8, 32)
 plt.ylim(0, 300)
 plt.xlabel('# vCPUs')
@@ -69,8 +70,8 @@ plt.title(titles[1])
 
 
 plt.subplot(133)
-plt.plot(x, b40,linewidth=2, marker="x",markersize=8,label="Barrelfish",color=colors[3],linestyle="dotted")
-plt.plot(x, l40,linewidth=2, marker="x",markersize=8,label="Linux",color=colors[3])
+plt.plot(x, b40, label="Barrelfish",linewidth=1.9,color=colors_line[3],linestyle="dotted")
+plt.plot(x, l40, label="Linux",linewidth=2.2, color=colors_line[0])
 plt.xlim(8, 32)
 plt.xlabel('# vCPUs')
 plt.xticks(range(8,40,8),["4x2","4x4","4x6","4x8"])

@@ -18,11 +18,11 @@ plt.rc('font', family='Nimbus Sans L', weight='medium')
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 #
 
-x_title = ['WC-RDMA', 'WC-TCP', 'Pi-RDMA', 'Pi-TCP', 'PR-RDMA', 'PR-TCP']
-x = np.arange(3)
-x_ticks = [-0.35, 0.1, 0.7, 1.15, 1.66, 2.1]
-labels = ["Guest OS", "QEMU", "DSM PF", "KVM", "Router"]
-width = 0.32
+x_title1 = ['WC-RDMA', 'WC-TCP', 'Pi-RDMA', 'Pi-TCP', 'PR-RDMA', 'PR-TCP']
+x1 = np.arange(3)
+x_ticks1 = [-0.35, 0.1, 0.7, 1.15, 1.66, 2.1]
+labels1 = ["Guest OS", "QEMU", "DSM PF", "KVM", "Router"]
+width1 = 0.28
 
 # RDMA
 
@@ -75,60 +75,61 @@ tword_dsm_pf_ratio = np.array(list(map(lambda x, y, z: (x / y) * z,
 # colors = ["#1e307c", "#3b7cb1", "#6db8be", "#a7d5b9", "#d9ecb8"]
 # colors = ["#d9ecb8", "#a7d5b9", "#6db8be", "#3b7cb1", "#1e307c"]
 # colors = ["#ffffff", "#d9ecb8", "#a7d5b9", "#6db8be", "#3b7cb1"]
-colors = ["#26388f", "#6db8be", "#a7d5b9", "#d9ecb8", "#fffedd"]
+colors1 = ["#26388f", "#6db8be", "#a7d5b9", "#d9ecb8", "#fffedd"]
 
-titles = ["Wordcount", "Pi", "Pagerank"]
+titles1 = ["Wordcount", "Pi", "Pagerank"]
 
-fig, axs = plt.subplots(1, 1, figsize=(6.13, 4.4))
+fig, axs = plt.subplots(1, 1, figsize=(3.2, 2.75))
 
 # plt.subplot(131)
-axs.set_title("RDMA V.S TCP")
-axs.set_xlim(-0.99, 2.99)
+axs.set_title("RDMA vs. TCP")
+axs.set_xlim(-0.59, 2.59)
 axs.set_ylim(0, 300)
-axs.set_xlabel('Tasks')
-axs.set_ylabel('Execution Time (s)')
+# axs.set_xlabel('Tasks')
+# axs.set_ylabel('Execution Time (s)')
 axs.grid(axis='y', linewidth=0.6, linestyle="--")
 axs.tick_params(bottom=False, top=False, left=True, right=False)
 # RDMA
-ro = axs.bar(x - width * 0.6, sword_router_ratio, width, label='Router', color=colors[0], zorder=10, edgecolor='black',
-        linewidth=0.95)
-qe = axs.bar(x - width * 0.6, sword_qemu_ratio, width, bottom=sword_router_ratio, label='QEMU', color=colors[1], zorder=10,
-        edgecolor='black', linewidth=0.95)
-dp = axs.bar(x - width * 0.6, sword_dsm_pf_ratio, width, bottom=sword_router_ratio + sword_qemu_ratio, label='DSM PF',
-        color=colors[2], zorder=10, edgecolor='black', linewidth=0.95)
-kv = axs.bar(x - width * 0.6, sword_kvm_ratio, width, bottom=sword_router_ratio + sword_qemu_ratio + sword_dsm_pf_ratio,
-        label='KVM',
-        color=colors[3], zorder=10, edgecolor='black', linewidth=0.95)
-nr = axs.bar(x - width * 0.6, sword_non_root_ratio, width,
-        bottom=sword_router_ratio + sword_qemu_ratio + sword_dsm_pf_ratio + sword_kvm_ratio,
-        label='Guest OS', color=colors[4], zorder=10, edgecolor='black', linewidth=0.95)
-# TCP
-axs.bar(x + width * 0.6, tword_router_ratio, width, label='Router', color=colors[0], zorder=10, edgecolor='black',
-        linewidth=0.95, linestyle='dotted')
-axs.bar(x + width * 0.6, tword_qemu_ratio, width, bottom=tword_router_ratio, label='QEMU', color=colors[1], zorder=10,
-        edgecolor='black', linewidth=0.95, linestyle='dotted')
-axs.bar(x + width * 0.6, tword_dsm_pf_ratio, width, bottom=tword_router_ratio + tword_qemu_ratio, label='DSM PF',
-        color=colors[2], zorder=10, edgecolor='black', linewidth=0.95, linestyle='dotted')
-axs.bar(x + width * 0.6, tword_kvm_ratio, width, bottom=tword_router_ratio + tword_qemu_ratio + tword_dsm_pf_ratio,
-        label='KVM',
-        color=colors[3], zorder=10, edgecolor='black', linewidth=0.95, linestyle='dotted')
-axs.bar(x + width * 0.6, tword_non_root_ratio, width,
-        bottom=tword_router_ratio + tword_qemu_ratio + tword_dsm_pf_ratio + tword_kvm_ratio,
-        label='Guest OS', color=colors[4], zorder=10, edgecolor='black', linewidth=0.95, linestyle='dotted')
+ro = axs.bar(x1 - width1 * 0.6, sword_router_ratio, width1, color=colors1[0], zorder=10, edgecolor='black',
+             linewidth=0.95)
+qe = axs.bar(x1 - width1 * 0.6, sword_qemu_ratio, width1, bottom=sword_router_ratio, color=colors1[1], zorder=10,
+             edgecolor='black', linewidth=0.95)
+dp = axs.bar(x1 - width1 * 0.6, sword_dsm_pf_ratio, width1, bottom=sword_router_ratio + sword_qemu_ratio,
+             color=colors1[2], zorder=10, edgecolor='black', linewidth=0.95)
+kv = axs.bar(x1 - width1 * 0.6, sword_kvm_ratio, width1, bottom=sword_router_ratio + sword_qemu_ratio + sword_dsm_pf_ratio,
 
-axs.legend((ro, qe, dp, kv, nr),
-        ("Router", "QEMU", "DSM PF", "KVM", "Non-Root"),facecolor='white',framealpha=1.0,
+             color=colors1[3], zorder=10, edgecolor='black', linewidth=0.95)
+nr = axs.bar(x1 - width1 * 0.6, sword_non_root_ratio, width1,
+             bottom=sword_router_ratio + sword_qemu_ratio + sword_dsm_pf_ratio + sword_kvm_ratio,
+             color=colors1[4], zorder=10, edgecolor='black', linewidth=0.95)
+# TCP
+axs.bar(x1 + width1 * 0.6, tword_router_ratio, width1, color=colors1[0], zorder=10, edgecolor='black',
+        linewidth=0.95, linestyle='dotted')
+axs.bar(x1 + width1 * 0.6, tword_qemu_ratio, width1, bottom=tword_router_ratio, color=colors1[1], zorder=10,
+        edgecolor='black', linewidth=0.95, linestyle='dotted')
+axs.bar(x1 + width1 * 0.6, tword_dsm_pf_ratio, width1, bottom=tword_router_ratio + tword_qemu_ratio,
+        color=colors1[2], zorder=10, edgecolor='black', linewidth=0.95, linestyle='dotted')
+axs.bar(x1 + width1 * 0.6, tword_kvm_ratio, width1, bottom=tword_router_ratio + tword_qemu_ratio + tword_dsm_pf_ratio,
+
+        color=colors1[3], zorder=10, edgecolor='black', linewidth=0.95, linestyle='dotted')
+axs.bar(x1 + width1 * 0.6, tword_non_root_ratio, width1,
+        bottom=tword_router_ratio + tword_qemu_ratio + tword_dsm_pf_ratio + tword_kvm_ratio,
+        label='Guest OS', color=colors1[4], zorder=10, edgecolor='black', linewidth=0.95, linestyle='dotted')
+
+axs.legend(facecolor='white',framealpha=1.0,
         loc='best', frameon=True,ncol=1, edgecolor='white')
 
 # g = lambda x, pos: "${}$".format(f._formatSciNotation('%1.10e' % x))
 # axs[0].yaxis.set_major_formatter(mticker.FuncFormatter(g))
-axs.set_xticks(x_ticks)
-axs.set_xticklabels(x_title, rotation=30)
+axs.set_xticks(x_ticks1)
+axs.set_xticklabels(x_title1, rotation=25)
 
 #
 fig.tight_layout()
 # fig.savefig('/Users/snake0/taco-journal/newimgs/breakdown.pdf', dpi=100)
-fig.savefig('./newimgs/non-write-latency-2.pdf', dpi=100)
+# fig.savefig('./newimgs/non-write-latency-2.pdf', dpi=100)
+fig.savefig('/Users/snake0/taco-journal/newimgs/tcp-rdmaaa.pdf', dpi=100)
+
 plt.show()
 
 plt.close()
