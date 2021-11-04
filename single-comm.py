@@ -134,7 +134,7 @@ axs[0].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 
 axs[0].set_axisbelow(True)
 
-axs[0].legend((t1, t2), ("CFS-8", "DaS-8"),
+axs[0].legend((t1, t2), ("CFS-8", "DaS-8 (N = 1)"),
               loc='upper left', frameon=False, facecolor="white", ncol=1)
 
 s1 = axs[1].bar(x - width * 2 - 2 * sep, cfs8non1, width,
@@ -179,7 +179,7 @@ axs[1].set_axisbelow(True)
 
 # axs[1].legend(
 #     loc='best', frameon=False, facecolor="white", ncol=1, bbox_to_anchor=(1.05, 1.0) )\
-axs[1].legend((s3, s4, s5), ('CFS-16', 'DaS-16', "MPI"),
+axs[1].legend((s3, s4, s5), ('CFS-16', 'DaS-16 (N = 2)', "MPI"),
               loc='upper left', frameon=False, facecolor="white", ncol=1)
 
 # ax.tick_params(length=0)

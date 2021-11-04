@@ -22,6 +22,12 @@ plt.subplots_adjust()
 
 x = ["w/o", "naïve", "LaS"]
 lc_guest = [1, 708.0166667/810.7166667, 714.0166667/810.7166667]
+# for i in range(len(lc_guest)):
+#     lc_guest[i] = 1.0/lc_guest[i]
+#
+# mm = max(lc_guest)
+# for i in range(len(lc_guest)):
+#     lc_guest[i] = lc_guest[i]/mm
 
 xrange = np.arange(len(x))
 
@@ -31,7 +37,7 @@ bar_zoom = 0.85
 linewidth = 4
 
 plt.xticks(xrange, x)
-ax.set_ylabel("Normalized Run Time",)
+ax.set_ylabel("Normalized (1 / Run Time)",)
 ax.tick_params(axis='both', which='major',)
 
 ax.set_axisbelow(True)

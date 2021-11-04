@@ -2,20 +2,23 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib
 
-font = {'size': 28,}
+# font = {'size': 28,}
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
+matplotlib.rcParams['xtick.direction'] = 'in'
+matplotlib.rcParams['ytick.direction'] = 'in'
+matplotlib.rcParams['axes.linewidth'] = 0.5  # set the value globally
 
-plt.rcParams['xtick.direction'] = 'in'  # 将x周的刻度线方向设置向内
-plt.rcParams['ytick.direction'] = 'in'  # 将y轴的刻度方向设置向内
+plt.rc('font', family='Nimbus Sans L',size=12.5)
+plt.rcParams['hatch.color'] = '#636466'
+plt.rcParams['hatch.linewidth'] = 1
 
-plt.rc('font', family='Nimbus Sans L', weight='medium')
 # font = {'size': 28, 'family': 'Helvetica Neue', 'weight': 'medium'}
 # plt.rc('font', family='Nimbus Sans L', weight='medium')
 
 fig, ax = plt.subplots()
-fig.set_size_inches(8, 7.2)
-plt.subplots_adjust(top=0.90, right=0.95, bottom=0.2)
+fig.set_size_inches(3.80952381,3.428571429)
+plt.subplots_adjust(top=0.90, right=0.93, bottom=0.2)
 
 
 
@@ -26,7 +29,7 @@ giantVM = [0.939948116, 0.7652072415, 0.7751622627, 0.8960600598, 0.7435865961,
         0.4053164141, 0.9621792433, 0.9820859601, 0.8520079264]
 
 # title = "Stress-ng Overhead on GiantVM"
-title = "Distributed vCPU Overhead"
+title = "Stress-ng CPU Overhead"
 colors = ['#f4f8c2']
 dot_style = ['s', 'x', 'd', '^', '.', 'D']
 line_style = [':', '-.', '--', '-']
@@ -39,12 +42,15 @@ labelx = -0.15
 zoom = 2
 linewidth = 2
 
-ax.set_title(title, fontdict=font)
+ax.set_title(title)
 
 plt.xticks(xrange, x, rotation=-30,ha='left')
-ax.set_ylabel("Normalized Results", fontdict=font)
-ax.tick_params(axis='x', which='major', labelsize=22)
-ax.tick_params(axis='y', which='major', labelsize=24)
+ax.set_ylabel("Normalized Results")
+ax.tick_params(axis='x', which='major')
+ax.tick_params(axis='y', which='major')
+
+plt.tick_params(top=False, bottom=False, left=True, right=False)
+
 
 def autolabel(rects):
     """Attach a text label above each bar in *rects*, displaying its height."""
@@ -54,11 +60,11 @@ def autolabel(rects):
             offset = -16
         else:
             offset = 6
-        ax.annotate("{:.2f}".format(height),
+        ax.annotate("{:.2f}X".format(height),
                     xy=(rect.get_x() + rect.get_width() / 2, height),
                     xytext=(0, offset),  # 3 points vertical offset
                     textcoords="offset points",
-                    ha='center', va='bottom',size=22,rotation=90, fontweight='black')
+                    ha='center', va='bottom',rotation=90, fontweight='black')
 
 for i in xrange:
     giantVM_bar = ax.bar(i, giantVM[i], width=bar_width * zoom,
@@ -66,13 +72,13 @@ for i in xrange:
                          label="GiantVM", linewidth=1)
     autolabel(giantVM_bar)
 
-ax.legend(["GiantVM"], loc=2, prop={'size': 28}, frameon=False,facecolor="white",linewidth=1)
+ax.legend(["GiantVM"], loc=2, frameon=False,facecolor="white")
 
 # plt.hlines(1.0,-1,len(x),colors="#4a7cac",linestyles="dotted",linewidth=3)
 plt.xlim(-1,len(x))
 plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 plt.yticks([0,1.0])
-plt.ylim(0,1.47)
+plt.ylim(0,1.57)
 #plt.tight_layout()
-plt.savefig('/Users/snake0/taco-journal/newimgs/stress-ng.pdf', dpi=300)
+plt.savefig('/Users/snake0/taco-journal/newimgs/stress-ng.pdf', dpi=100)
 plt.show()

@@ -117,12 +117,12 @@ lpr_dsm_pf_ratio = np.array(list(map(lambda x, y, z: x * z / y,
 # colors = ["#ffffff", "#d9ecb8", "#a7d5b9", "#6db8be", "#3b7cb1"]
 colors = ["#26388f", "#6db8be", "#ddebbd", "#ffffff", "#fffedd"]
 
-titles = ["WordCount", "Pi", "PageRank"]
+titles = ["(a) WordCount", "(b) Pi", "(c) PageRank"]
 
 fig, axs = plt.subplots(1, 4, figsize=(10.13, 2.4))
 
 # plt.subplot(131)
-axs[0].set_title("WordCount")
+axs[0].set_title("(a) WordCount")
 axs[0].set_xlim(-0.99, 3.99)
 axs[0].set_ylim(0, 120)
 axs[0].set_xlabel('# vCPUs')
@@ -152,7 +152,7 @@ axs[0].set_xticklabels(x_title)
 # [i.set_linewidth(0.5) for i in axs[0].spines.itervalues()]
 
 # plt.subplot(132)
-axs[1].set_title("Pi")
+axs[1].set_title("(b) Pi")
 axs[1].set_xlim(-0.99, 3.99)
 axs[1].set_ylim(0, 250)
 axs[1].set_xlabel('# vCPUs')
@@ -176,7 +176,7 @@ axs[1].set_xticklabels(x_title)
 
 
 # plt.subplot(133)
-axs[2].set_title("PageRank")
+axs[2].set_title("(c) PageRank")
 axs[2].set_xlim(-0.99, 3.99)
 axs[2].set_ylim(0, 150)
 
@@ -294,7 +294,7 @@ print(tword_dsm_pf_ratio/tword_cpu_time_real)
 titles1 = ["WordCount", "Pi", "PageRank"]
 
 
-axs[3].set_title("RDMA vs. TCP")
+axs[3].set_title("(d) RDMA vs. TCP")
 axs[3].set_xlim(-0.59, 2.59)
 axs[3].set_ylim(0, 300)
 # axs.set_xlabel('Tasks')

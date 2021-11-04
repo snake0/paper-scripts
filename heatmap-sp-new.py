@@ -15,7 +15,7 @@ R1 = np.loadtxt("/Users/snake0/taco-journal/newdata/sp.A.csv", delimiter=",", sk
 # R1=R1+1
 #
 # R1 = np.log2(R1)
-sns_plot1 = sns.heatmap(R1, xticklabels=2, yticklabels=2, vmax=400, cmap="Greys", square=True)
+sns_plot1 = sns.heatmap(R1, xticklabels=2, yticklabels=2, vmax=400, cmap="YlGnBu", square=True)
 for xitem in sns_plot1.get_xticklabels():
     xitem.set_rotation(90)
 for yitem in sns_plot1.get_yticklabels():

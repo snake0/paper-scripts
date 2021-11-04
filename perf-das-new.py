@@ -75,7 +75,7 @@ def autolabel(rects, array, heights):
 
 
 b1 = plt.bar(x + width * 1.25 + sep, das, width,
-             color=colors[0], edgecolor="black", label='DaS',  linewidth=0.7)
+             color=colors[0], edgecolor="black", label='DaS (N = 2)',  linewidth=0.7)
 autolabel(b1, das_l, das +0.03)
 
 b2 = plt.bar(x, cfs, width,

@@ -50,7 +50,7 @@ fig = plt.figure(figsize=(6.25, 2.6))
 
 colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 
-titles= ["Mutex {1,*}","Mutex {16,*}","File I/O {1KiB,*}","File I/O {1MiB,*}"]
+titles= ["Mutex {1,*}","Mutex {16,*}","(e) File I/O {1KiB,*}","(f) File I/O {1MiB,*}"]
 
 
 plt.subplot(121)

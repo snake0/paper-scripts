@@ -14,7 +14,7 @@ matplotlib.rcParams['axes.linewidth'] = 0.5  # set the value globally
 plt.rc('font', family='Nimbus Sans L', weight='medium', size=12)
 f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 
-fig = plt.figure(figsize=(3.125, 2.7))
+fig = plt.figure(figsize=(3.125, 2.8))
 
 x = np.arange(0, 100)
 
@@ -155,7 +155,7 @@ plt.ylim([0,1])
 plt.ylabel("CDF")
 plt.xlim([2400,184500])
 plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
-plt.title("Top 100 Pages")
+plt.title("(h) Top 100 Pages")
 plt.yticks([0,0.2,0.4,0.6,0.8,1])
 #
 # g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))

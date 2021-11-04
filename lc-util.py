@@ -16,7 +16,7 @@ matplotlib.rcParams['ytick.direction'] = 'in'
 plt.rc('font', family='Nimbus Sans L', weight='medium',size=13)
 
 fig, ax = plt.subplots()
-fig.set_size_inches(3.3, 2.4)
+fig.set_size_inches(3., 2.47)
 plt.subplots_adjust()
 
 x = ["w/o", "naïve", "LaS"]
@@ -31,28 +31,28 @@ bar_zoom = 0.85
 linewidth = 4
 
 plt.xticks(xrange, x)
-ax.set_ylabel("CPU Utilization")
+ax.set_ylabel("CPU Utilization (%)")
 
 ax.set_axisbelow(True)
 ax.tick_params(top=False, bottom=False, left=True, right=False)
 
-ax2 = ax.twinx()
-ax2.set_ylabel("Gini Coefficient")
+# ax2 = ax.twinx()
+# ax2.set_ylabel("Gini Coefficient")
 
-ax.set_ylim(20, 65)
-ax2.set_ylim(.3, .75)
+ax.set_ylim(25, 45)
+# ax2.set_ylim(.3, .75)
 # ax2.tick_params(top=True, bottom=False, left=True, right=False)
 
-ax2.set_axisbelow(True)
+# ax2.set_axisbelow(True)
 
 for i in xrange:
-    util_bar = ax.bar(i - bar_interval / 2, lc_util[i], width=bar_width * bar_zoom,
+    util_bar = ax.bar(i, lc_util[i], width=bar_width * bar_zoom,
                       bottom=0, color=colors_taco[2], edgecolor="black")
-    gini_bar = ax2.bar(i + bar_interval / 2, lc_gini[i], width=bar_width * bar_zoom,
-                       bottom=0, color=colors_taco[4], edgecolor="black")
+    # gini_bar = ax2.bar(i + bar_interval / 2, lc_gini[i], width=bar_width * bar_zoom,
+    #                    bottom=0, color=colors_taco[4], edgecolor="black")
 
-ax2.legend((util_bar, gini_bar), ("CPU Util", "Gini"), facecolor='white', framealpha=1.0,
-           loc='best', frameon=True, ncol=1, edgecolor='white')
+# ax2.legend((util_bar), ("CPU Util"), facecolor='white', framealpha=1.0,
+#            loc='best', frameon=True, edgecolor='white')
 
 plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 plt.tight_layout()

@@ -1,5 +1,7 @@
 import matplotlib
 import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
 
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
@@ -50,7 +52,7 @@ ylatency = [10.90569025, 11.3494405, 11.25516425, 11.3727005, 11.67127925, 15.71
 
 # titles = ["{4KiB,local,write,*}", "{4KiB,global,read,*}", "{4KiB,global,write,*}", "{4MiB,global,write,*}"]
 
-fig, axs = plt.subplots(1,2,figsize=(6.33125, 2.7))
+fig, axs = plt.subplots(1,3,figsize=(9, 2.9))
 
 # plt.xlim([-1, 16])
 # plt.ylim([0, 100000])
@@ -121,6 +123,80 @@ axs[1].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 
 axs[1].set_xticks(x[::2])
 axs[1].set_xticklabels(x_title[::2], rotation=26)
+
+
+data1 = pd.read_excel('/Users/snake0/taco-journal/newdata/rdma-tcp-lat.xlsx', header=0, usecols=[0,1,2])
+
+x = np.arange(0, 100)
+
+y_rdma = np.array(data1['Non-owner Write RDMA'].values.tolist())
+y_tcp = np.array(data1['Non-owner Write TCP'].values.tolist())
+y_ipoib = np.array(data1['Non-owner Write IPoIB'].values.tolist())
+
+y_rdma = y_rdma / 1000
+y_tcp = y_tcp / 1000
+y_ipoib = y_ipoib / 1000
+
+
+y_rdma_sort3 = np.sort(y_rdma)
+y_tcp_sort3 = np.sort(y_tcp)
+y_iboip_sort3 = np.sort(y_ipoib)
+
+rdma_90 = np.percentile(y_rdma_sort3,90)
+tcp_90 = np.percentile(y_tcp_sort3,90)
+iboip_90 = np.percentile(y_iboip_sort3,90)
+
+
+rdma_50 = np.percentile(y_rdma_sort3,50)
+tcp_50 = np.percentile(y_tcp_sort3,50)
+iboip_50 = np.percentile(y_iboip_sort3,50)
+
+print(rdma_50,tcp_50,iboip_50)
+print(rdma_90,tcp_90,iboip_90)
+
+y_rdma_cdf3 = 1. * np.arange(len(y_rdma_sort3)) / (len(y_rdma_sort3) - 1)
+y_tcp_cdf3 = 1. * np.arange(len(y_tcp_sort3)) / (len(y_tcp_sort3) - 1)
+y_iboip_cdf3 = 1. * np.arange(len(y_iboip_sort3)) / (len(y_iboip_sort3) - 1)
+
+
+
+axs[2].plot(y_rdma_sort3, y_rdma_cdf3,label="RDMA",linewidth=1.4,color=colors[3],linestyle="dotted")
+axs[2].plot(y_tcp_sort3, y_tcp_cdf3,label="TCP-Ethernet",linewidth=1.8, color="black")
+axs[2].plot(y_iboip_sort3, y_iboip_cdf3,label="TCP-IPoIB",linewidth=2.2, color=colors[0])
+
+# plt.scatter(rdma_90, 0.9,color = 'black', s=15,marker='s')
+# plt.scatter(tcp_90, 0.9,color = 'black', s=15,marker='s')
+# plt.scatter(iboip_90, 0.9,color = 'black', s=15,marker='s')
+#
+# plt.text(30000, 0.87, "P90",size=11,weight='bold')
+
+axs[2].set_xlabel("Non-owner Write Latency (us)")
+axs[2].set_xscale("log")
+axs[2].set_ylim([0,1])
+axs[2].set_ylabel("CDF")
+# plt.xlim([2400,184500])
+axs[2].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
+# plt.title("Non-owner Write Latency")
+axs[2].set_yticks([0,0.2,0.4,0.6,0.8,1])
+# plt.scatter(0.1,0.95, s=4, c='red', marker='s')
+#
+# plt.text(0.1,0.9,"Main Memory")
+# #
+# g = lambda x,pos : "${}$".format(f._formatSciNotation('%d' % x))
+# plt.gca().xaxis.set_major_formatter(mticker.FuncFormatter(g))
+#
+# g1 = lambda x,pos : "${}$".format(f._formatSciNotation("%.1f" % (x)))
+# plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g1))
+
+axs[2].legend(facecolor='white',framealpha=0.0,
+        loc='lower right',frameon=True,ncol=1, edgecolor='white')
+
+axs[0].set_title("(a) Latency")
+axs[1].set_title("(b) Bandwidth")
+axs[2].set_title("(c) DSM Bottleneck")
+
+
+colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 
 fig.tight_layout()
 fig.savefig('/Users/snake0/taco-journal/newimgs/latency-bandwidth.pdf', dpi=100)

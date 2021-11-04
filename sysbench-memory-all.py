@@ -44,7 +44,7 @@ fig = plt.figure(figsize=(12.5, 2.7))
 
 colors = ["#7ec1be","#53a2bf","#366eaa","#0e215b"]
 
-titles= ["Memory {4KiB,local,write,*}","Memory {4KiB,global,read,*}","Memory {4KiB,global,write,*}","Memory {4MiB,global,write,*}"]
+titles= ["(a) Memory {4KiB,local,write,*}","(b) Memory {4KiB,global,read,*}","(c) Memory {4KiB,global,write,*}","(d) Memory {4MiB,global,write,*}"]
 
 plt.subplot(141)
 plt.plot(x, y1,linewidth=2.2,label="GiantVM",color=colors_line[0])
