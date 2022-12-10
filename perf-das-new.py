@@ -92,6 +92,8 @@ autolabel(b3, nb_l, nb  +0.03)
 def to_percent(temp, position):
     return '%1.1f' % (temp)
 
+plt.text(s="MPI = 1.0X",x=2.7,y=0.93)
+
 
 plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(to_percent))
 

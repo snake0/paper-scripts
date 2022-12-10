@@ -319,7 +319,8 @@ ax2.tick_params(labelsize='medium', width=3, color="black")
 plt.tight_layout()
 plt.title("Comparison between Yanni and VM Live Migration")
 
-plt.savefig('/Users/snake0/yanni-img/bandwidth.pdf', dpi=300, bbox_inches='tight')
-plt.show()
+# plt.savefig('/Users/snake0/yanni-img/bandwidth.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('/Users/snake0/Downloads/a.pdf', dpi=300, bbox_inches='tight')
+# plt.show()
 
 plt.close()

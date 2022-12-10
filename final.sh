@@ -1,6 +1,5 @@
 #!/bin/bash
 
-./run.sh perf-new.py &
-./run.sh latency-occupy.py &
-./run.sh perf-net.py &
-./run.sh co-schedule.py &
+./run.sh line-chart-latency.py &
+./run.sh line-chart-latency1.py &
+./run.sh line-chart-latency2.py &

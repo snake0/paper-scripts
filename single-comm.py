@@ -127,6 +127,10 @@ axs[0].set_ylim(0.0, 2.8)
 # plt.yticks([0, 1])
 axs[0].set_xticks(x)
 axs[0].set_xticklabels(name, rotation=00)
+
+axs[0].text(s="MPI = 1.0X",x=0.6,y=2.2)
+
+
 # axs[0].set_yticks([0, 0.3, 0.6, 0.9, 1.2, 1.5])
 
 # plt.grid(axis='y', linewidth=0.9, linestyle=(0, (5, 3)))

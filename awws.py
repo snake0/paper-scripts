@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt
 
 from common import *
 
-font["font.size"] = 8
-plt.rcParams.update(font)
+# font["font.size"] = 8
+# plt.rcParams.update(font)
+
+plt.rc('font', family='Nimbus Sans L', weight='heavy', size=8)
+
 
 # Useless invalidations
 xlabel = []
@@ -61,17 +64,22 @@ rnn_traning_awws = [0, 20.68, 28.26, 28.74, 28.65, 28.81, 29.10, 31.57, 31.68,
 def generate_figure(awws, filename):
     while (len(awws) < len(xlabel)):
         awws.append(awws[len(awws) - 1])
+    aaws = []
+    # for i in awws:
+    #     aaws.append(i + 10)
 
     fig, ax = plt.subplots()
     fig.set_size_inches(2, 1)
-    marker_size = 1
+    marker_size = 0.1
     ax.plot(xlabel, awws, markersize=marker_size, linewidth=2, \
             label="", color=color_jxg_grey, marker="*")
+    # ax.plot(xlabel, aaws, markersize=marker_size, linewidth=2, \
+    #         label="", color=color_light_grey, marker="*")
     ax.set_xscale("log")
 
-    ax.grid(True, linestyle='-.')
-    ax.tick_params(labelsize='medium', width=3, color="black")
-    ax.set_ylim([0, 100])
+    ax.grid(True, linestyle=':')
+    ax.tick_params(labelsize='medium', width=1, color="black")
+    ax.set_ylim([0, 110])
 
     plt.subplots_adjust(bottom=0.20, left=0.15)
     # plt.show()
