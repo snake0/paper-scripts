@@ -5,10 +5,15 @@ import numpy as np
 from statistics import mean
 from common import *
 
-font["font.size"] = 13
-plt.rcParams.update(font)
+# font["font.size"] = 13
+# plt.rcParams.update(font)
 
-plt.rc('font', family='Arial', weight='medium', size=13)
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
+matplotlib.rcParams['xtick.direction'] = 'in'
+matplotlib.rcParams['ytick.direction'] = 'in'
+
+plt.rc('font', family='Nimbus Sans L', weight='medium', size=15.5)
 # plt.rc('font', family='DejaVu Serif', weight='medium', size=13)
 
 plt.rcParams['hatch.color'] = '#636466'
@@ -72,11 +77,11 @@ width = 0.1
 zoom = 0.85
 
 vstr = "VM Live Migration"
-ystr = "Yanni"
+ystr = "Anemoi"
 
 fig, ax1 = plt.subplots()
 
-fig.set_size_inches(12.705, 2.8)
+fig.set_size_inches(12.705, 3.7)
 
 
 def autolabel(ax, rects, array, heights):
@@ -140,16 +145,19 @@ f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 # plt.xlabel('# vCPUs')
 # plt.yticks([])
 # plt.ylabel('Percentage of Improvement')
-plt.xticks(x, name, rotation=12, size=11)
+plt.xticks(x, name, rotation=16, size=11)
 
 # g = lambda x, pos: "${}$".format(f._formatSciNotation('%1.1e' % x))
 # plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
 
 # plt.yscale('log')
 
-plt.grid(linewidth=0.4)
+plt.grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 
-ax1.legend(loc="upper left", frameon=False, prop={'size': 13}, ncol=2)
+# ax1.legend(loc="upper left", frameon=False, prop={'size': 13}, ncol=2)
+
+ax1.legend(facecolor='white', framealpha=1.0,
+              loc='upper left', frameon=True, ncol=2, edgecolor='white')
 
 # plt.legend(
 #     mode="expand", loc="upper center",
@@ -164,7 +172,7 @@ ax1.legend(loc="upper left", frameon=False, prop={'size': 13}, ncol=2)
 # plt.plot([9.5,9.5],[min(nb)-80, max(clique)+1], linewidth=1.5, color='black')
 plt.xlim([0 - 8 * width / 2 - 0.05, max(x) + 8 * width / 2 + 0.05])
 
-ax1.set_ylim(0.0, 16000)
+ax1.set_ylim(0.0, 12000)
 
 # plt.text(s="Never Converge",
 #          x=4 - 2 * width, y=0.05,
@@ -177,13 +185,13 @@ ax1.set_ylim(0.0, 16000)
 #          va='bottom', size=11, rotation=90, ha='center')
 
 
-plt.text(s="1st mig",
+plt.text(s="1st Mig",
          x=0 - 1 * width, y=vanilla0[0] + 1700,
-         va='bottom', size=10, rotation=90, ha='center', weight='bold')
+         va='bottom', rotation=90, ha='center', weight='bold',size=14)
 
-plt.text(s="2-4th mig",
+plt.text(s="2-4th Mig",
          x=0 + 1 * width, y=vanilla0[0] + 1700,
-         va='bottom', size=10, rotation=90, ha='center', weight='bold')
+         va='bottom', rotation=90, ha='center', weight='bold',size=14)
 
 #plt.text(s="0 to 1",
 #         x=0 + 1 * width, y=vanilla0[0] + 1700,
@@ -193,13 +201,13 @@ plt.text(s="2-4th mig",
 #         x=0 + 3 * width, y=vanilla0[0] + 1700,
 #         va='bottom', size=10, rotation=90, ha='center', weight='bold')
 
-plt.text(s="vm live\ncannot\nconverge",
-         x=4, y=yanni0[4] + 2000,
-         va='bottom', size=12, rotation=90, ha='center', weight='bold')
+plt.text(s="VM Live\ncannot\nconverge",
+         x=4, y=yanni0[4] + 1500,
+         va='bottom', rotation=90, ha='center', weight='bold',size=14)
 
-plt.text(s="vm live\ncannot\nconverge",
+plt.text(s="VM Live\ncannot\nconverge",
          x=11, y=yanni0[4] + 1000,
-         va='bottom', size=12, rotation=90, ha='center', weight='bold')
+         va='bottom', size=14, rotation=90, ha='center', weight='bold')
 
 ax2 = ax1.twinx()
 
@@ -305,7 +313,7 @@ for i in range(1):
     ax2.plot(xs[2 * i], ys[2 * i], marker="s", markersize=3.5, label="VM Live Migration", color=colors[1],
              markerfacecolor='black',
              markeredgecolor="black", linestyle="None")
-    ax2.plot(xs[2 * i + 1], ys[2 * i + 1], marker="x", markersize=5, label="Yanni", color=colors[1],
+    ax2.plot(xs[2 * i + 1], ys[2 * i + 1], marker="x", markersize=5, label="Anemoi", color=colors[1],
              markerfacecolor='black', markeredgecolor="black", linestyle="None")
 
 for i in range(1, 12):
@@ -317,20 +325,26 @@ for i in range(1, 12):
              markeredgecolor="black", linestyle="None")
 
 # plt.text(-0.4, 2.2, "Unit = Mop/s/thread")
-ax1.set_ylabel("Network Bandwidth (MiB)")
+ax1.set_ylabel("Network Bandwidth (MiB/s)")
 ax2.set_ylabel("Migration Time (s)")
 
-ax2.set_ylim(-3, 120)
+ax2.set_ylim(-3, 100)
 
 
-ax2.legend(loc="upper right", frameon=False, prop={'size': 13}, ncol=2)
+# ax2.legend(loc="upper right", frameon=False, prop={'size': 13}, ncol=2)
+
+ax2.legend(facecolor='white', framealpha=1.0,
+              loc='upper right', frameon=True, ncol=2, edgecolor='white')
 
 ax1.tick_params(labelsize='medium', width=3, color="black")
 ax2.tick_params(labelsize='medium', width=3, color="black")
 
+ax1.ticklabel_format(style='sci', scilimits=(-1,2), axis='y')
+
+
 plt.tight_layout()
 
-plt.savefig('imgs/bandwidth.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('/Users/snake0/MasterThesis/figures/_bandwidth.pdf', dpi=300, bbox_inches='tight')
 plt.show()
 
 plt.close()

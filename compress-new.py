@@ -10,7 +10,12 @@ plt.rcParams.update(font)
 #matplotlib.rcParams['pdf.fonttype'] = 42
 #matplotlib.rcParams['ps.fonttype'] = 42
 
-#plt.rc('font', family='Arial', weight='medium', size=13)
+matplotlib.rcParams['pdf.fonttype'] = 42
+matplotlib.rcParams['ps.fonttype'] = 42
+matplotlib.rcParams['xtick.direction'] = 'in'
+matplotlib.rcParams['ytick.direction'] = 'in'
+
+plt.rc('font', family='Nimbus Sans L', weight='medium', size=15.5)
 # plt.rc('font', family='DejaVu Serif', weight='medium', size=13)
 
 plt.rcParams['hatch.color'] = '#636466'
@@ -77,7 +82,7 @@ ystr = "Decompression"
 
 fig, ax1 = plt.subplots()
 
-fig.set_size_inches(12.705, 2.9)
+fig.set_size_inches(12.705, 3.7)
 
 
 def autolabel(ax, rects, array, heights):
@@ -98,7 +103,7 @@ def autolabel(ax, rects, array, heights):
         ax.text(s=s,
                 x=rect.get_x() + rect.get_width() / 2 + 0.02, y=height - offset,
 
-                va='bottom', size=11, rotation=90, ha='center', weight='bold')
+                va='bottom', size=12, rotation=90, ha='center', weight='bold')
 
 
 b1 = ax1.bar(x - 7 * width / 2, vanilla0, width * zoom,
@@ -141,7 +146,7 @@ b8 = ax1.bar(x + 7 * width / 2, yanni3, width * zoom,
 # plt.xlabel('# vCPUs')
 # plt.yticks([])
 # plt.ylabel('Percentage of Improvement')
-plt.xticks(x, name, rotation=12, size=11)
+plt.xticks(x, name, rotation=15)
 
 # g = lambda x, pos: "${}$".format(f._formatSciNotation('%1.1e' % x))
 # plt.gca().yaxis.set_major_formatter(mticker.FuncFormatter(g))
@@ -150,7 +155,11 @@ plt.yscale('log')
 
 plt.grid(linewidth=0.4)
 
-ax1.legend(loc=2, frameon=True, prop={'size': 13}, ncol=2)
+# ax1.legend(loc=2, frameon=True, prop={'size': 13}, ncol=2)
+
+
+ax1.legend(facecolor='white', framealpha=1.0,
+              loc='upper left', frameon=True, ncol=2, edgecolor='white')
 
 # plt.legend(
 #     mode="expand", loc="upper center",
@@ -180,19 +189,19 @@ ax1.set_ylim(0.1, 100000000)
 
 plt.text(s="Zero",
          x=8 - 3 * width, y=vanilla0[0] + 15000,
-         va='bottom', size=10, rotation=90, ha='center', weight='bold')
+         va='bottom', size=13, rotation=90, ha='center', weight='bold')
 
 plt.text(s="SaPM",
          x=8 - 1 * width, y=vanilla0[0] + 15000,
-         va='bottom', size=10, rotation=90, ha='center', weight='bold')
+         va='bottom', size=13, rotation=90, ha='center', weight='bold')
 
 plt.text(s="SiPM",
          x=8 + 1 * width, y=vanilla0[0] + 15000,
-         va='bottom', size=10, rotation=90, ha='center', weight='bold')
+         va='bottom', size=13, rotation=90, ha='center', weight='bold')
 
 plt.text(s="General",
          x=8 + 3 * width, y=vanilla0[0] + 15000,
-         va='bottom', size=10, rotation=90, ha='center', weight='bold')
+         va='bottom', size=13, rotation=90, ha='center', weight='bold')
 
 # plt.text(s="VM Live Migration\nNever Converges",
 #          x=4, y=yanni0[4] + 2000,
@@ -223,7 +232,7 @@ ys = [[451104, 5842, 41080, 42243],
       ]
 
 for i in range(1):
-    ax2.plot(xs[1 * i], ys[1 * i], marker="s", markersize=3.5, label="#Pages", color=colors[1],
+    ax2.plot(xs[1 * i], ys[1 * i], marker="s", markersize=3.5, label="# of Pages", color=colors[1],
              markerfacecolor='black',
              markeredgecolor="black", linestyle="None")
 
@@ -232,7 +241,7 @@ for i in range(1, 12):
              markerfacecolor='black', markeredgecolor="black", linestyle="None")
 
 # plt.text(-0.4, 2.2, "Unit = Mop/s/thread")
-ax1.set_ylabel("(De)compression Latency/μs")
+ax1.set_ylabel("(De)compression Latency(μs)")
 # ax2.set_ylabel("# of Pages")
 
 # ax2.set_ylim(-3, 110)
@@ -246,16 +255,21 @@ for i in rate:
 for i in range(len(rates)):
     plt.text(s=rates[i],
              x=i, y=520000,
-             va='bottom', size=11, rotation=00, ha='center', weight='bold')
+             va='bottom', size=13, rotation=00, ha='center', weight='bold')
 
-ax2.legend(loc=0, frameon=True, prop={'size': 13})
+# ax2.legend(loc=0, frameon=True, prop={'size': 13})
+
+ax2.legend(facecolor='white', framealpha=1.0,
+              loc='upper right', frameon=True, ncol=2, edgecolor='white')
 ticks = range(0, 1200000, 200000)
-tt = []
-for i in ticks:
-    temp = i/1000000
-    tt.append(str(temp) + "x10e6")
+# tt = []
+# for i in ticks:
+#     temp = i/1000000
+#     tt.append(str(temp) + "x10e6")
 ax2.set_yticks(ticks)
-ax2.set_yticklabels(tt)
+# ax2.set_yticklabels(tt)
+ax2.ticklabel_format(style='sci', scilimits=(-1,2), axis='y')
+
 
 # ax1.tick_params(labelsize='medium', width=3, color="black")
 # ax2.tick_params(labelsize='medium', width=3, color="black")
@@ -263,7 +277,7 @@ ax2.set_yticklabels(tt)
 plt.tight_layout()
 #plt.title("Yanni (De)compression Results")
 
-plt.savefig('imgs/compress.pdf', dpi=300, bbox_inches='tight')
+plt.savefig('/Users/snake0/MasterThesis/figures/_compress-result.pdf', dpi=300, bbox_inches='tight')
 plt.show()
 
 plt.close()

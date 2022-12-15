@@ -6,7 +6,7 @@ matplotlib.rcParams['ps.fonttype'] = 42
 matplotlib.rcParams['xtick.direction'] = 'in'
 matplotlib.rcParams['ytick.direction'] = 'in'
 
-plt.rc('font', family='Nimbus Sans L', weight='medium', size=12)
+plt.rc('font', family='Nimbus Sans L', weight='medium', size=15)
 # f = mticker.ScalarFormatter(useOffset=False, useMathText=True)
 
 
@@ -47,8 +47,8 @@ ylatency = [10.90569025, 11.3494405, 11.25516425, 11.3727005, 11.67127925, 15.71
             1210.440283,
             6025.49152]
 
-y3 = [886.76, 869.03, 874, 850.54]
-y4 = [889.72, 879.71, 873.05, 878.4]
+y3 = [5, 5, 8, 13]
+y4 = [5, 17, 32, 94]
 
 x_title = ["2G", "1G", "512M", "256M"]
 x = range(len(x_title))
@@ -57,7 +57,7 @@ x = range(len(x_title))
 
 # titles = ["{4KiB,local,write,*}", "{4KiB,global,read,*}", "{4KiB,global,write,*}", "{4MiB,global,write,*}"]
 
-fig, axs = plt.subplots(1, 5, figsize=(13.5, 2.61))
+fig, axs = plt.subplots(1, 4, figsize=(10.8, 2.61))
 
 # plt.xlim([-1, 16])
 # plt.ylim([0, 100000])
@@ -70,15 +70,15 @@ fig, axs = plt.subplots(1, 5, figsize=(13.5, 2.61))
 # p4, = plt.plot([], [], marker="x", markersize=9, linestyle="dotted", color=colors[0])
 # plt.legend([p1, p3, p2, p4], ["", "", "RDMA", "TCP"], ncol=2, columnspacing=0)
 
-l1, = axs[0].plot(x, y3,  linewidth=1.2, color="black",marker="o", markersize=3)
+l1, = axs[0].plot(x, y3, linewidth=2.0, color=colors[3], linestyle="dotted", )
 l2, = axs[0].plot(x, y4, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # l3,=axs[0].plot(x, ylatency, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # ax1.set_ylim(1, 10000)
-# axs[0].set_yscale('log')
+axs[0].set_yscale('log')
 axs[0].set_xlabel('Anemoi$ Size (MiB)')
-axs[0].set_ylabel('Request Per Second (1/s)')
+axs[0].set_ylabel('Latency (ms)')
 axs[0].set_xlim([-0.5, 3.5])
-axs[0].set_ylim([800, 910])
+axs[0].set_ylim([3, 800])
 
 axs[0].legend((l1, l2),
               ("Anemoi$", "Linux Swap"), facecolor='white', framealpha=1.0,
@@ -108,10 +108,10 @@ axs[0].set_xticklabels(x_title)
 # plt.title(titles[0])
 # plt.ylim([0, 100000])
 
-y3 = [1084.5676, 1082.1629, 919.3312, 31.3139]
-y4 = [1032.2, 787.4458, 44.5584, 24.7537]
+y3 = [1.96, 2.81, 4.89, 82.96]
+y4 = [2.12, 9.06, 101.13, 161.51]
 
-l4, = axs[1].plot(x, y3,  linewidth=1.2, color="black",marker="o", markersize=3)
+l4, = axs[1].plot(x, y3, linewidth=2.0, color=colors[3], linestyle="dotted", )
 l5, = axs[1].plot(x, y4, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # l3,=axs[0].plot(x, ylatency, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # ax1.set_ylim(1, 10000)
@@ -119,7 +119,7 @@ axs[1].set_yscale('log')
 axs[1].set_xlabel('Anemoi$ Size (MiB)')
 # axs[1].set_ylabel('Latency (ms)')
 axs[1].set_xlim([-0.5, 3.5])
-axs[1].set_ylim([1, 2000])
+axs[1].set_ylim([0.5, 900])
 
 axs[1].legend((l4, l5),
               ("Anemoi$", "Linux Swap"), facecolor='white', framealpha=1.0,
@@ -129,13 +129,10 @@ axs[1].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 axs[1].set_xticks(x)
 axs[1].set_xticklabels(x_title)
 
+y3 = [203.33, 369.67, 407.82, 1469.6]
+y4 = [240.02, 511.33, 861.95, 1561.52]
 
-
-
-y3 = [17.9478,16.7268, 15.114, 4.1947]
-y4 = [17.2721, 11.0272, 6.6489, 3.2246]
-
-l6, = axs[2].plot(x, y3,  linewidth=1.2, color="black",marker="o", markersize=3)
+l6, = axs[2].plot(x, y3, linewidth=2.0, color=colors[3], linestyle="dotted", )
 l7, = axs[2].plot(x, y4, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # l3,=axs[0].plot(x, ylatency, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # ax1.set_ylim(1, 10000)
@@ -143,7 +140,7 @@ axs[2].set_yscale('log')
 axs[2].set_xlabel('Anemoi$ Size (MiB)')
 # axs[2].set_ylabel('Latency (ms)')
 axs[2].set_xlim([-0.5, 3.5])
-axs[2].set_ylim([0.5, 50])
+axs[2].set_ylim([150, 17000])
 
 axs[2].legend((l6, l7),
               ("Anemoi$", "Linux Swap"), facecolor='white', framealpha=1.0,
@@ -153,63 +150,59 @@ axs[2].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 axs[2].set_xticks(x)
 axs[2].set_xticklabels(x_title)
 
-y3 = [111152.28, 106044.54, 105042.02, 92447.1]
-y4 = [113007.12, 104455.76, 90415.91, 63371.35]
+y3 = [2, 2, 6, 16]
+y4 = [2, 5, 16, 20]
 
-l6, = axs[3].plot(x, y3,  linewidth=1.2, color="black",marker="o", markersize=3)
+l6, = axs[3].plot(x, y3, linewidth=2.0, color=colors[3], linestyle="dotted", )
 l7, = axs[3].plot(x, y4, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # l3,=axs[0].plot(x, ylatency, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # ax1.set_ylim(1, 10000)
-# axs[3].set_yscale('log')
+axs[3].set_yscale('log')
 axs[3].set_xlabel('Anemoi$ Size (MiB)')
-axs[3].set_ylabel('Request Per Second (1/s)')
-
 # axs[3].set_ylabel('Latency (ms)')
 axs[3].set_xlim([-0.5, 3.5])
-axs[3].set_ylim([30000, 125000])
+axs[3].set_ylim([0.5, 600])
 
-axs[3].legend((l6, l7),
+axs[3].legend((l6, l6),
               ("Anemoi$", "Linux Swap"), facecolor='white', framealpha=1.0,
               loc='best', frameon=True, ncol=1, edgecolor='white')
 axs[3].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
 
-axs[3].ticklabel_format(style='sci', scilimits=(-1,2), axis='y')
-
 axs[3].set_xticks(x)
 axs[3].set_xticklabels(x_title)
 
-y3 = [111415.12, 103270.23, 91268.63, 90449.93]
-y4 = [116076.62, 103160.58, 86647.93, 87336.24]
+y3 = [2, 4, 7, 14]
+y4 = [2, 16, 51, 86]
 
-l6, = axs[4].plot(x, y3,  linewidth=1.2, color="black",marker="o", markersize=3)
+l6, = axs[4].plot(x, y3, linewidth=2.0, color=colors[3], linestyle="dotted", )
 l7, = axs[4].plot(x, y4, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # l3,=axs[0].plot(x, ylatency, linewidth=1.9, marker="s", markersize=6.5, color=colors[0], markerfacecolor='none')
 # ax1.set_ylim(1, 10000)
-# axs[4].set_yscale('log')
+axs[4].set_yscale('log')
 axs[4].set_xlabel('Anemoi$ Size (MiB)')
 # axs[4].set_ylabel('Latency (ms)')
 axs[4].set_xlim([-0.5, 3.5])
-axs[4].set_ylim([50000, 125000])
+axs[4].set_ylim([0.5, 1000])
 
-axs[4].legend((l6, l7),
+axs[4].legend((l6, l6),
               ("Anemoi$", "Linux Swap"), facecolor='white', framealpha=1.0,
               loc='best', frameon=True, ncol=1, edgecolor='white')
 axs[4].grid(axis='y', linewidth=0.4, linestyle=(0, (2, 4)), color="#000000")
-axs[4].ticklabel_format(style='sci', scilimits=(-1,2), axis='y')
 
 axs[4].set_xticks(x)
 axs[4].set_xticklabels(x_title)
 
-axs[0].set_title("(a) Apache")
-axs[1].set_title("(b) OLTP RO")
-axs[2].set_title("(c) OLTP RW")
-axs[3].set_title("(d) Redis G.")
-axs[4].set_title("(e) R. G./S.")
+
+axs[0].set_title("(a) Apache (Max)")
+axs[1].set_title("(b) OLTP RO (P95)")
+axs[2].set_title("(c) OLTP RW (P95)")
+axs[3].set_title("(d) Redis GET (P99.99)")
+axs[4].set_title("(e) R. G./S. (P99.99)")
 
 colors = ["#7ec1be", "#53a2bf", "#366eaa", "#0e215b"]
 
 fig.tight_layout()
-fig.savefig('/Users/snake0/MasterThesis/figures/_throughput-comp.pdf', dpi=100)
+fig.savefig('/Users/snake0/MasterThesis/figures/_latency-comp.pdf', dpi=100)
 # fig.savefig('./newimgs/sysbench-latency-all.pdf', dpi=100)
 plt.show()
 
